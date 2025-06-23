@@ -1,0 +1,32 @@
+{
+  "common": {
+    "cortano": "cortano",
+    "loading": "Ładowanie...",
+    "month": "/miesiąc",
+    "currency": "USD"
+  },
+  "navbar": {
+    "features": "Funkcje",
+    "useCases": "Przypadki użycia",
+    "pricing": "Cennik",
+    "getStarted": "Rozpocznij",
+    "components": {
+      "callFlows": {
+        "title": "Przepływy rozmów",
+        "description": "Projektuj konwersacyjne przepływy AI za pomocą naszego wizualnego kreatora bez kodu."
+      },
+      "voiceOptions": {
+        "title": "Opcje głosu", 
+        "description": "Wybierz z premium głosów AI lub sklonuj własny głos marki."
+      },
+      "integrations": {
+        "title": "Integracje",
+        "description": "Połącz się z CRM, kalendarzami i narzędziami biznesowymi bezproblemowo."
+      },
+      "analytics": {
+        "title": "Analityka",
+        "description": "Śledź wydajność rozmów, współczynniki konwersji i wgląd w agentów."
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "common": {
+    "cortano": "cortano",
+    "loading": "Laden...",
+    "month": "/Monat",
+    "currency": "USD"
+  },
+  "navbar": {
+    "features": "Funktionen",
+    "useCases": "Anwendungsfälle",
+    "pricing": "Preise",
+    "getStarted": "Loslegen",
+    "components": {
+      "callFlows": {
+        "title": "Anrufabläufe",
+        "description": "Entwerfen Sie konversationelle KI-Abläufe mit unserem visuellen No-Code-Builder."
+      },
+      "voiceOptions": {
+        "title": "Sprachoptionen", 
+        "description": "Wählen Sie aus Premium-KI-Stimmen oder klonen Sie Ihre eigene Markenstimme."
+      },
+      "integrations": {
+        "title": "Integrationen",
+        "description": "Verbinden Sie sich nahtlos mit CRM, Kalendern und Geschäftstools."
+      },
+      "analytics": {
+        "title": "Analytik",
+        "description": "Verfolgen Sie Anrufleistung, Konversionsraten und Agent-Insights."
+      }
+    }
+  }
+}

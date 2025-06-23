@@ -1,0 +1,32 @@
+{
+  "common": {
+    "cortano": "cortano",
+    "loading": "Cargando...",
+    "month": "/mes",
+    "currency": "USD"
+  },
+  "navbar": {
+    "features": "Características",
+    "useCases": "Casos de uso",
+    "pricing": "Precios",
+    "getStarted": "Comenzar",
+    "components": {
+      "callFlows": {
+        "title": "Flujos de llamadas",
+        "description": "Diseña flujos de IA conversacional con nuestro constructor visual sin código."
+      },
+      "voiceOptions": {
+        "title": "Opciones de voz", 
+        "description": "Elige entre voces premium de IA o clona tu propia voz de marca."
+      },
+      "integrations": {
+        "title": "Integraciones",
+        "description": "Conecta con CRM, calendarios y herramientas empresariales sin problemas."
+      },
+      "analytics": {
+        "title": "Analíticas",
+        "description": "Rastrea el rendimiento de llamadas, tasas de conversión e insights de agentes."
+      }
+    }
+  }
+}
