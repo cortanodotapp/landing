@@ -1,9 +1,10 @@
 {
   "common": {
     "cortano": "cortano",
-    "loading": "Laden...",
+    "loading": "Wird geladen...",
     "month": "/Monat",
-    "currency": "USD"
+    "currency": "USD",
+    "close": "Schließen"
   },
   "navbar": {
     "features": "Funktionen",
@@ -13,20 +14,187 @@
     "components": {
       "callFlows": {
         "title": "Anrufabläufe",
-        "description": "Entwerfen Sie konversationelle KI-Abläufe mit unserem visuellen No-Code-Builder."
+        "description": "Gestalten Sie Konversationsabläufe mit unserem visuellen No-Code-Builder."
       },
       "voiceOptions": {
-        "title": "Sprachoptionen", 
+        "title": "Sprachoptionen",
         "description": "Wählen Sie aus Premium-KI-Stimmen oder klonen Sie Ihre eigene Markenstimme."
       },
       "integrations": {
         "title": "Integrationen",
-        "description": "Verbinden Sie sich nahtlos mit CRM, Kalendern und Geschäftstools."
+        "description": "Nahtlose Verbindung mit CRM, Kalendern und Geschäftstools."
       },
       "analytics": {
-        "title": "Analytik",
-        "description": "Verfolgen Sie Anrufleistung, Konversionsraten und Agent-Insights."
+        "title": "Analysen",
+        "description": "Verfolgen Sie die Anrufleistung, Konversionsraten und Agenten-Insights."
       }
     }
+  },
+  "hero": {
+    "badge": "KI-Anrufagenten jetzt verfügbar",
+    "headline": "Verwandeln Sie verpasste Anrufe in",
+    "headlineHighlight": "zahlende Kunden",
+    "description": "Verpassen Sie nie wieder einen potenziellen Kunden. Unsere KI-Agenten beantworten jeden Anruf, qualifizieren Leads und konvertieren Interessenten – selbst wenn Ihr Team beschäftigt oder nicht verfügbar ist.",
+    "cta": "Anrufe konvertieren starten"
+  },
+  "features": {
+    "badge": "Funktionen",
+    "title": "Alles, was Sie brauchen, um beeindruckende KI-Anruferlebnisse zu schaffen",
+    "description": "Von Drag-and-Drop-Workflows bis hin zu Enterprise-Infrastruktur – wir bieten die Werkzeuge, um Ihre KI-Vision zu realisieren.",
+    "deployInMinutes": {
+      "title": "Bereitstellung in Minuten",
+      "description": "Von der Idee zum Live-KI-Agent in unter 5 Minuten. Unser optimierter Prozess ermöglicht sofortigen Einsatz."
+    },
+    "enterpriseSecurity": {
+      "title": "Enterprise-Sicherheit",
+      "description": "Bankenähnliche Verschlüsselung, SOC 2-Konformität und 99,9 % Uptime SLA. Ihre Anrufe sind sicher und jederzeit verfügbar."
+    },
+    "globalInfrastructure": {
+      "title": "Globale Infrastruktur",
+      "description": "Bedienen Sie Kunden weltweit mit unserem Edge-Netzwerk. Geringe Latenz, hohe Verfügbarkeit – überall."
+    },
+    "advancedAnalytics": {
+      "title": "Erweiterte Analysen",
+      "description": "Tiefgehende Einblicke in Anrufleistung, Gesprächsmuster und Nutzerzufriedenheit mit Echtzeit-Dashboards."
+    }
+  },
+  "pricing": {
+    "badge": "Preispläne",
+    "title": "Wählen Sie den perfekten Plan für Ihre KI-Agenten",
+    "subtitle": "Skalieren Sie von Ihrem ersten KI-Anruf bis zu Millionen. Transparente Preise ohne versteckte Gebühren.",
+    "popular": "Beliebt",
+    "perMonth": "/Monat",
+    "billing": {
+      "monthly": "Monatlich",
+      "yearly": "Jährlich",
+      "savings": "20 % sparen"
+    },
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "description": "Ideal für Tests und kleine Unternehmen.",
+        "cta": "Jetzt starten",
+        "features": {
+          "callMinutes": "750 Anrufminuten / Monat",
+          "phoneNumber": "1 kostenlose Telefonnummer",
+          "voiceModels": "Basis-KI-Stimmen",
+          "workspace": "Ein Arbeitsbereich",
+          "agents": "2 KI-Agenten",
+          "support": "Basis-Support"
+        }
+      },
+      "professional": {
+        "name": "Professionell",
+        "description": "Alles, was Sie brauchen, um Ihr KI-Geschäft zu skalieren.",
+        "cta": "Pro starten",
+        "features": {
+          "callMinutes": "2.000 Anrufminuten / Monat",
+          "phoneNumber": "1 kostenlose Telefonnummer",
+          "voiceModels": "Premium-KI-Stimmen",
+          "workflowBuilder": "Erweiterter Workflow-Builder",
+          "agents": "Unbegrenzte KI-Agenten",
+          "support": "Priorisierter Support",
+          "integrations": "Individuelle Integrationen"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Skalierbarkeit, Sicherheit und dedizierter Support für Unternehmen.",
+        "customPrice": "Individuell",
+        "cta": "Vertrieb kontaktieren",
+        "features": {
+          "callMinutes": "Unbegrenzte Anrufminuten",
+          "phoneNumbers": "5 kostenlose Telefonnummern",
+          "voiceModels": "Individuelle KI-Stimmen",
+          "architecture": "Mandantenfähige Architektur",
+          "sla": "SLA-Garantien",
+          "manager": "Dedizierter Success-Manager",
+          "whiteLabel": "White-Label-Optionen"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "Stellen Sie intelligente KI-Anrufagenten in Minuten bereit. Automatisieren Sie Kundenanrufe, Lead-Qualifizierung und Support mit unserer No-Code-Plattform.",
+    "product": {
+      "title": "Produkt",
+      "callFlows": "Anrufabläufe",
+      "voiceOptions": "Sprachoptionen",
+      "integrations": "Integrationen",
+      "pricing": "Preise",
+      "analytics": "Analysen"
+    },
+    "useCases": {
+      "title": "Anwendungsfälle",
+      "customerSupport": "Kundensupport",
+      "leadQualification": "Lead-Qualifizierung",
+      "appointmentBooking": "Terminbuchung",
+      "salesAutomation": "Vertriebsautomatisierung"
+    },
+    "company": {
+      "title": "Unternehmen",
+      "aboutUs": "Über uns",
+      "blog": "Blog",
+      "careers": "Karriere",
+      "contact": "Kontakt"
+    },
+    "legal": {
+      "copyright": "© 2025 Cortano. Alle Rechte vorbehalten.",
+      "privacyPolicy": "Datenschutzrichtlinie",
+      "termsOfService": "Nutzungsbedingungen",
+      "cookiePolicy": "Cookie-Richtlinie"
+    }
+  },
+  "dialog": {
+    "comingSoon": "Demnächst verfügbar",
+    "featureNotPublished": "Diese Funktion ist in Entwicklung und bald verfügbar.",
+    "acknowledge": "Verstanden"
+  },
+  "featureNames": {
+    "aiCallAgentPlatform": "KI-Anrufagenten-Plattform",
+    "accountRegistration": "Konto Registrierung",
+    "useCasesExamples": "Anwendungsbeispiele",
+    "callFlowBuilder": "Anrufablauf-Builder",
+    "voiceCustomization": "Stimmenanpassung",
+    "thirdPartyIntegrations": "Drittanbieter-Integrationen",
+    "analyticsDashboard": "Analyse-Dashboard",
+    "customerSupportUseCases": "Kundensupport-Anwendungsfälle",
+    "leadQualificationExamples": "Lead-Qualifizierungsbeispiele",
+    "appointmentBookingSolutions": "Lösungen zur Terminbuchung",
+    "salesAutomationWorkflows": "Vertriebsautomatisierungs-Workflows",
+    "aboutCortano": "Über Cortano",
+    "cortanoBlog": "Cortano-Blog",
+    "careerOpportunities": "Karrieremöglichkeiten",
+    "contactSupport": "Kontakt & Support",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "starterPlan": "Starter-Tarif",
+    "professionalPlan": "Professioneller Tarif",
+    "enterprisePlan": "Enterprise-Tarif"
+  },
+  "visualWorkflow": {
+    "title": "Visueller Workflow-Builder",
+    "description": "Ziehen und ablegen, um komplexe Anrufabläufe zu erstellen",
+    "steps": {
+      "incomingCall": "Eingehender Anruf",
+      "aiAnalysis": "KI-Analyse",
+      "bookMeeting": "Termin buchen",
+      "sendInfo": "Information senden"
+    }
+  },
+  "movingPartners": {
+    "title": "Unterstützt von Branchenführern",
+    "subtitle": "Führende Unternehmen"
+  },
+  "visualFlow": {
+    "title": "Wie es funktioniert",
+    "step1": "Anruf empfangen",
+    "step2": "KI-Verarbeitung",
+    "step3": "Antwort generiert",
+    "step4": "Aktion ausgeführt"
+  },
+  "languageShowcase": {
+    "title": "Unterstützt mehrere Sprachen"
   }
 }

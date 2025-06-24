@@ -187,4 +187,9 @@
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
   }
+  
+  /* Ensure sections with IDs have proper scroll margin to account for fixed navbar */
+  [id] {
+    scroll-margin-top: 6rem;
+  }
 }

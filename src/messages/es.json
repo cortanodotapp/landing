@@ -3,30 +3,198 @@
     "cortano": "cortano",
     "loading": "Cargando...",
     "month": "/mes",
-    "currency": "USD"
+    "currency": "USD",
+    "close": "Cerrar"
   },
   "navbar": {
-    "features": "Características",
+    "features": "Funciones",
     "useCases": "Casos de uso",
     "pricing": "Precios",
     "getStarted": "Comenzar",
     "components": {
       "callFlows": {
-        "title": "Flujos de llamadas",
-        "description": "Diseña flujos de IA conversacional con nuestro constructor visual sin código."
+        "title": "Flujos de llamada",
+        "description": "Diseña flujos conversacionales con nuestro creador visual sin código."
       },
       "voiceOptions": {
-        "title": "Opciones de voz", 
-        "description": "Elige entre voces premium de IA o clona tu propia voz de marca."
+        "title": "Opciones de voz",
+        "description": "Elige entre voces de IA premium o clona tu propia voz de marca."
       },
       "integrations": {
         "title": "Integraciones",
-        "description": "Conecta con CRM, calendarios y herramientas empresariales sin problemas."
+        "description": "Conéctate fácilmente con CRM, calendarios y herramientas empresariales."
       },
       "analytics": {
-        "title": "Analíticas",
-        "description": "Rastrea el rendimiento de llamadas, tasas de conversión e insights de agentes."
+        "title": "Analítica",
+        "description": "Sigue el rendimiento de llamadas, tasas de conversión y datos de agentes."
       }
     }
+  },
+  "hero": {
+    "badge": "Agentes de llamadas con IA disponibles",
+    "headline": "Convierte llamadas perdidas en",
+    "headlineHighlight": "clientes que pagan",
+    "description": "Nunca pierdas un cliente potencial. Nuestros agentes de IA responden cada llamada, califican prospectos y convierten interesados en ventas, incluso cuando tu equipo está ocupado o no disponible.",
+    "cta": "Empieza a convertir llamadas"
+  },
+  "features": {
+    "badge": "Funciones",
+    "title": "Todo lo que necesitas para crear experiencias de llamadas con IA increíbles",
+    "description": "Desde flujos de trabajo drag-and-drop hasta infraestructura empresarial. Tenemos las herramientas para hacer realidad tu visión con IA.",
+    "deployInMinutes": {
+      "title": "Implementa en minutos",
+      "description": "De la idea al agente de IA activo en menos de 5 minutos. Nuestro proceso de implementación te pone en marcha de inmediato."
+    },
+    "enterpriseSecurity": {
+      "title": "Seguridad empresarial",
+      "description": "Encriptación bancaria, cumplimiento SOC 2 y SLA del 99.9 %. Tus llamadas son seguras y siempre disponibles."
+    },
+    "globalInfrastructure": {
+      "title": "Infraestructura global",
+      "description": "Atiende clientes en todo el mundo con nuestra red distribuida. Baja latencia, alta disponibilidad, en todas partes."
+    },
+    "advancedAnalytics": {
+      "title": "Analítica avanzada",
+      "description": "Información profunda sobre el rendimiento de llamadas, patrones de conversación y satisfacción del usuario con paneles en tiempo real."
+    }
+  },
+  "pricing": {
+    "badge": "Planes de precios",
+    "title": "Elige el plan perfecto para tus agentes de llamadas IA",
+    "subtitle": "Escala desde tu primera llamada hasta millones. Precios transparentes y sin cargos ocultos.",
+    "popular": "Popular",
+    "perMonth": "/mes",
+    "billing": {
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "savings": "Ahorra 20%"
+    },
+    "plans": {
+      "starter": {
+        "name": "Inicial",
+        "description": "Perfecto para probar agentes IA y para pequeñas empresas.",
+        "cta": "Comenzar ahora",
+        "features": {
+          "callMinutes": "750 minutos de llamada / mes",
+          "phoneNumber": "1 número gratuito",
+          "voiceModels": "Modelos de voz IA básicos",
+          "workspace": "Un solo espacio de trabajo",
+          "agents": "2 agentes IA",
+          "support": "Soporte básico"
+        }
+      },
+      "professional": {
+        "name": "Profesional",
+        "description": "Todo lo que necesitas para escalar tu negocio con IA.",
+        "cta": "Comenzar Pro",
+        "features": {
+          "callMinutes": "2,000 minutos de llamada / mes",
+          "phoneNumber": "1 número gratuito",
+          "voiceModels": "Modelos de voz IA premium",
+          "workflowBuilder": "Creador de flujos avanzado",
+          "agents": "Agentes IA ilimitados",
+          "support": "Soporte prioritario",
+          "integrations": "Integraciones personalizadas"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Escala crítica, seguridad y soporte dedicado para tu empresa.",
+        "customPrice": "Personalizado",
+        "cta": "Contactar ventas",
+        "features": {
+          "callMinutes": "Minutos de llamada ilimitados",
+          "phoneNumbers": "5 números gratuitos",
+          "voiceModels": "Modelos de voz IA personalizados",
+          "architecture": "Arquitectura multiusuario",
+          "sla": "Garantías SLA",
+          "manager": "Gerente de éxito dedicado",
+          "whiteLabel": "Opciones marca blanca"
+        }
+      }
+    }
+  },
+  "footer": {
+    "description": "Implementa agentes de llamadas inteligentes en minutos. Automatiza llamadas, calificación de leads y soporte con nuestra plataforma sin código.",
+    "product": {
+      "title": "Producto",
+      "callFlows": "Flujos de llamada",
+      "voiceOptions": "Opciones de voz",
+      "integrations": "Integraciones",
+      "pricing": "Precios",
+      "analytics": "Analítica"
+    },
+    "useCases": {
+      "title": "Casos de uso",
+      "customerSupport": "Atención al cliente",
+      "leadQualification": "Calificación de leads",
+      "appointmentBooking": "Reservas de citas",
+      "salesAutomation": "Automatización de ventas"
+    },
+    "company": {
+      "title": "Empresa",
+      "aboutUs": "Sobre nosotros",
+      "blog": "Blog",
+      "careers": "Carreras",
+      "contact": "Contacto"
+    },
+    "legal": {
+      "copyright": "© 2025 Cortano. Todos los derechos reservados.",
+      "privacyPolicy": "Política de privacidad",
+      "termsOfService": "Términos del servicio",
+      "cookiePolicy": "Política de cookies"
+    }
+  },
+  "dialog": {
+    "comingSoon": "Próximamente",
+    "featureNotPublished": "Esta función está en desarrollo y estará disponible pronto.",
+    "acknowledge": "Entendido"
+  },
+  "featureNames": {
+    "aiCallAgentPlatform": "Plataforma de agentes IA",
+    "accountRegistration": "Registro de cuenta",
+    "useCasesExamples": "Casos de uso y ejemplos",
+    "callFlowBuilder": "Creador de flujos de llamada",
+    "voiceCustomization": "Personalización de voz",
+    "thirdPartyIntegrations": "Integraciones de terceros",
+    "analyticsDashboard": "Panel de analítica",
+    "customerSupportUseCases": "Casos de uso: atención al cliente",
+    "leadQualificationExamples": "Ejemplos de calificación de leads",
+    "appointmentBookingSolutions": "Soluciones para reservas de citas",
+    "salesAutomationWorkflows": "Flujos de automatización de ventas",
+    "aboutCortano": "Sobre Cortano",
+    "cortanoBlog": "Blog de Cortano",
+    "careerOpportunities": "Oportunidades laborales",
+    "contactSupport": "Contacto y soporte",
+    "privacyPolicy": "Política de privacidad",
+    "termsOfService": "Términos del servicio",
+    "cookiePolicy": "Política de cookies",
+    "starterPlan": "Plan Inicial",
+    "professionalPlan": "Plan Profesional",
+    "enterprisePlan": "Plan Enterprise"
+  },
+  "visualWorkflow": {
+    "title": "Creador visual de flujos",
+    "description": "Arrastra y suelta para crear flujos complejos",
+    "steps": {
+      "incomingCall": "Llamada entrante",
+      "aiAnalysis": "Análisis IA",
+      "bookMeeting": "Reservar cita",
+      "sendInfo": "Enviar información"
+    }
+  },
+  "movingPartners": {
+    "title": "Respaldado por líderes del sector",
+    "subtitle": "Empresas líderes"
+  },
+  "visualFlow": {
+    "title": "Cómo funciona",
+    "step1": "Llamada recibida",
+    "step2": "Procesamiento IA",
+    "step3": "Respuesta generada",
+    "step4": "Acción realizada"
+  },
+  "languageShowcase": {
+    "title": "Compatible con varios idiomas"
   }
 }

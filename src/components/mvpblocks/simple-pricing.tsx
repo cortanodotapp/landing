@@ -94,7 +94,7 @@ export default function SimplePricing() {
   if (!mounted) return null;
 
   return (
-    <section id="pricing" className="relative py-24 overflow-hidden">
+    <section id="pricing" className="relative py-24 overflow-hidden scroll-mt-20">
       {/* Ambient background effects matching your theme */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_100%_at_50%_50%,_var(--tw-gradient-stops))] from-primary/10 via-primary/5 to-transparent"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[800px] bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,_var(--tw-gradient-stops))] from-primary/15 via-primary/5 to-transparent blur-3xl"></div>

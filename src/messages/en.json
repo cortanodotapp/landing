@@ -142,14 +142,11 @@
       "termsOfService": "Terms of Service",
       "cookiePolicy": "Cookie Policy"
     }
-  },
-  "dialog": {
+  },  "dialog": {
     "comingSoon": "Coming Soon",
-    "featureNotPublished": "This feature isn't published yet. Subscribe to our newsletter to get notified when it's available.",
-    "getNotified": "Get notified when it's ready",
-    "enterEmail": "Enter your email",
-    "thanksSubscribing": "Thanks for subscribing!",
-    "notifyWhenAvailable": "We'll notify you as soon as it's available."  },
+    "featureNotPublished": "This feature is currently under development and will be available soon.",
+    "acknowledge": "Got it"
+  },
   "featureNames": {
     "aiCallAgentPlatform": "AI Call Agent Platform",
     "accountRegistration": "Account Registration",
