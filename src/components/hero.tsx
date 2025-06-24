@@ -11,7 +11,7 @@ export function Hero() {
   const t = useTranslations('hero')
   const tFeatures = useTranslations('featureNames')
   
-  return (    <section className="relative min-h-screen overflow-hidden bg-background pt-24 md:pt-28 lg:pt-24">
+  return (    <section className="relative min-h-screen overflow-hidden bg-background pt-28 md:pt-32 lg:pt-28">
       {/* Main Ambient Light Effect from Top */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_100%_at_50%_0%,_var(--tw-gradient-stops))] from-primary/30 via-primary/10 via-primary/5 to-transparent"></div>
       
@@ -22,8 +22,9 @@ export function Hero() {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent"></div>
       
       {/* Main content container */}
-      <div className="relative z-10 flex flex-col justify-center min-h-screen -mt-24 md:-mt-28 lg:-mt-24">        {/* Hero content positioned higher */}
-        <div className="flex-1 flex flex-col justify-center items-center px-6 py-12">
+      <div className="relative z-10 flex flex-col min-h-screen">
+        {/* Hero content positioned properly with navbar clearance */}
+        <div className="flex-1 flex flex-col justify-center items-center px-6 py-12 pt-20 md:pt-24">
           <div className="mx-auto max-w-4xl text-center">
             {/* Status Badge */}
             <div className="mb-6 md:mb-8 flex justify-center">

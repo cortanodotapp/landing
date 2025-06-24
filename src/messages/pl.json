@@ -79,7 +79,7 @@
           "phoneNumber": "1 darmowy numer telefonu",
           "voiceModels": "Podstawowe modele głosu AI",
           "workspace": "Jedna przestrzeń robocza",
-          "agents": "2 agenci AI",
+          "agents": "2 agentów AI",
           "support": "Podstawowe wsparcie"
         }
       },
@@ -101,7 +101,7 @@
         "name": "Enterprise",
         "description": "Skalowalność, bezpieczeństwo i dedykowane wsparcie na poziomie krytycznym dla firm.",
         "customPrice": "Indywidualna wycena",
-        "cta": "Skontaktuj się z działem sprzedaży",
+        "cta": "Skontaktuj się",
         "features": {
           "callMinutes": "Nieograniczone minuty rozmów",
           "phoneNumbers": "5 darmowych numerów telefonu",
