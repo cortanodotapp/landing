@@ -3,17 +3,19 @@
 import { motion } from "motion/react"
 import { ArrowRight, Phone, Mic, Brain, MessageCircle } from "lucide-react"
 import { useEffect, useState } from "react"
-
-const steps = [
-  { label: "Incoming Call", color: "bg-blue-500", icon: Phone },
-  { label: "Voice Recognition", color: "bg-green-500", icon: Mic },
-  { label: "AI Processing", color: "bg-purple-500", icon: Brain },
-  { label: "Smart Response", color: "bg-orange-500", icon: MessageCircle }
-]
+import { useTranslations } from 'next-intl'
 
 export function VisualFlow() {
   const [activeStep, setActiveStep] = useState(0)
   const [mounted, setMounted] = useState(false)
+  const t = useTranslations('visualFlow')
+
+  const steps = [
+    { label: t('step1'), color: "bg-blue-500", icon: Phone },
+    { label: t('step2'), color: "bg-green-500", icon: Mic },
+    { label: t('step3'), color: "bg-purple-500", icon: Brain },
+    { label: t('step4'), color: "bg-orange-500", icon: MessageCircle }
+  ]
 
   useEffect(() => {
     setMounted(true)
@@ -26,7 +28,7 @@ export function VisualFlow() {
   if (!mounted) return null
   return (
     <div className="flex flex-col h-full justify-center">      <h3 className="text-lg font-semibold mb-6 text-card-foreground">
-        How It Works
+        {t('title')}
       </h3>
       
       <div className="flex items-center justify-between relative">

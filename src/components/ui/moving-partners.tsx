@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react"
 import { useEffect, useState } from "react"
+import { useTranslations } from 'next-intl'
 
 const partners = [
   { 
@@ -23,6 +24,7 @@ const partners = [
 
 export function MovingPartners() {
   const [mounted, setMounted] = useState(false)
+  const t = useTranslations('movingPartners')
 
   useEffect(() => {
     setMounted(true)
@@ -33,8 +35,8 @@ export function MovingPartners() {
   return (
     <div className="flex flex-col h-full justify-center">
       <h3 className="text-lg font-semibold mb-4 text-card-foreground">
-        Backed by Industry Leaders
-      </h3>      <div className="relative overflow-hidden">
+        {t('title')}
+      </h3><div className="relative overflow-hidden">
         <motion.div
           className="flex space-x-3"
           animate={{

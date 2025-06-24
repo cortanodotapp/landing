@@ -16,74 +16,76 @@ import { cn } from '@/lib/utils';
 import { Sparkles, ArrowRight, Check, Star, Zap, Shield } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
-const plans = [
-  {
-    id: 'starter',
-    name: 'Starter',
-    icon: Star,
-    price: {
-      monthly: 40,
-      yearly: 32,
-    },
-    description:
-      'Perfect for trying out AI call agents and small businesses.',
-    features: [
-      '750 call minutes / month',
-      '1 Free Phone Number',
-      'Basic AI voice models',
-      'Single workspace',
-      '2 AI agents',
-      'Basic Support',
-    ],
-    cta: 'Start Now',
-  },
-  {
-    id: 'pro',
-    name: 'Professional',
-    icon: Zap,
-    price: {
-      monthly: 80,
-      yearly: 62,
-    },
-    description: 'Everything you need to build and scale your AI call business.',
-    features: [
-      '2,000 call minutes / month',
-      '1 Free Phone Number',
-      'Premium AI voice models',
-      'Advanced workflow builder',
-      'Unlimited AI agents',
-      'Priority support',
-      'Custom integrations',
-    ],
-    cta: 'Start Pro',
-    popular: true,
-  },
-  {
-    id: 'enterprise',
-    name: 'Enterprise',
-    icon: Shield,
-    price: {
-      monthly: 'Custom',
-      yearly: 'Custom',
-    },
-    description: 'Critical scale, security, and dedicated support for your business.',
-    features: [
-      'Unlimited call minutes',
-      '5 Free Phone Number',
-      'Custom AI voice models',
-      'Multi-tenant architecture',
-      'SLA guarantees',
-      'Dedicated success manager',
-      'White-label options',
-    ],
-    cta: 'Contact Sales',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function SimplePricing() {
   const [frequency, setFrequency] = useState<string>('monthly');
   const [mounted, setMounted] = useState(false);
+  const t = useTranslations('pricing');
+  const tFeatures = useTranslations('featureNames');
+
+  const plans = [
+    {
+      id: 'starter',
+      name: t('plans.starter.name'),
+      icon: Star,
+      price: {
+        monthly: 40,
+        yearly: 32,
+      },
+      description: t('plans.starter.description'),
+      features: [
+        t('plans.starter.features.callMinutes'),
+        t('plans.starter.features.phoneNumber'),
+        t('plans.starter.features.voiceModels'),
+        t('plans.starter.features.workspace'),
+        t('plans.starter.features.agents'),
+        t('plans.starter.features.support'),
+      ],
+      cta: t('plans.starter.cta'),
+    },
+    {
+      id: 'pro',
+      name: t('plans.professional.name'),
+      icon: Zap,
+      price: {
+        monthly: 80,
+        yearly: 62,
+      },
+      description: t('plans.professional.description'),
+      features: [
+        t('plans.professional.features.callMinutes'),
+        t('plans.professional.features.phoneNumber'),
+        t('plans.professional.features.voiceModels'),
+        t('plans.professional.features.workflowBuilder'),
+        t('plans.professional.features.agents'),
+        t('plans.professional.features.support'),
+        t('plans.professional.features.integrations'),
+      ],
+      cta: t('plans.professional.cta'),
+      popular: true,
+    },
+    {
+      id: 'enterprise',
+      name: t('plans.enterprise.name'),
+      icon: Shield,
+      price: {
+        monthly: t('plans.enterprise.customPrice'),
+        yearly: t('plans.enterprise.customPrice'),
+      },
+      description: t('plans.enterprise.description'),
+      features: [
+        t('plans.enterprise.features.callMinutes'),
+        t('plans.enterprise.features.phoneNumbers'),
+        t('plans.enterprise.features.voiceModels'),
+        t('plans.enterprise.features.architecture'),
+        t('plans.enterprise.features.sla'),
+        t('plans.enterprise.features.manager'),
+        t('plans.enterprise.features.whiteLabel'),
+      ],
+      cta: t('plans.enterprise.cta'),
+    },
+  ];
 
   useEffect(() => {
     setMounted(true);
@@ -104,7 +106,7 @@ export default function SimplePricing() {
             className="mb-6 bg-primary/10 text-primary border-primary/20 px-4 py-2"
           >
             <Sparkles className="mr-2 h-4 w-4 animate-pulse" />
-            Pricing Plans
+            {t('badge')}
           </Badge>
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
@@ -112,7 +114,7 @@ export default function SimplePricing() {
             transition={{ duration: 0.5 }}
             className="text-4xl font-bold text-card-foreground mb-4 sm:text-5xl"
           >
-            Choose the perfect plan for your AI call agents
+            {t('title')}
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -120,7 +122,7 @@ export default function SimplePricing() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-xl text-muted-foreground max-w-3xl mx-auto"
           >
-            Scale from your first AI call to millions. Transparent pricing with no hidden fees.
+            {t('subtitle')}
           </motion.p>
         </div>
 
@@ -140,18 +142,18 @@ export default function SimplePricing() {
                 value="monthly"
                 className="rounded-full transition-all duration-300 data-[state=active]:bg-primary/10 data-[state=active]:text-primary"
               >
-                Monthly
+                {t('billing.monthly')}
               </TabsTrigger>
               <TabsTrigger
                 value="yearly"
                 className="rounded-full transition-all duration-300 data-[state=active]:bg-primary/10 data-[state=active]:text-primary"
               >
-                Yearly
+                {t('billing.yearly')}
                 <Badge
                   variant="secondary"
                   className="ml-2 bg-primary/10 text-primary hover:bg-primary/15"
                 >
-                  Save 20%
+                  {t('billing.savings')}
                 </Badge>
               </TabsTrigger>
             </TabsList>
@@ -182,7 +184,7 @@ export default function SimplePricing() {
                   <div className="absolute -top-3 left-0 right-0 mx-auto w-fit">
                     <Badge className="rounded-full bg-primary px-4 py-1 text-primary-foreground shadow-sm">
                       <Sparkles className="mr-1 h-3.5 w-3.5" />
-                      Popular
+                      {t('popular')}
                     </Badge>
                   </div>
                 )}
@@ -231,7 +233,7 @@ export default function SimplePricing() {
                             }
                           />
                           <span className="text-sm text-muted-foreground">
-                            /month
+                            {t('perMonth')}
                           </span>
                         </div>
                       ) : (
@@ -274,7 +276,7 @@ export default function SimplePricing() {
                 </CardContent>
                 <CardFooter className="pt-6">
                   <FeatureComingSoonDialog
-                    featureName={plan.name + " Plan"}
+                    featureName={tFeatures(plan.id === 'starter' ? 'starterPlan' : plan.id === 'pro' ? 'professionalPlan' : 'enterprisePlan')}
                   >
                     <Button
                       variant={plan.popular ? 'default' : 'outline'}

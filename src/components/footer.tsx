@@ -1,7 +1,14 @@
+"use client"
+
 import Link from "next/link"
 import { FeatureComingSoonDialog } from "@/components/ui/feature-coming-soon-dialog"
+import { useTranslations } from 'next-intl'
 
 export function Footer() {
+  const t = useTranslations('footer')
+  const tFeatures = useTranslations('featureNames')
+  const tCommon = useTranslations('common')
+  
   return (
     <footer className="relative bg-background border-t border-white/10">
       {/* Subtle background gradient */}
@@ -17,11 +24,10 @@ export function Footer() {
                 alt="Cortano Logo" 
                 className="h-6 w-auto" 
               />
-              <span className="text-xl font-bold text-foreground">cortano</span>
+              <span className="text-xl font-bold text-foreground">{tCommon('cortano')}</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed mb-6">
-              Deploy intelligent AI call agents for your business in minutes. 
-              Automate customer calls, lead qualification, and support with our no-code platform.
+              {t('description')}
             </p>
             <div className="flex space-x-4">
               <Link 
@@ -65,122 +71,122 @@ export function Footer() {
 
           {/* Product Links */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">Product</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">{t('product.title')}</h3>
             <ul className="space-y-3">              <li>                <FeatureComingSoonDialog
-                  featureName="Call Flow Builder"
+                  featureName={tFeatures('callFlowBuilder')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Call Flows
+                    {t('product.callFlows')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Voice Customization"
+                  featureName={tFeatures('voiceCustomization')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Voice Options
+                    {t('product.voiceOptions')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Third-party Integrations"
+                  featureName={tFeatures('thirdPartyIntegrations')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Integrations
+                    {t('product.integrations')}
                   </span>
                 </FeatureComingSoonDialog></li>
               <li>
                 <Link href="/#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
-                  Pricing
+                  {t('product.pricing')}
                 </Link>
               </li>
               <li>                <FeatureComingSoonDialog
-                  featureName="Analytics Dashboard"
+                  featureName={tFeatures('analyticsDashboard')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Analytics
+                    {t('product.analytics')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
             </ul>
           </div>          {/* Use Cases */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">Use Cases</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">{t('useCases.title')}</h3>
             <ul className="space-y-3">              <li>
                 <FeatureComingSoonDialog
-                  featureName="Customer Support Use Cases"
+                  featureName={tFeatures('customerSupportUseCases')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Customer Support
+                    {t('useCases.customerSupport')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Lead Qualification Examples"
+                  featureName={tFeatures('leadQualificationExamples')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Lead Qualification
+                    {t('useCases.leadQualification')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Appointment Booking Solutions"
+                  featureName={tFeatures('appointmentBookingSolutions')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Appointment Booking
+                    {t('useCases.appointmentBooking')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Sales Automation Workflows"
+                  featureName={tFeatures('salesAutomationWorkflows')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Sales Automation
+                    {t('useCases.salesAutomation')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
             </ul>
           </div>          {/* Company */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">Company</h3>
+            <h3 className="text-sm font-semibold text-foreground mb-4">{t('company.title')}</h3>
             <ul className="space-y-3">              <li>
                 <FeatureComingSoonDialog
-                  featureName="About Cortano"
+                  featureName={tFeatures('aboutCortano')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    About Us
+                    {t('company.aboutUs')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Cortano Blog"
+                  featureName={tFeatures('cortanoBlog')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Blog
+                    {t('company.blog')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Career Opportunities"
+                  featureName={tFeatures('careerOpportunities')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Careers
+                    {t('company.careers')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName="Contact & Support"
+                  featureName={tFeatures('contactSupport')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    Contact
+                    {t('company.contact')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
@@ -192,27 +198,27 @@ export function Footer() {
         <div className="mt-12 pt-8 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-sm text-muted-foreground">
-              © 2025 Cortano. All rights reserved.
+              {t('legal.copyright')}
             </div>            <div className="flex space-x-6">
               <FeatureComingSoonDialog
-                featureName="Privacy Policy"
+                featureName={tFeatures('privacyPolicy')}
               >
                 <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  Privacy Policy
+                  {t('legal.privacyPolicy')}
                 </span>
               </FeatureComingSoonDialog>
               <FeatureComingSoonDialog
-                featureName="Terms of Service"
+                featureName={tFeatures('termsOfService')}
               >
                 <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  Terms of Service
+                  {t('legal.termsOfService')}
                 </span>
               </FeatureComingSoonDialog>
               <FeatureComingSoonDialog
-                featureName="Cookie Policy"
+                featureName={tFeatures('cookiePolicy')}
               >
                 <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  Cookie Policy
+                  {t('legal.cookiePolicy')}
                 </span>
               </FeatureComingSoonDialog>
             </div>

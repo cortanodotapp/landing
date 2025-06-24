@@ -1,9 +1,9 @@
-{
-  "common": {
+{  "common": {
     "cortano": "cortano",
     "loading": "Loading...",
     "month": "/month",
-    "currency": "USD"
+    "currency": "USD",
+    "close": "Close"
   },
   "navbar": {
     "features": "Features",
@@ -56,56 +56,59 @@
       "title": "Advanced Analytics",
       "description": "Deep insights into call performance, conversation patterns, and user satisfaction with real-time dashboards."
     }
-  },
-  "pricing": {
+  },  "pricing": {
     "badge": "Pricing Plans",
     "title": "Choose the perfect plan for your AI call agents",
-    "description": "Scale from your first AI call to millions. Transparent pricing with no hidden fees.",
-    "monthly": "Monthly",
-    "yearly": "Yearly",
-    "savePercent": "Save 20%",
+    "subtitle": "Scale from your first AI call to millions. Transparent pricing with no hidden fees.",
     "popular": "Popular",
+    "perMonth": "/month",
+    "billing": {
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "savings": "Save 20%"
+    },
     "plans": {
       "starter": {
         "name": "Starter",
         "description": "Perfect for trying out AI call agents and small businesses.",
-        "features": [
-          "750 call minutes / month",
-          "1 Free Phone Number",
-          "Basic AI voice models",
-          "Single workspace",
-          "2 AI agents",
-          "Basic Support"
-        ],
-        "cta": "Start Now"
+        "cta": "Start Now",
+        "features": {
+          "callMinutes": "750 call minutes / month",
+          "phoneNumber": "1 Free Phone Number",
+          "voiceModels": "Basic AI voice models",
+          "workspace": "Single workspace",
+          "agents": "2 AI agents",
+          "support": "Basic Support"
+        }
       },
-      "pro": {
+      "professional": {
         "name": "Professional",
         "description": "Everything you need to build and scale your AI call business.",
-        "features": [
-          "2,000 call minutes / month",
-          "1 Free Phone Number", 
-          "Premium AI voice models",
-          "Advanced workflow builder",
-          "Unlimited AI agents",
-          "Priority support",
-          "Custom integrations"
-        ],
-        "cta": "Start Pro"
+        "cta": "Start Pro",
+        "features": {
+          "callMinutes": "2,000 call minutes / month",
+          "phoneNumber": "1 Free Phone Number",
+          "voiceModels": "Premium AI voice models",
+          "workflowBuilder": "Advanced workflow builder",
+          "agents": "Unlimited AI agents",
+          "support": "Priority support",
+          "integrations": "Custom integrations"
+        }
       },
       "enterprise": {
         "name": "Enterprise",
         "description": "Critical scale, security, and dedicated support for your business.",
-        "features": [
-          "Unlimited call minutes",
-          "5 Free Phone Number",
-          "Custom AI voice models",
-          "Multi-tenant architecture",
-          "SLA guarantees",
-          "Dedicated success manager",
-          "White-label options"
-        ],
-        "cta": "Contact Sales"
+        "customPrice": "Custom",
+        "cta": "Contact Sales",
+        "features": {
+          "callMinutes": "Unlimited call minutes",
+          "phoneNumbers": "5 Free Phone Numbers",
+          "voiceModels": "Custom AI voice models",
+          "architecture": "Multi-tenant architecture",
+          "sla": "SLA guarantees",
+          "manager": "Dedicated success manager",
+          "whiteLabel": "White-label options"
+        }
       }
     }
   },
@@ -146,8 +149,7 @@
     "getNotified": "Get notified when it's ready",
     "enterEmail": "Enter your email",
     "thanksSubscribing": "Thanks for subscribing!",
-    "notifyWhenAvailable": "We'll notify you as soon as it's available."
-  },
+    "notifyWhenAvailable": "We'll notify you as soon as it's available."  },
   "featureNames": {
     "aiCallAgentPlatform": "AI Call Agent Platform",
     "accountRegistration": "Account Registration",
@@ -170,5 +172,26 @@
     "starterPlan": "Starter Plan",
     "professionalPlan": "Professional Plan",
     "enterprisePlan": "Enterprise Plan"
+  },  "visualWorkflow": {
+    "title": "Visual Workflow Builder",
+    "description": "Drag and drop to create complex call flows",
+    "steps": {
+      "incomingCall": "Incoming Call",
+      "aiAnalysis": "AI Analysis",
+      "bookMeeting": "Book Meeting",
+      "sendInfo": "Send Info"
+    }
+  },"movingPartners": {
+    "title": "Backed by Industry Leaders",
+    "subtitle": "Leading companies"
+  },  "visualFlow": {
+    "title": "How It Works",
+    "step1": "Call Received",
+    "step2": "AI Processing", 
+    "step3": "Response Generated",
+    "step4": "Action Taken"
+  },
+  "languageShowcase": {
+    "title": "Supports several languages"
   }
 }

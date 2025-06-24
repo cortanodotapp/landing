@@ -3,9 +3,12 @@
 import { motion } from "motion/react"
 import { Bot, MessageSquare, Calendar, Zap, ArrowDown, ArrowDownRight, ArrowDownLeft } from "lucide-react"
 import { useState, useEffect } from "react"
+import { useTranslations } from 'next-intl'
 
 export function VisualWorkflowBuilder() {
   const [activeStep, setActiveStep] = useState(0)
+  const t = useTranslations('visualWorkflow')
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveStep((prev) => {
@@ -24,10 +27,10 @@ export function VisualWorkflowBuilder() {
     <div className="flex flex-col h-full">
       <div className="mb-8">
         <h3 className="text-xl font-bold text-card-foreground mb-2">
-          Visual Workflow Builder
+          {t('title')}
         </h3>
         <p className="text-sm text-muted-foreground leading-relaxed">
-          Create sophisticated AI call flows with our intuitive drag-and-drop interface.
+          {t('description')}
         </p>
       </div>
 
@@ -60,7 +63,7 @@ export function VisualWorkflowBuilder() {
             transition={{ duration: 0.3 }}
           >
             <Bot className={`h-5 w-5 transition-colors duration-300 ${activeStep === 0 ? 'text-primary' : 'text-muted-foreground'}`} />
-            <span className={`text-sm font-medium transition-colors duration-300 ${activeStep === 0 ? 'text-card-foreground' : 'text-muted-foreground'}`}>Incoming Call</span>
+            <span className={`text-sm font-medium transition-colors duration-300 ${activeStep === 0 ? 'text-card-foreground' : 'text-muted-foreground'}`}>{t('steps.incomingCall')}</span>
           </motion.div>
         </motion.div>
 
@@ -100,7 +103,7 @@ export function VisualWorkflowBuilder() {
             transition={{ duration: 0.3 }}
           >
             <MessageSquare className={`h-5 w-5 transition-colors duration-300 ${activeStep === 1 ? 'text-primary' : 'text-muted-foreground'}`} />
-            <span className={`text-sm font-medium transition-colors duration-300 ${activeStep === 1 ? 'text-card-foreground' : 'text-muted-foreground'}`}>AI Analysis</span>
+            <span className={`text-sm font-medium transition-colors duration-300 ${activeStep === 1 ? 'text-card-foreground' : 'text-muted-foreground'}`}>{t('steps.aiAnalysis')}</span>
           </motion.div>
         </motion.div>
 
@@ -136,7 +139,7 @@ export function VisualWorkflowBuilder() {
             transition={{ duration: 0.3 }}
           >
             <Calendar className={`h-4 w-4 transition-colors duration-300 ${activeStep === 2 ? 'text-primary' : 'text-muted-foreground'}`} />
-            <span className={`text-xs font-medium transition-colors duration-300 ${activeStep === 2 ? 'text-card-foreground' : 'text-muted-foreground'}`}>Book Meeting</span>
+            <span className={`text-xs font-medium transition-colors duration-300 ${activeStep === 2 ? 'text-card-foreground' : 'text-muted-foreground'}`}>{t('steps.bookMeeting')}</span>
           </motion.div>
 
           <motion.div 
@@ -151,7 +154,7 @@ export function VisualWorkflowBuilder() {
             transition={{ duration: 0.3 }}
           >
             <Zap className={`h-4 w-4 transition-colors duration-300 ${activeStep === 2 ? 'text-primary' : 'text-muted-foreground'}`} />
-            <span className={`text-xs font-medium transition-colors duration-300 ${activeStep === 2 ? 'text-card-foreground' : 'text-muted-foreground'}`}>Send Info</span>
+            <span className={`text-xs font-medium transition-colors duration-300 ${activeStep === 2 ? 'text-card-foreground' : 'text-muted-foreground'}`}>{t('steps.sendInfo')}</span>
           </motion.div>
         </motion.div>
       </div>

@@ -3,6 +3,7 @@
 import { motion } from "motion/react"
 import { useState, useEffect } from "react"
 import ReactCountryFlag from "react-country-flag"
+import { useTranslations } from 'next-intl'
 
 const languages = [
   { name: "English", code: "US", isoCode: "EN" },
@@ -14,6 +15,7 @@ const languages = [
 export function LanguageShowcase() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [mounted, setMounted] = useState(false)
+  const t = useTranslations('languageShowcase')
 
   useEffect(() => {
     setMounted(true)
@@ -28,7 +30,7 @@ export function LanguageShowcase() {
   return (
     <div className="flex flex-col h-full justify-center">
       <h3 className="text-lg font-semibold mb-4 text-card-foreground">
-        Supports several languages
+        {t('title')}
       </h3>
       <div className="grid grid-cols-2 gap-2">
         {languages.map((language, index) => (
