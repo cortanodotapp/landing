@@ -81,13 +81,13 @@ export function generateStaticParams() {
 
 export default async function LocaleLayout({
   children,
-  params: { locale }
+  params
 }: {
   children: React.ReactNode;
-  params: { locale: string };
+  params : Promise<{ locale: string }>;
 }) {
   // Ensure that the incoming `locale` is valid
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes((await params).locale as any)) {
     notFound();
   }
   // Providing all messages to the client
@@ -124,7 +124,7 @@ export default async function LocaleLayout({
     }
   };
   return (
-    <html lang={locale}>
+    <html lang={(await params).locale}>
       <head>
         <script
           type="application/ld+json"
