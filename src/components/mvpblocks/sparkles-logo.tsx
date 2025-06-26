@@ -2,7 +2,7 @@ import { SparklesCore } from '@/components/ui/sparkles';
 
 export default function TrustedPartnersSection() {
   return (
-    <div className="pt-4 md:pt-8 pb-0 relative overflow-hidden">
+    <div className="pt-0 pb-0 relative overflow-hidden">
       <div className="mx-auto max-w-full px-4 md:px-6">
         <div className="mt-0 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 items-center justify-items-center max-w-5xl mx-auto">
           {/* Google */}
@@ -40,7 +40,7 @@ export default function TrustedPartnersSection() {
         </div>
       </div>
 
-      <div className="relative -mt-16 h-80 w-full overflow-hidden before:absolute before:left-0 before:top-0 before:h-full before:w-20 before:bg-gradient-to-r before:from-background before:to-transparent before:z-10 after:absolute after:right-0 after:top-0 after:h-full after:w-20 after:bg-gradient-to-l after:from-background after:to-transparent after:z-10">
+      <div className="relative -mt-8 h-64 w-full overflow-hidden before:absolute before:left-0 before:top-0 before:h-full before:w-20 before:bg-gradient-to-r before:from-background before:to-transparent before:z-10 after:absolute after:right-0 after:top-0 after:h-full after:w-20 after:bg-gradient-to-l after:from-background after:to-transparent after:z-10">
         {/* Background gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-primary/15 via-primary/5 to-transparent opacity-50" />
         
