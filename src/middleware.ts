@@ -9,7 +9,7 @@ export default createMiddleware({
   defaultLocale,
 
   // Prefix strategy - paths will be like /en, /pl, /es, /de
-  localePrefix: 'always'
+  localePrefix: 'as-needed'
 });
 
 export const config = {
