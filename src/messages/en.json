@@ -191,5 +191,69 @@
   },
   "languageShowcase": {
     "title": "Supports multiple protocols"
+  },
+  "about": {
+    "hero": {
+      "badge": "About Cortano",
+      "title": "Building the future of",
+      "titleHighlight": "business automation",
+      "description": "We're on a mission to make intelligent background automation accessible to every business, from startups to enterprises. Our platform empowers teams to focus on what matters most while our agents handle the rest."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We believe every business should have access to intelligent automation that works around the clock.",
+      "goals": {
+        "title": "Clear Goals",
+        "description": "Democratize background automation by making it simple, accessible, and powerful for businesses of all sizes."
+      },
+      "innovation": {
+        "title": "Innovation First",
+        "description": "Push the boundaries of what's possible with event-driven automation and intelligent background processing."
+      },
+      "community": {
+        "title": "Community Driven",
+        "description": "Build tools that empower developers and business teams to create automation solutions together."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "The principles that guide everything we do and help us build better automation solutions.",
+      "customerFirst": {
+        "title": "Customer First",
+        "description": "Every decision we make is driven by delivering exceptional value to our users and their businesses."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We build systems that work when you need them most, with enterprise-grade uptime and security."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly push boundaries to make automation more intelligent, efficient, and accessible."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Powerful automation should be available to everyone, regardless of technical expertise or company size."
+      }
+    },
+    "team": {
+      "badge": "Meet the Team",
+      "title": "The minds behind Cortano",
+      "description": "We're a passionate team of engineers, designers, and automation experts dedicated to revolutionizing how businesses operate.",
+      "members": {
+        "cto": {
+          "role": "Founder & CTO",
+          "description": "Leading our technical vision and architecture. Passionate about building scalable automation systems that revolutionize how businesses operate."
+        },
+        "sales": {
+          "role": "Founder & Head of Sales",
+          "description": "Driving business growth and partnerships. Expert at understanding customer needs and building relationships that fuel our mission."
+        },
+        "design": {
+          "role": "Founder & Head of Graphic",
+          "description": "Crafting beautiful, intuitive experiences that make complex automation accessible. Focused on user-centered design and visual storytelling."
+        }
+      },
+      "joinTeam": "Interested in joining our mission? We're always looking for talented individuals who share our passion for automation."
+    }
   }
 }

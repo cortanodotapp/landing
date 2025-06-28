@@ -117,7 +117,7 @@ export function Navbar() {
                     {t('useCases')}
                   </div>
                 </FeatureComingSoonDialog>
-              </NavigationMenuItem><NavigationMenuItem>
+              </NavigationMenuItem>              <NavigationMenuItem>
                 <Link href="/#pricing" legacyBehavior passHref>
                   <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "bg-transparent text-foreground hover:bg-white/10")}>
                     {t('pricing')}

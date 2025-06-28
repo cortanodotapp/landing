@@ -155,13 +155,9 @@ export function Footer() {
           <div>
             <h3 className="text-sm font-semibold text-foreground mb-4">{t('company.title')}</h3>
             <ul className="space-y-3">              <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('aboutCortano')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('company.aboutUs')}
-                  </span>
-                </FeatureComingSoonDialog>
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('company.aboutUs')}
+                </Link>
               </li>
               <li>
                 <FeatureComingSoonDialog

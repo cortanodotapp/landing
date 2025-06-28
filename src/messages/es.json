@@ -197,5 +197,69 @@
   },
   "languageShowcase": {
     "title": "Compatible con múltiples protocolos"
+  },
+  "about": {
+    "hero": {
+      "badge": "Acerca de Cortano",
+      "title": "Construyendo el futuro de la",
+      "titleHighlight": "automatización empresarial",
+      "description": "Estamos en una misión para hacer la automatización inteligente en segundo plano accesible a cada negocio, desde startups hasta empresas. Nuestra plataforma permite a los equipos enfocarse en lo que más importa mientras nuestros agentes manejan el resto."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "description": "Creemos que cada negocio debería tener acceso a automatización inteligente que funcione las 24 horas.",
+      "goals": {
+        "title": "Objetivos Claros",
+        "description": "Democratizar la automatización en segundo plano haciéndola simple, accesible y poderosa para negocios de todos los tamaños."
+      },
+      "innovation": {
+        "title": "Innovación Primero",
+        "description": "Empujar los límites de lo posible con automatización dirigida por eventos y procesamiento inteligente en segundo plano."
+      },
+      "community": {
+        "title": "Impulsado por la Comunidad",
+        "description": "Construir herramientas que empoderen a desarrolladores y equipos de negocio para crear soluciones de automatización juntos."
+      }
+    },
+    "values": {
+      "title": "Nuestros Valores",
+      "description": "Los principios que guían todo lo que hacemos y nos ayudan a construir mejores soluciones de automatización.",
+      "customerFirst": {
+        "title": "Cliente Primero",
+        "description": "Cada decisión que tomamos está impulsada por entregar valor excepcional a nuestros usuarios y sus negocios."
+      },
+      "reliability": {
+        "title": "Confiabilidad",
+        "description": "Construimos sistemas que funcionan cuando más los necesitas, con tiempo de actividad y seguridad de nivel empresarial."
+      },
+      "innovation": {
+        "title": "Innovación",
+        "description": "Constantemente empujamos límites para hacer la automatización más inteligente, eficiente y accesible."
+      },
+      "accessibility": {
+        "title": "Accesibilidad",
+        "description": "La automatización poderosa debería estar disponible para todos, independientemente de la experiencia técnica o el tamaño de la empresa."
+      }
+    },
+    "team": {
+      "badge": "Conoce al Equipo",
+      "title": "Las mentes detrás de Cortano",
+      "description": "Somos un equipo apasionado de ingenieros, diseñadores y expertos en automatización dedicados a revolucionar cómo operan las empresas.",
+      "members": {
+        "cto": {
+          "role": "Fundador y CTO",
+          "description": "Liderando nuestra visión técnica y arquitectura. Apasionado por construir sistemas de automatización escalables que revolucionan cómo operan las empresas."
+        },
+        "sales": {
+          "role": "Fundador y Jefe de Ventas",
+          "description": "Impulsando el crecimiento del negocio y alianzas. Experto en entender las necesidades del cliente y construir relaciones que impulsan nuestra misión."
+        },
+        "design": {
+          "role": "Fundador y Jefe de Gráficos",
+          "description": "Creando experiencias hermosas e intuitivas que hacen la automatización compleja accesible. Enfocado en diseño centrado en el usuario y narrativa visual."
+        }
+      },
+      "joinTeam": "¿Interesado en unirte a nuestra misión? Siempre estamos buscando individuos talentosos que compartan nuestra pasión por la automatización."
+    }
   }
 }

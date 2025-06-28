@@ -197,5 +197,69 @@
   },
   "languageShowcase": {
     "title": "Unterstützt mehrere Protokolle"
+  },
+  "about": {
+    "hero": {
+      "badge": "Über Cortano",
+      "title": "Die Zukunft der",
+      "titleHighlight": "Geschäftsautomatisierung gestalten",
+      "description": "Wir haben es uns zur Aufgabe gemacht, intelligente Hintergrundautomatisierung für jedes Unternehmen zugänglich zu machen, von Startups bis hin zu Großunternehmen. Unsere Plattform ermöglicht es Teams, sich auf das Wesentliche zu konzentrieren, während unsere Agenten den Rest übernehmen."
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Wir glauben, dass jedes Unternehmen Zugang zu intelligenter Automatisierung haben sollte, die rund um die Uhr funktioniert.",
+      "goals": {
+        "title": "Klare Ziele",
+        "description": "Hintergrundautomatisierung demokratisieren, indem wir sie einfach, zugänglich und leistungsstark für Unternehmen jeder Größe machen."
+      },
+      "innovation": {
+        "title": "Innovation zuerst",
+        "description": "Die Grenzen des Möglichen mit ereignisgesteuerter Automatisierung und intelligenter Hintergrundverarbeitung erweitern."
+      },
+      "community": {
+        "title": "Community-getrieben",
+        "description": "Tools entwickeln, die Entwickler und Geschäftsteams befähigen, gemeinsam Automatisierungslösungen zu erstellen."
+      }
+    },
+    "values": {
+      "title": "Unsere Werte",
+      "description": "Die Prinzipien, die alles leiten, was wir tun und uns helfen, bessere Automatisierungslösungen zu entwickeln.",
+      "customerFirst": {
+        "title": "Kunde zuerst",
+        "description": "Jede Entscheidung, die wir treffen, wird davon geleitet, außergewöhnlichen Wert für unsere Nutzer und ihre Unternehmen zu liefern."
+      },
+      "reliability": {
+        "title": "Zuverlässigkeit",
+        "description": "Wir entwickeln Systeme, die funktionieren, wenn Sie sie am meisten brauchen, mit Unternehmens-Verfügbarkeit und -Sicherheit."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Wir erweitern ständig Grenzen, um Automatisierung intelligenter, effizienter und zugänglicher zu machen."
+      },
+      "accessibility": {
+        "title": "Zugänglichkeit",
+        "description": "Leistungsstarke Automatisierung sollte für jeden verfügbar sein, unabhängig von technischem Fachwissen oder Unternehmensgröße."
+      }
+    },
+    "team": {
+      "badge": "Das Team kennenlernen",
+      "title": "Die Köpfe hinter Cortano",
+      "description": "Wir sind ein leidenschaftliches Team von Ingenieuren, Designern und Automatisierungsexperten, die sich dafür einsetzen, die Art und Weise zu revolutionieren, wie Unternehmen arbeiten.",
+      "members": {
+        "cto": {
+          "role": "Gründer & CTO",
+          "description": "Führt unsere technische Vision und Architektur. Leidenschaftlich für den Aufbau skalierbarer Automatisierungssysteme, die revolutionieren, wie Unternehmen arbeiten."
+        },
+        "sales": {
+          "role": "Gründer & Leiter Vertrieb",
+          "description": "Treibt Geschäftswachstum und Partnerschaften voran. Experte im Verstehen von Kundenbedürfnissen und Aufbau von Beziehungen, die unsere Mission vorantreiben."
+        },
+        "design": {
+          "role": "Gründer & Leiter Grafik",
+          "description": "Gestaltet schöne, intuitive Erfahrungen, die komplexe Automatisierung zugänglich machen. Fokussiert auf nutzerzentriertes Design und visuelles Storytelling."
+        }
+      },
+      "joinTeam": "Interessiert daran, unserer Mission beizutreten? Wir suchen immer nach talentierten Personen, die unsere Leidenschaft für Automatisierung teilen."
+    }
   }
 }
