@@ -6,11 +6,6 @@ export const initPostHog = () => {
     const posthogKey = process.env.NEXT_PUBLIC_POSTHOG_KEY
     const posthogHost = process.env.NEXT_PUBLIC_POSTHOG_HOST || '/ingest'
     
-    console.log('PostHog Init - Key exists:', !!posthogKey)
-    console.log('PostHog Init - Host:', posthogHost)
-    console.log('PostHog Init - Environment:', process.env.NODE_ENV)
-    console.log('PostHog Init - Cookie consent:', hasCookieConsent())
-    
     if (posthogKey && posthogKey.length > 0) {
       console.log('Initializing PostHog with key:', posthogKey.slice(0, 10) + '...')
       
@@ -21,10 +16,6 @@ export const initPostHog = () => {
           capture_pageview: false, // Disable automatic pageview capture, as we capture manually
           capture_pageleave: true,
           debug: process.env.NODE_ENV === 'development', // Enable debug mode in development
-          loaded: (posthog) => {
-            console.log('PostHog loaded successfully!')
-            console.log('PostHog instance:', posthog)
-          }
         })
       } catch (error) {
         console.error('Error initializing PostHog:', error)
