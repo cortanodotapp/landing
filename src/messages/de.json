@@ -4,7 +4,8 @@
     "loading": "Wird geladen...",
     "month": "/Monat",
     "currency": "USD",
-    "close": "Schließen"
+    "close": "Schließen",
+    "soon": "Bald"
   },
   "navbar": {
     "features": "Funktionen",
@@ -13,55 +14,55 @@
     "getStarted": "Loslegen",
     "components": {
       "callFlows": {
-        "title": "Anrufabläufe",
-        "description": "Gestalten Sie Konversationsabläufe mit unserem visuellen No-Code-Builder."
+        "title": "Event-Workflows",
+        "description": "Gestalten Sie automatisierte Workflows, die durch Events, Integrationen und API-Anfragen ausgelöst werden."
       },
       "voiceOptions": {
-        "title": "Sprachoptionen",
-        "description": "Wählen Sie aus Premium-KI-Stimmen oder klonen Sie Ihre eigene Markenstimme."
+        "title": "Integrationsoptionen",
+        "description": "Verbinden Sie APIs, Webhooks und erstellen Sie benutzerdefinierte MCP-Protokolle nahtlos."
       },
       "integrations": {
-        "title": "Integrationen",
-        "description": "Nahtlose Verbindung mit CRM, Kalendern und Geschäftstools."
+        "title": "MCP-Builder",
+        "description": "Erstellen Sie benutzerdefinierte Model Context Protocols mit unserem visuellen No-Code-Builder."
       },
       "analytics": {
-        "title": "Analysen",
-        "description": "Verfolgen Sie die Anrufleistung, Konversionsraten und Agenten-Insights."
+        "title": "Aufgaben-Analysen",
+        "description": "Verfolgen Sie die Leistung von Hintergrundagenten, Event-Verarbeitung und Automatisierungs-Insights."
       }
     }
   },
   "hero": {
-    "badge": "KI-Anrufagenten jetzt verfügbar",
-    "headline": "Verwandeln Sie verpasste Anrufe in",
-    "headlineHighlight": "zahlende Kunden",
-    "description": "Verpassen Sie nie wieder einen potenziellen Kunden. Unsere KI-Agenten beantworten jeden Anruf, qualifizieren Leads und konvertieren Interessenten – selbst wenn Ihr Team beschäftigt oder nicht verfügbar ist.",
-    "cta": "Anrufe konvertieren starten"
+    "badge": "Hintergrundagenten jetzt verfügbar",
+    "headline": "Verwandeln Sie Events in",
+    "headlineHighlight": "automatisierte Aktionen",
+    "description": "Verpassen Sie nie wieder eine Gelegenheit. Unsere intelligenten Hintergrundagenten verarbeiten Events, lösen Workflows aus und automatisieren Ihre Geschäftsprozesse - 24/7, selbst wenn Ihr Team offline ist.",
+    "cta": "Events automatisieren starten"
   },
   "features": {
     "badge": "Funktionen",
-    "title": "Alles, was Sie brauchen, um beeindruckende KI-Anruferlebnisse zu schaffen",
-    "description": "Von Drag-and-Drop-Workflows bis hin zu Enterprise-Infrastruktur – wir bieten die Werkzeuge, um Ihre KI-Vision zu realisieren.",
+    "title": "Alles, was Sie brauchen, um leistungsstarke Hintergrundautomatisierung zu erstellen",
+    "description": "Von Drag-and-Drop-Workflows bis hin zu Enterprise-Infrastruktur – wir bieten die Werkzeuge, um Ihre Automatisierungsvision zu realisieren.",
     "deployInMinutes": {
       "title": "Bereitstellung in Minuten",
-      "description": "Von der Idee zum Live-KI-Agent in unter 5 Minuten. Unser optimierter Prozess ermöglicht sofortigen Einsatz."
+      "description": "Von der Idee zum Live-Hintergrundagenten in unter 5 Minuten. Unser optimierter Prozess bringt Ihre Automatisierung sofort zum Laufen."
     },
     "enterpriseSecurity": {
       "title": "Enterprise-Sicherheit",
-      "description": "Bankenähnliche Verschlüsselung, SOC 2-Konformität und 99,9 % Uptime SLA. Ihre Anrufe sind sicher und jederzeit verfügbar."
+      "description": "Bankenähnliche Verschlüsselung, SOC 2-Konformität und 99,9 % Uptime SLA. Ihre Automatisierungen sind sicher und jederzeit verfügbar."
     },
     "globalInfrastructure": {
       "title": "Globale Infrastruktur",
-      "description": "Bedienen Sie Kunden weltweit mit unserem Edge-Netzwerk. Geringe Latenz, hohe Verfügbarkeit – überall."
+      "description": "Verarbeiten Sie Events weltweit mit unserem Edge-Netzwerk. Geringe Latenz, hohe Verfügbarkeit – überall."
     },
     "advancedAnalytics": {
       "title": "Erweiterte Analysen",
-      "description": "Tiefgehende Einblicke in Anrufleistung, Gesprächsmuster und Nutzerzufriedenheit mit Echtzeit-Dashboards."
+      "description": "Tiefgehende Einblicke in Automatisierungsleistung, Event-Muster und Agenteneffizienz mit Echtzeit-Dashboards."
     }
   },
   "pricing": {
     "badge": "Preispläne",
-    "title": "Wählen Sie den perfekten Plan für Ihre KI-Agenten",
-    "subtitle": "Skalieren Sie von Ihrem ersten KI-Anruf bis zu Millionen. Transparente Preise ohne versteckte Gebühren.",
+    "title": "Wählen Sie den perfekten Plan für Ihre Hintergrundagenten",
+    "subtitle": "Skalieren Sie von Ihrer ersten Automatisierung bis zu Millionen von Events. Transparente Preise ohne versteckte Gebühren.",
     "popular": "Beliebt",
     "perMonth": "/Monat",
     "billing": {
@@ -72,40 +73,40 @@
     "plans": {
       "starter": {
         "name": "Starter",
-        "description": "Ideal für Tests und kleine Unternehmen.",
+        "description": "Ideal für Tests mit Hintergrundagenten und kleine Automatisierungen.",
         "cta": "Jetzt starten",
         "features": {
-          "callMinutes": "750 Anrufminuten / Monat",
-          "phoneNumber": "1 kostenlose Telefonnummer",
-          "voiceModels": "Basis-KI-Stimmen",
+          "callMinutes": "10.000 Events verarbeitet / Monat",
+          "phoneNumber": "5 API-Endpunkte",
+          "voiceModels": "Basis-Integrationskonnektoren",
           "workspace": "Ein Arbeitsbereich",
-          "agents": "2 KI-Agenten",
+          "agents": "3 Hintergrundagenten",
           "support": "Basis-Support"
         }
       },
       "professional": {
         "name": "Professionell",
-        "description": "Alles, was Sie brauchen, um Ihr KI-Geschäft zu skalieren.",
+        "description": "Alles, was Sie brauchen, um Ihr Automatisierungsgeschäft zu skalieren.",
         "cta": "Pro starten",
         "features": {
-          "callMinutes": "2.000 Anrufminuten / Monat",
-          "phoneNumber": "1 kostenlose Telefonnummer",
-          "voiceModels": "Premium-KI-Stimmen",
-          "workflowBuilder": "Erweiterter Workflow-Builder",
-          "agents": "Unbegrenzte KI-Agenten",
+          "callMinutes": "100.000 Events verarbeitet / Monat",
+          "phoneNumber": "25 API-Endpunkte",
+          "voiceModels": "Erweiterte Integrationskonnektoren",
+          "workflowBuilder": "Benutzerdefinierter MCP-Builder",
+          "agents": "Unbegrenzte Hintergrundagenten",
           "support": "Priorisierter Support",
-          "integrations": "Individuelle Integrationen"
+          "integrations": "Benutzerdefinierte Protokollentwicklung"
         }
       },
       "enterprise": {
         "name": "Enterprise",
-        "description": "Skalierbarkeit, Sicherheit und dedizierter Support für Unternehmen.",
+        "description": "Kritische Skalierung, Sicherheit und dedizierter Support für Ihr Unternehmen.",
         "customPrice": "Individuell",
         "cta": "Vertrieb kontaktieren",
         "features": {
-          "callMinutes": "Unbegrenzte Anrufminuten",
-          "phoneNumbers": "5 kostenlose Telefonnummern",
-          "voiceModels": "Individuelle KI-Stimmen",
+          "callMinutes": "Unbegrenzte Events verarbeitet",
+          "phoneNumbers": "Unbegrenzte API-Endpunkte",
+          "voiceModels": "Benutzerdefinierte Integrationsprotokolle",
           "architecture": "Mandantenfähige Architektur",
           "sla": "SLA-Garantien",
           "manager": "Dedizierter Success-Manager",
@@ -115,21 +116,21 @@
     }
   },
   "footer": {
-    "description": "Stellen Sie intelligente KI-Anrufagenten in Minuten bereit. Automatisieren Sie Kundenanrufe, Lead-Qualifizierung und Support mit unserer No-Code-Plattform.",
+    "description": "Stellen Sie intelligente Hintergrundagenten in Minuten bereit. Automatisieren Sie Event-Verarbeitung, Integrations-Workflows und Geschäftsprozesse mit unserer No-Code-Plattform.",
     "product": {
       "title": "Produkt",
-      "callFlows": "Anrufabläufe",
-      "voiceOptions": "Sprachoptionen",
-      "integrations": "Integrationen",
+      "callFlows": "Event-Workflows",
+      "voiceOptions": "Integrationsoptionen",
+      "integrations": "MCP-Builder",
       "pricing": "Preise",
-      "analytics": "Analysen"
+      "analytics": "Aufgaben-Analysen"
     },
     "useCases": {
       "title": "Anwendungsfälle",
-      "customerSupport": "Kundensupport",
-      "leadQualification": "Lead-Qualifizierung",
-      "appointmentBooking": "Terminbuchung",
-      "salesAutomation": "Vertriebsautomatisierung"
+      "customerSupport": "Event-Verarbeitung",
+      "leadQualification": "API-Integration",
+      "appointmentBooking": "Hintergrundautomatisierung",
+      "salesAutomation": "Benutzerdefinierte Protokolle"
     },
     "company": {
       "title": "Unternehmen",
@@ -151,17 +152,17 @@
     "acknowledge": "Verstanden"
   },
   "featureNames": {
-    "aiCallAgentPlatform": "KI-Anrufagenten-Plattform",
+    "aiCallAgentPlatform": "Hintergrundagenten-Plattform",
     "accountRegistration": "Konto Registrierung",
     "useCasesExamples": "Anwendungsbeispiele",
-    "callFlowBuilder": "Anrufablauf-Builder",
-    "voiceCustomization": "Stimmenanpassung",
+    "callFlowBuilder": "Event-Workflow-Builder",
+    "voiceCustomization": "Integrations-Anpassung",
     "thirdPartyIntegrations": "Drittanbieter-Integrationen",
     "analyticsDashboard": "Analyse-Dashboard",
-    "customerSupportUseCases": "Kundensupport-Anwendungsfälle",
-    "leadQualificationExamples": "Lead-Qualifizierungsbeispiele",
-    "appointmentBookingSolutions": "Lösungen zur Terminbuchung",
-    "salesAutomationWorkflows": "Vertriebsautomatisierungs-Workflows",
+    "customerSupportUseCases": "Event-Verarbeitungs-Anwendungsfälle",
+    "leadQualificationExamples": "API-Integrationsbeispiele",
+    "appointmentBookingSolutions": "Hintergrundautomatisierungs-Lösungen",
+    "salesAutomationWorkflows": "Benutzerdefinierte Protokoll-Workflows",
     "aboutCortano": "Über Cortano",
     "cortanoBlog": "Cortano-Blog",
     "careerOpportunities": "Karrieremöglichkeiten",
@@ -175,12 +176,12 @@
   },
   "visualWorkflow": {
     "title": "Visueller Workflow-Builder",
-    "description": "Ziehen und ablegen, um komplexe Anrufabläufe zu erstellen",
+    "description": "Ziehen und ablegen, um komplexe event-gesteuerte Workflows zu erstellen",
     "steps": {
-      "incomingCall": "Eingehender Anruf",
-      "aiAnalysis": "KI-Analyse",
-      "bookMeeting": "Termin buchen",
-      "sendInfo": "Information senden"
+      "incomingCall": "Event ausgelöst",
+      "aiAnalysis": "Hintergrundverarbeitung",
+      "bookMeeting": "Aktion ausführen",
+      "sendInfo": "Antwort senden"
     }
   },
   "movingPartners": {
@@ -189,12 +190,12 @@
   },
   "visualFlow": {
     "title": "Wie es funktioniert",
-    "step1": "Anruf empfangen",
-    "step2": "KI-Verarbeitung",
-    "step3": "Antwort generiert",
-    "step4": "Aktion ausgeführt"
+    "step1": "Event empfangen",
+    "step2": "Hintergrundverarbeitung",
+    "step3": "Aktion generiert",
+    "step4": "Aufgabe abgeschlossen"
   },
   "languageShowcase": {
-    "title": "Unterstützt mehrere Sprachen"
+    "title": "Unterstützt mehrere Protokolle"
   }
 }

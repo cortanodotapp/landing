@@ -4,7 +4,8 @@
     "loading": "Cargando...",
     "month": "/mes",
     "currency": "USD",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "soon": "Pronto"
   },
   "navbar": {
     "features": "Funciones",
@@ -13,55 +14,55 @@
     "getStarted": "Comenzar",
     "components": {
       "callFlows": {
-        "title": "Flujos de llamada",
-        "description": "Diseña flujos conversacionales con nuestro creador visual sin código."
+        "title": "Flujos de eventos",
+        "description": "Diseña flujos automatizados activados por eventos, integraciones y solicitudes de API."
       },
       "voiceOptions": {
-        "title": "Opciones de voz",
-        "description": "Elige entre voces de IA premium o clona tu propia voz de marca."
+        "title": "Opciones de integración",
+        "description": "Conecta APIs, webhooks y construye protocolos MCP personalizados sin problemas."
       },
       "integrations": {
-        "title": "Integraciones",
-        "description": "Conéctate fácilmente con CRM, calendarios y herramientas empresariales."
+        "title": "Constructor MCP",
+        "description": "Construye protocolos de contexto de modelo personalizados con nuestro constructor visual sin código."
       },
       "analytics": {
-        "title": "Analítica",
-        "description": "Sigue el rendimiento de llamadas, tasas de conversión y datos de agentes."
+        "title": "Analítica de tareas",
+        "description": "Rastrea el rendimiento de agentes en segundo plano, procesamiento de eventos e insights de automatización."
       }
     }
   },
   "hero": {
-    "badge": "Agentes de llamadas con IA disponibles",
-    "headline": "Convierte llamadas perdidas en",
-    "headlineHighlight": "clientes que pagan",
-    "description": "Nunca pierdas un cliente potencial. Nuestros agentes de IA responden cada llamada, califican prospectos y convierten interesados en ventas, incluso cuando tu equipo está ocupado o no disponible.",
-    "cta": "Empieza a convertir llamadas"
+    "badge": "Agentes en segundo plano disponibles",
+    "headline": "Convierte eventos en",
+    "headlineHighlight": "acciones automatizadas",
+    "description": "Nunca pierdas una oportunidad. Nuestros agentes inteligentes en segundo plano procesan eventos, activan flujos de trabajo y automatizan tus operaciones comerciales - trabajando 24/7 incluso cuando tu equipo está desconectado.",
+    "cta": "Comenzar a automatizar eventos"
   },
   "features": {
     "badge": "Funciones",
-    "title": "Todo lo que necesitas para crear experiencias de llamadas con IA increíbles",
-    "description": "Desde flujos de trabajo drag-and-drop hasta infraestructura empresarial. Tenemos las herramientas para hacer realidad tu visión con IA.",
+    "title": "Todo lo que necesitas para crear automatización poderosa en segundo plano",
+    "description": "Desde flujos de trabajo drag-and-drop hasta infraestructura empresarial. Tenemos las herramientas para hacer realidad tu visión de automatización.",
     "deployInMinutes": {
       "title": "Implementa en minutos",
-      "description": "De la idea al agente de IA activo en menos de 5 minutos. Nuestro proceso de implementación te pone en marcha de inmediato."
+      "description": "De la idea al agente en segundo plano activo en menos de 5 minutos. Nuestro proceso de implementación hace que tu automatización funcione al instante."
     },
     "enterpriseSecurity": {
       "title": "Seguridad empresarial",
-      "description": "Encriptación bancaria, cumplimiento SOC 2 y SLA del 99.9 %. Tus llamadas son seguras y siempre disponibles."
+      "description": "Encriptación bancaria, cumplimiento SOC 2 y SLA del 99.9 %. Tus automatizaciones son seguras y siempre disponibles."
     },
     "globalInfrastructure": {
       "title": "Infraestructura global",
-      "description": "Atiende clientes en todo el mundo con nuestra red distribuida. Baja latencia, alta disponibilidad, en todas partes."
+      "description": "Procesa eventos en todo el mundo con nuestra red distribuida. Baja latencia, alta disponibilidad, en todas partes."
     },
     "advancedAnalytics": {
       "title": "Analítica avanzada",
-      "description": "Información profunda sobre el rendimiento de llamadas, patrones de conversación y satisfacción del usuario con paneles en tiempo real."
+      "description": "Información profunda sobre el rendimiento de automatización, patrones de eventos y eficiencia de agentes con paneles en tiempo real."
     }
   },
   "pricing": {
     "badge": "Planes de precios",
-    "title": "Elige el plan perfecto para tus agentes de llamadas IA",
-    "subtitle": "Escala desde tu primera llamada hasta millones. Precios transparentes y sin cargos ocultos.",
+    "title": "Elige el plan perfecto para tus agentes en segundo plano",
+    "subtitle": "Escala desde tu primera automatización hasta millones de eventos. Precios transparentes y sin cargos ocultos.",
     "popular": "Popular",
     "perMonth": "/mes",
     "billing": {
@@ -72,29 +73,29 @@
     "plans": {
       "starter": {
         "name": "Inicial",
-        "description": "Perfecto para probar agentes IA y para pequeñas empresas.",
+        "description": "Perfecto para probar agentes en segundo plano y pequeñas automatizaciones.",
         "cta": "Comenzar ahora",
         "features": {
-          "callMinutes": "750 minutos de llamada / mes",
-          "phoneNumber": "1 número gratuito",
-          "voiceModels": "Modelos de voz IA básicos",
+          "callMinutes": "10,000 eventos procesados / mes",
+          "phoneNumber": "5 endpoints de API",
+          "voiceModels": "Conectores de integración básicos",
           "workspace": "Un solo espacio de trabajo",
-          "agents": "2 agentes IA",
+          "agents": "3 agentes en segundo plano",
           "support": "Soporte básico"
         }
       },
       "professional": {
         "name": "Profesional",
-        "description": "Todo lo que necesitas para escalar tu negocio con IA.",
+        "description": "Todo lo que necesitas para escalar tu negocio de automatización.",
         "cta": "Comenzar Pro",
         "features": {
-          "callMinutes": "2,000 minutos de llamada / mes",
-          "phoneNumber": "1 número gratuito",
-          "voiceModels": "Modelos de voz IA premium",
-          "workflowBuilder": "Creador de flujos avanzado",
-          "agents": "Agentes IA ilimitados",
+          "callMinutes": "100,000 eventos procesados / mes",
+          "phoneNumber": "25 endpoints de API",
+          "voiceModels": "Conectores de integración avanzados",
+          "workflowBuilder": "Constructor MCP personalizado",
+          "agents": "Agentes en segundo plano ilimitados",
           "support": "Soporte prioritario",
-          "integrations": "Integraciones personalizadas"
+          "integrations": "Desarrollo de protocolos personalizados"
         }
       },
       "enterprise": {
@@ -103,9 +104,9 @@
         "customPrice": "Personalizado",
         "cta": "Contactar ventas",
         "features": {
-          "callMinutes": "Minutos de llamada ilimitados",
-          "phoneNumbers": "5 números gratuitos",
-          "voiceModels": "Modelos de voz IA personalizados",
+          "callMinutes": "Eventos procesados ilimitados",
+          "phoneNumbers": "Endpoints de API ilimitados",
+          "voiceModels": "Protocolos de integración personalizados",
           "architecture": "Arquitectura multiusuario",
           "sla": "Garantías SLA",
           "manager": "Gerente de éxito dedicado",
@@ -115,21 +116,21 @@
     }
   },
   "footer": {
-    "description": "Implementa agentes de llamadas inteligentes en minutos. Automatiza llamadas, calificación de leads y soporte con nuestra plataforma sin código.",
+    "description": "Implementa agentes inteligentes en segundo plano en minutos. Automatiza procesamiento de eventos, flujos de integración y operaciones comerciales con nuestra plataforma sin código.",
     "product": {
       "title": "Producto",
-      "callFlows": "Flujos de llamada",
-      "voiceOptions": "Opciones de voz",
-      "integrations": "Integraciones",
+      "callFlows": "Flujos de eventos",
+      "voiceOptions": "Opciones de integración",
+      "integrations": "Constructor MCP",
       "pricing": "Precios",
-      "analytics": "Analítica"
+      "analytics": "Analítica de tareas"
     },
     "useCases": {
       "title": "Casos de uso",
-      "customerSupport": "Atención al cliente",
-      "leadQualification": "Calificación de leads",
-      "appointmentBooking": "Reservas de citas",
-      "salesAutomation": "Automatización de ventas"
+      "customerSupport": "Procesamiento de eventos",
+      "leadQualification": "Integración de API",
+      "appointmentBooking": "Automatización en segundo plano",
+      "salesAutomation": "Protocolos personalizados"
     },
     "company": {
       "title": "Empresa",
@@ -151,17 +152,17 @@
     "acknowledge": "Entendido"
   },
   "featureNames": {
-    "aiCallAgentPlatform": "Plataforma de agentes IA",
+    "aiCallAgentPlatform": "Plataforma de agentes en segundo plano",
     "accountRegistration": "Registro de cuenta",
     "useCasesExamples": "Casos de uso y ejemplos",
-    "callFlowBuilder": "Creador de flujos de llamada",
-    "voiceCustomization": "Personalización de voz",
+    "callFlowBuilder": "Creador de flujos de eventos",
+    "voiceCustomization": "Personalización de integración",
     "thirdPartyIntegrations": "Integraciones de terceros",
     "analyticsDashboard": "Panel de analítica",
-    "customerSupportUseCases": "Casos de uso: atención al cliente",
-    "leadQualificationExamples": "Ejemplos de calificación de leads",
-    "appointmentBookingSolutions": "Soluciones para reservas de citas",
-    "salesAutomationWorkflows": "Flujos de automatización de ventas",
+    "customerSupportUseCases": "Casos de uso de procesamiento de eventos",
+    "leadQualificationExamples": "Ejemplos de integración de API",
+    "appointmentBookingSolutions": "Soluciones de automatización en segundo plano",
+    "salesAutomationWorkflows": "Flujos de protocolos personalizados",
     "aboutCortano": "Sobre Cortano",
     "cortanoBlog": "Blog de Cortano",
     "careerOpportunities": "Oportunidades laborales",
@@ -175,12 +176,12 @@
   },
   "visualWorkflow": {
     "title": "Creador visual de flujos",
-    "description": "Arrastra y suelta para crear flujos complejos",
+    "description": "Arrastra y suelta para crear flujos complejos activados por eventos",
     "steps": {
-      "incomingCall": "Llamada entrante",
-      "aiAnalysis": "Análisis IA",
-      "bookMeeting": "Reservar cita",
-      "sendInfo": "Enviar información"
+      "incomingCall": "Evento activado",
+      "aiAnalysis": "Procesamiento en segundo plano",
+      "bookMeeting": "Ejecutar acción",
+      "sendInfo": "Enviar respuesta"
     }
   },
   "movingPartners": {
@@ -189,12 +190,12 @@
   },
   "visualFlow": {
     "title": "Cómo funciona",
-    "step1": "Llamada recibida",
-    "step2": "Procesamiento IA",
-    "step3": "Respuesta generada",
-    "step4": "Acción realizada"
+    "step1": "Evento recibido",
+    "step2": "Procesamiento en segundo plano",
+    "step3": "Acción generada",
+    "step4": "Tarea completada"
   },
   "languageShowcase": {
-    "title": "Compatible con varios idiomas"
+    "title": "Compatible con múltiples protocolos"
   }
 }
