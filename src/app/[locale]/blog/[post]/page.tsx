@@ -12,13 +12,14 @@ import ReactMarkdown from 'react-markdown'
 import { mdxComponents } from "@/components/mdx-components"
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     locale: string
     post: string
-  }
+  }>
 }
 
-export default function BlogPostPage({ params: { locale, post } }: BlogPostPageProps) {
+export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { locale, post } = await params
   const t = useTranslations('blog')
   const blogPost = getBlogPost(locale, post)
 
@@ -125,7 +126,8 @@ export async function generateStaticParams() {
   }))
 }
 
-export async function generateMetadata({ params: { locale, post } }: BlogPostPageProps) {
+export async function generateMetadata({ params }: BlogPostPageProps) {
+  const { locale, post } = await params
   const blogPost = getBlogPost(locale, post)
   
   if (!blogPost) {

@@ -9,12 +9,13 @@ import { notFound } from "next/navigation"
 import { useTranslations } from "next-intl"
 
 interface BlogPageProps {
-  params: {
+  params: Promise<{
     locale: string
-  }
+  }>
 }
 
-export default function BlogPage({ params: { locale } }: BlogPageProps) {
+export default async function BlogPage({ params }: BlogPageProps) {
+  const { locale } = await params
   const t = useTranslations('blog')
   const posts = getAllBlogPosts(locale)
 
