@@ -15,6 +15,8 @@ const withMDX = createMDX({
 const nextConfig: NextConfig = {
   // Configure `pageExtensions` to include MDX files
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
+  // Enable standalone output for Docker optimization
+  output: 'standalone',
   // Optionally, add any other Next.js config below
   async rewrites() {
     return [
