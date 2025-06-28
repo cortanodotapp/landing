@@ -3,7 +3,8 @@
     "loading": "Loading...",
     "month": "/month",
     "currency": "USD",
-    "close": "Close"
+    "close": "Close",
+    "soon": "Soon"
   },
   "navbar": {
     "features": "Features",
@@ -12,54 +13,54 @@
     "getStarted": "Get Started",
     "components": {
       "callFlows": {
-        "title": "Call Flows",
-        "description": "Design conversational AI flows with our visual no-code builder."
+        "title": "Event Workflows",
+        "description": "Design automated workflows triggered by events, integrations, and API requests."
       },
       "voiceOptions": {
-        "title": "Voice Options", 
-        "description": "Choose from premium AI voices or clone your own brand voice."
+        "title": "Integration Options", 
+        "description": "Connect with APIs, webhooks, and build custom MCP protocols seamlessly."
       },
       "integrations": {
-        "title": "Integrations",
-        "description": "Connect with CRM, calendars, and business tools seamlessly."
+        "title": "MCP Builder",
+        "description": "Build custom Model Context Protocols with our visual no-code builder."
       },
       "analytics": {
-        "title": "Analytics",
-        "description": "Track call performance, conversion rates, and agent insights."
+        "title": "Task Analytics",
+        "description": "Track background agent performance, event processing, and automation insights."
       }
     }
   },
   "hero": {
-    "badge": "AI Call Agents Now Available",
-    "headline": "Turn missed calls into",
-    "headlineHighlight": "paying clients",
-    "description": "Never lose a potential customer again. Our AI call agents answer every call, qualify leads, and convert prospects into sales - even when your team is busy or unavailable.",
-    "cta": "Start Converting Calls"
+    "badge": "Background Agents Now Available",
+    "headline": "Turn events into",
+    "headlineHighlight": "automated actions",
+    "description": "Never miss an opportunity again. Our intelligent background agents process events, trigger workflows, and automate your business operations - working 24/7 even when your team is offline.",
+    "cta": "Start Automating Events"
   },
   "features": {
     "badge": "Features",
-    "title": "Everything you need to build amazing AI call experiences",
-    "description": "From drag-and-drop workflows to enterprise-grade infrastructure, we've got the tools to bring your AI calling vision to life.",
+    "title": "Everything you need to build powerful background automation",
+    "description": "From drag-and-drop workflows to enterprise-grade infrastructure, we've got the tools to bring your automation vision to life.",
     "deployInMinutes": {
       "title": "Deploy in Minutes",
-      "description": "Go from idea to live AI agent in under 5 minutes. Our streamlined deployment process gets you up and running instantly."
+      "description": "Go from idea to live background agent in under 5 minutes. Our streamlined deployment process gets your automation running instantly."
     },
     "enterpriseSecurity": {
       "title": "Enterprise Security",
-      "description": "Bank-grade encryption, SOC 2 compliance, and 99.9% uptime SLA. Your calls are secure and always available."
+      "description": "Bank-grade encryption, SOC 2 compliance, and 99.9% uptime SLA. Your automations are secure and always available."
     },
     "globalInfrastructure": {
       "title": "Global Infrastructure", 
-      "description": "Serve customers worldwide with our distributed edge network. Low latency, high availability, everywhere."
+      "description": "Process events worldwide with our distributed edge network. Low latency, high availability, everywhere."
     },
     "advancedAnalytics": {
       "title": "Advanced Analytics",
-      "description": "Deep insights into call performance, conversation patterns, and user satisfaction with real-time dashboards."
+      "description": "Deep insights into automation performance, event patterns, and agent efficiency with real-time dashboards."
     }
   },  "pricing": {
     "badge": "Pricing Plans",
-    "title": "Choose the perfect plan for your AI call agents",
-    "subtitle": "Scale from your first AI call to millions. Transparent pricing with no hidden fees.",
+    "title": "Choose the perfect plan for your background agents",
+    "subtitle": "Scale from your first automation to millions of events. Transparent pricing with no hidden fees.",
     "popular": "Popular",
     "perMonth": "/month",
     "billing": {
@@ -70,29 +71,29 @@
     "plans": {
       "starter": {
         "name": "Starter",
-        "description": "Perfect for trying out AI call agents and small businesses.",
+        "description": "Perfect for trying out background agents and small automations.",
         "cta": "Start Now",
         "features": {
-          "callMinutes": "750 call minutes / month",
-          "phoneNumber": "1 Free Phone Number",
-          "voiceModels": "Basic AI voice models",
+          "callMinutes": "10,000 events processed / month",
+          "phoneNumber": "5 API endpoints",
+          "voiceModels": "Basic integration connectors",
           "workspace": "Single workspace",
-          "agents": "2 AI agents",
+          "agents": "3 background agents",
           "support": "Basic Support"
         }
       },
       "professional": {
         "name": "Professional",
-        "description": "Everything you need to build and scale your AI call business.",
+        "description": "Everything you need to build and scale your automation business.",
         "cta": "Start Pro",
         "features": {
-          "callMinutes": "2,000 call minutes / month",
-          "phoneNumber": "1 Free Phone Number",
-          "voiceModels": "Premium AI voice models",
-          "workflowBuilder": "Advanced workflow builder",
-          "agents": "Unlimited AI agents",
+          "callMinutes": "100,000 events processed / month",
+          "phoneNumber": "25 API endpoints",
+          "voiceModels": "Advanced integration connectors",
+          "workflowBuilder": "Custom MCP builder",
+          "agents": "Unlimited background agents",
           "support": "Priority support",
-          "integrations": "Custom integrations"
+          "integrations": "Custom protocol development"
         }
       },
       "enterprise": {
@@ -101,9 +102,9 @@
         "customPrice": "Custom",
         "cta": "Contact Sales",
         "features": {
-          "callMinutes": "Unlimited call minutes",
-          "phoneNumbers": "5 Free Phone Numbers",
-          "voiceModels": "Custom AI voice models",
+          "callMinutes": "Unlimited events processed",
+          "phoneNumbers": "Unlimited API endpoints",
+          "voiceModels": "Custom integration protocols",
           "architecture": "Multi-tenant architecture",
           "sla": "SLA guarantees",
           "manager": "Dedicated success manager",
@@ -113,21 +114,21 @@
     }
   },
   "footer": {
-    "description": "Deploy intelligent AI call agents for your business in minutes. Automate customer calls, lead qualification, and support with our no-code platform.",
+    "description": "Deploy intelligent background agents for your business in minutes. Automate event processing, integration workflows, and business operations with our no-code platform.",
     "product": {
       "title": "Product",
-      "callFlows": "Call Flows",
-      "voiceOptions": "Voice Options",
-      "integrations": "Integrations",
+      "callFlows": "Event Workflows",
+      "voiceOptions": "Integration Options",
+      "integrations": "MCP Builder",
       "pricing": "Pricing",
-      "analytics": "Analytics"
+      "analytics": "Task Analytics"
     },
     "useCases": {
       "title": "Use Cases",
-      "customerSupport": "Customer Support",
-      "leadQualification": "Lead Qualification",
-      "appointmentBooking": "Appointment Booking",
-      "salesAutomation": "Sales Automation"
+      "customerSupport": "Event Processing",
+      "leadQualification": "API Integration",
+      "appointmentBooking": "Background Automation",
+      "salesAutomation": "Custom Protocols"
     },
     "company": {
       "title": "Company",
@@ -148,17 +149,17 @@
     "acknowledge": "Got it"
   },
   "featureNames": {
-    "aiCallAgentPlatform": "AI Call Agent Platform",
+    "aiCallAgentPlatform": "Background Agent Platform",
     "accountRegistration": "Account Registration",
     "useCasesExamples": "Use Cases & Examples",
-    "callFlowBuilder": "Call Flow Builder",
-    "voiceCustomization": "Voice Customization",
+    "callFlowBuilder": "Event Workflow Builder",
+    "voiceCustomization": "Integration Customization",
     "thirdPartyIntegrations": "Third-party Integrations",
     "analyticsDashboard": "Analytics Dashboard",
-    "customerSupportUseCases": "Customer Support Use Cases",
-    "leadQualificationExamples": "Lead Qualification Examples",
-    "appointmentBookingSolutions": "Appointment Booking Solutions",
-    "salesAutomationWorkflows": "Sales Automation Workflows",
+    "customerSupportUseCases": "Event Processing Use Cases",
+    "leadQualificationExamples": "API Integration Examples",
+    "appointmentBookingSolutions": "Background Automation Solutions",
+    "salesAutomationWorkflows": "Custom Protocol Workflows",
     "aboutCortano": "About Cortano",
     "cortanoBlog": "Cortano Blog",
     "careerOpportunities": "Career Opportunities",
@@ -171,24 +172,101 @@
     "enterprisePlan": "Enterprise Plan"
   },  "visualWorkflow": {
     "title": "Visual Workflow Builder",
-    "description": "Drag and drop to create complex call flows",
+    "description": "Drag and drop to create complex event-driven workflows",
     "steps": {
-      "incomingCall": "Incoming Call",
-      "aiAnalysis": "AI Analysis",
-      "bookMeeting": "Book Meeting",
-      "sendInfo": "Send Info"
+      "incomingCall": "Event Triggered",
+      "aiAnalysis": "Background Processing",
+      "bookMeeting": "Execute Action",
+      "sendInfo": "Send Response"
     }
   },"movingPartners": {
     "title": "Backed by Industry Leaders",
     "subtitle": "Leading companies"
   },  "visualFlow": {
     "title": "How It Works",
-    "step1": "Call Received",
-    "step2": "AI Processing", 
-    "step3": "Response Generated",
-    "step4": "Action Taken"
+    "step1": "Event Received",
+    "step2": "Background Processing", 
+    "step3": "Action Generated",
+    "step4": "Task Completed"
   },
   "languageShowcase": {
-    "title": "Supports several languages"
+    "title": "Supports multiple protocols"
+  },
+  "about": {
+    "hero": {
+      "badge": "About Cortano",
+      "title": "Building the future of",
+      "titleHighlight": "business automation",
+      "description": "We're on a mission to make intelligent background automation accessible to every business, from startups to enterprises. Our platform empowers teams to focus on what matters most while our agents handle the rest."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "We believe every business should have access to intelligent automation that works around the clock.",
+      "goals": {
+        "title": "Clear Goals",
+        "description": "Democratize background automation by making it simple, accessible, and powerful for businesses of all sizes."
+      },
+      "innovation": {
+        "title": "Innovation First",
+        "description": "Push the boundaries of what's possible with event-driven automation and intelligent background processing."
+      },
+      "community": {
+        "title": "Community Driven",
+        "description": "Build tools that empower developers and business teams to create automation solutions together."
+      }
+    },
+    "values": {
+      "title": "Our Values",
+      "description": "The principles that guide everything we do and help us build better automation solutions.",
+      "customerFirst": {
+        "title": "Customer First",
+        "description": "Every decision we make is driven by delivering exceptional value to our users and their businesses."
+      },
+      "reliability": {
+        "title": "Reliability",
+        "description": "We build systems that work when you need them most, with enterprise-grade uptime and security."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "We constantly push boundaries to make automation more intelligent, efficient, and accessible."
+      },
+      "accessibility": {
+        "title": "Accessibility",
+        "description": "Powerful automation should be available to everyone, regardless of technical expertise or company size."
+      }
+    },
+    "team": {
+      "badge": "Meet the Team",
+      "title": "The minds behind Cortano",
+      "description": "We're a passionate team of engineers, designers, and automation experts dedicated to revolutionizing how businesses operate.",
+      "members": {
+        "cto": {
+          "role": "Founder & CTO",
+          "description": "Leading our technical vision and architecture. Passionate about building scalable automation systems that revolutionize how businesses operate."
+        },
+        "sales": {
+          "role": "Founder & Head of Sales",
+          "description": "Driving business growth and partnerships. Expert at understanding customer needs and building relationships that fuel our mission."
+        },
+        "design": {
+          "role": "Founder & Head of Graphic",
+          "description": "Crafting beautiful, intuitive experiences that make complex automation accessible. Focused on user-centered design and visual storytelling."
+        }
+      },
+      "joinTeam": "Interested in joining our mission? We're always looking for talented individuals who share our passion for automation."
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights, tutorials, and updates from the Cortano team",
+    "featured": "Featured Posts",
+    "featuredBadge": "Featured",
+    "allPosts": "All Posts",
+    "latestPosts": "Latest Posts",
+    "noPosts": "No blog posts available yet. Check back soon!",
+    "backToBlog": "Back to Blog",
+    "publishedBy": "Published by",
+    "on": "on",
+    "readingTime": "min read"
   }
 }

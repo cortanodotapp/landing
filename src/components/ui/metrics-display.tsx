@@ -71,7 +71,7 @@ export function MetricsDisplay() {
         <AnimatedMetric
           value={10000}
           suffix="+"
-          label="Calls Processed"
+          label="Events Processed"
         />
         <AnimatedMetric
           value={50}
