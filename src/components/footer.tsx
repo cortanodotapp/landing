@@ -160,13 +160,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('cortanoBlog')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('company.blog')}
-                  </span>
-                </FeatureComingSoonDialog>
+                <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('company.blog')}
+                </Link>
               </li>
               <li>
                 <FeatureComingSoonDialog

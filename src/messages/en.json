@@ -255,5 +255,18 @@
       },
       "joinTeam": "Interested in joining our mission? We're always looking for talented individuals who share our passion for automation."
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights, tutorials, and updates from the Cortano team",
+    "featured": "Featured Posts",
+    "featuredBadge": "Featured",
+    "allPosts": "All Posts",
+    "latestPosts": "Latest Posts",
+    "noPosts": "No blog posts available yet. Check back soon!",
+    "backToBlog": "Back to Blog",
+    "publishedBy": "Published by",
+    "on": "on",
+    "readingTime": "min read"
   }
 }

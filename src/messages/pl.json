@@ -261,5 +261,18 @@
       },
       "joinTeam": "Chcesz dołączyć do naszej misji? Zawsze szukamy utalentowanych osób, które dzielą naszą pasję do automatyzacji."
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Spostrzeżenia, tutoriale i aktualizacje od zespołu Cortano",
+    "featured": "Wyróżnione Posty",
+    "featuredBadge": "Wyróżniony",
+    "allPosts": "Wszystkie Posty",
+    "latestPosts": "Najnowsze Posty",
+    "noPosts": "Jeszcze nie ma dostępnych postów na blogu. Wróć wkrótce!",
+    "backToBlog": "Powrót do Bloga",
+    "publishedBy": "Opublikowany przez",
+    "on": "dnia",
+    "readingTime": "min czytania"
   }
 }

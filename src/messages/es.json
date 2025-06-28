@@ -261,5 +261,18 @@
       },
       "joinTeam": "¿Interesado en unirte a nuestra misión? Siempre estamos buscando individuos talentosos que compartan nuestra pasión por la automatización."
     }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Insights, tutoriales y actualizaciones del equipo de Cortano",
+    "featured": "Publicaciones Destacadas",
+    "featuredBadge": "Destacado",
+    "allPosts": "Todas las Publicaciones",
+    "latestPosts": "Últimas Publicaciones",
+    "noPosts": "¡Aún no hay publicaciones de blog disponibles. ¡Vuelve pronto!",
+    "backToBlog": "Volver al Blog",
+    "publishedBy": "Publicado por",
+    "on": "el",
+    "readingTime": "min de lectura"
   }
 }
