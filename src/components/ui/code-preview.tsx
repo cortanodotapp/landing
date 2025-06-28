@@ -6,11 +6,11 @@ import { useState, useEffect } from "react"
 const codeSnippets = [
   {
     language: "JavaScript",
-    code: `// Initialize AI Call Agent
+    code: `// Initialize Background Agent
 const agent = new CortanoAgent({
-  language: 'en',
-  voice: 'neural-pro',
-  webhook: '/api/calls'
+  triggers: ['webhook', 'api'],
+  protocol: 'mcp-custom',
+  endpoint: '/api/events'
 });
 
 agent.start();`
@@ -18,20 +18,20 @@ agent.start();`
   {
     language: "Python",
     code: `# Quick setup
-from cortano import CallAgent
+from cortano import BackgroundAgent
 
-agent = CallAgent(
-    language="en",
-    voice="neural-pro"
+agent = BackgroundAgent(
+    triggers=["events", "api"],
+    protocol="mcp-custom"
 )
 agent.deploy()`
   },
   {
     language: "cURL",
     code: `curl -X POST \\
-  https://api.cortano.ai/calls \\
+  https://api.cortano.ai/agents \\
   -H "Authorization: Bearer $TOKEN" \\
-  -d '{"action": "start_call"}'`
+  -d '{"action": "trigger_event"}'`
   }
 ]
 

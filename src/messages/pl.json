@@ -4,7 +4,8 @@
     "loading": "Ładowanie...",
     "month": "/miesiąc",
     "currency": "USD",
-    "close": "Zamknij"
+    "close": "Zamknij",
+    "soon": "Wkrótce"
   },
   "navbar": {
     "features": "Funkcje",
@@ -13,55 +14,55 @@
     "getStarted": "Rozpocznij",
     "components": {
       "callFlows": {
-        "title": "Przebiegi połączeń",
-        "description": "Projektuj konwersacyjne przepływy AI za pomocą naszego wizualnego kreatora bez kodu."
+        "title": "Przepływy zdarzeń",
+        "description": "Projektuj zautomatyzowane przepływy wyzwalane przez zdarzenia, integracje i żądania API."
       },
       "voiceOptions": {
-        "title": "Opcje głosu",
-        "description": "Wybierz spośród głosów AI premium lub sklonuj własny głos marki."
+        "title": "Opcje integracji",
+        "description": "Łącz API, webhooki i twórz niestandardowe protokoły MCP bezproblemowo."
       },
       "integrations": {
-        "title": "Integracje",
-        "description": "Bezproblemowe połączenia z CRM, kalendarzami i narzędziami biznesowymi."
+        "title": "Kreator MCP",
+        "description": "Twórz niestandardowe protokoły kontekstu modelu za pomocą naszego wizualnego kreatora bez kodu."
       },
       "analytics": {
-        "title": "Analityka",
-        "description": "Śledź wydajność połączeń, współczynniki konwersji i informacje o agentach."
+        "title": "Analityka zadań",
+        "description": "Śledź wydajność agentów w tle, przetwarzanie zdarzeń i wgląd w automatyzację."
       }
     }
   },
   "hero": {
-    "badge": "Agenci AI do rozmów są już dostępni",
-    "headline": "Zamień nieodebrane połączenia w",
-    "headlineHighlight": "płacących klientów",
-    "description": "Nigdy więcej nie przegapisz potencjalnego klienta. Nasi agenci AI odbierają każde połączenie, kwalifikują leady i zamieniają zainteresowanych w klientów — nawet gdy Twój zespół jest zajęty lub niedostępny.",
-    "cta": "Zacznij konwertować połączenia"
+    "badge": "Agenci w tle są już dostępni",
+    "headline": "Zamieniaj zdarzenia w",
+    "headlineHighlight": "automatyczne akcje",
+    "description": "Nigdy więcej nie przegapisz możliwości. Nasi inteligentni agenci w tle przetwarzają zdarzenia, wyzwalają przepływy pracy i automatyzują operacje biznesowe - pracując 24/7, nawet gdy Twój zespół jest offline.",
+    "cta": "Zacznij automatyzować zdarzenia"
   },
   "features": {
     "badge": "Funkcje",
-    "title": "Wszystko, czego potrzebujesz, aby tworzyć niesamowite doświadczenia AI w rozmowach",
-    "description": "Od przepływów typu przeciągnij i upuść po infrastrukturę klasy enterprise — mamy narzędzia, które ożywią Twoją wizję AI.",
+    "title": "Wszystko, czego potrzebujesz, aby tworzyć potężną automatyzację w tle",
+    "description": "Od przepływów typu przeciągnij i upuść po infrastrukturę klasy enterprise — mamy narzędzia, które ożywią Twoją wizję automatyzacji.",
     "deployInMinutes": {
       "title": "Wdrażaj w kilka minut",
-      "description": "Od pomysłu do działającego agenta AI w mniej niż 5 minut. Nasz uproszczony proces wdrażania pozwala natychmiast rozpocząć."
+      "description": "Od pomysłu do działającego agenta w tle w mniej niż 5 minut. Nasz uproszczony proces wdrażania natychmiast uruchamia automatyzację."
     },
     "enterpriseSecurity": {
       "title": "Bezpieczeństwo klasy enterprise",
-      "description": "Szyfrowanie na poziomie bankowym, zgodność z SOC 2 i SLA na poziomie 99,9%. Twoje połączenia są bezpieczne i zawsze dostępne."
+      "description": "Szyfrowanie na poziomie bankowym, zgodność z SOC 2 i SLA na poziomie 99,9%. Twoje automatyzacje są bezpieczne i zawsze dostępne."
     },
     "globalInfrastructure": {
       "title": "Globalna infrastruktura",
-      "description": "Obsługuj klientów na całym świecie dzięki naszej rozproszonej sieci. Niskie opóźnienia, wysoka dostępność — wszędzie."
+      "description": "Przetwarzaj zdarzenia na całym świecie dzięki naszej rozproszonej sieci. Niskie opóźnienia, wysoka dostępność — wszędzie."
     },
     "advancedAnalytics": {
       "title": "Zaawansowana analityka",
-      "description": "Głębokie informacje o wydajności połączeń, wzorcach rozmów i satysfakcji użytkowników dzięki pulpitom na żywo."
+      "description": "Głębokie informacje o wydajności automatyzacji, wzorcach zdarzeń i efektywności agentów dzięki pulpitom na żywo."
     }
   },
   "pricing": {
     "badge": "Plany cenowe",
-    "title": "Wybierz idealny plan dla swoich agentów AI",
-    "subtitle": "Skaluj od pierwszego połączenia AI do milionów. Przejrzysty cennik bez ukrytych opłat.",
+    "title": "Wybierz idealny plan dla swoich agentów w tle",
+    "subtitle": "Skaluj od pierwszej automatyzacji do milionów zdarzeń. Przejrzysty cennik bez ukrytych opłat.",
     "popular": "Popularny",
     "perMonth": "/miesiąc",
     "billing": {
@@ -72,40 +73,40 @@
     "plans": {
       "starter": {
         "name": "Startowy",
-        "description": "Idealny do testowania agentów AI i dla małych firm.",
+        "description": "Idealny do testowania agentów w tle i małych automatyzacji.",
         "cta": "Zacznij teraz",
         "features": {
-          "callMinutes": "750 minut rozmów / miesiąc",
-          "phoneNumber": "1 darmowy numer telefonu",
-          "voiceModels": "Podstawowe modele głosu AI",
+          "callMinutes": "10 000 przetworzonych zdarzeń / miesiąc",
+          "phoneNumber": "5 punktów końcowych API",
+          "voiceModels": "Podstawowe konektory integracji",
           "workspace": "Jedna przestrzeń robocza",
-          "agents": "2 agentów AI",
+          "agents": "3 agentów w tle",
           "support": "Podstawowe wsparcie"
         }
       },
       "professional": {
         "name": "Profesjonalny",
-        "description": "Wszystko, czego potrzebujesz, by rozwijać firmę opartą na AI."
-        ,"cta": "Zacznij Pro",
+        "description": "Wszystko, czego potrzebujesz, by rozwijać firmę opartą na automatyzacji.",
+        "cta": "Zacznij Pro",
         "features": {
-          "callMinutes": "2 000 minut rozmów / miesiąc",
-          "phoneNumber": "1 darmowy numer telefonu",
-          "voiceModels": "Zaawansowane modele głosu AI",
-          "workflowBuilder": "Zaawansowany kreator przepływów",
-          "agents": "Nieograniczona liczba agentów AI",
+          "callMinutes": "100 000 przetworzonych zdarzeń / miesiąc",
+          "phoneNumber": "25 punktów końcowych API",
+          "voiceModels": "Zaawansowane konektory integracji",
+          "workflowBuilder": "Niestandardowy kreator MCP",
+          "agents": "Nieograniczona liczba agentów w tle",
           "support": "Priorytetowe wsparcie",
-          "integrations": "Dedykowane integracje"
+          "integrations": "Rozwój niestandardowych protokołów"
         }
       },
       "enterprise": {
         "name": "Enterprise",
-        "description": "Skalowalność, bezpieczeństwo i dedykowane wsparcie na poziomie krytycznym dla firm.",
+        "description": "Krytyczna skala, bezpieczeństwo i dedykowane wsparcie dla Twojej firmy.",
         "customPrice": "Indywidualna wycena",
         "cta": "Skontaktuj się",
         "features": {
-          "callMinutes": "Nieograniczone minuty rozmów",
-          "phoneNumbers": "5 darmowych numerów telefonu",
-          "voiceModels": "Niestandardowe modele głosu AI",
+          "callMinutes": "Nieograniczone przetwarzanie zdarzeń",
+          "phoneNumbers": "Nieograniczone punkty końcowe API",
+          "voiceModels": "Niestandardowe protokoły integracji",
           "architecture": "Architektura multi-tenant",
           "sla": "Gwarancje SLA",
           "manager": "Dedykowany menedżer sukcesu",
@@ -115,21 +116,21 @@
     }
   },
   "footer": {
-    "description": "Wdrażaj inteligentnych agentów AI w swojej firmie w kilka minut. Automatyzuj połączenia, kwalifikuj leady i wspieraj klientów dzięki naszej platformie bez kodu.",
+    "description": "Wdrażaj inteligentnych agentów w tle w swojej firmie w kilka minut. Automatyzuj przetwarzanie zdarzeń, przepływy integracji i operacje biznesowe dzięki naszej platformie bez kodu.",
     "product": {
       "title": "Produkt",
-      "callFlows": "Przebiegi połączeń",
-      "voiceOptions": "Opcje głosu",
-      "integrations": "Integracje",
+      "callFlows": "Przepływy zdarzeń",
+      "voiceOptions": "Opcje integracji",
+      "integrations": "Kreator MCP",
       "pricing": "Cennik",
-      "analytics": "Analityka"
+      "analytics": "Analityka zadań"
     },
     "useCases": {
       "title": "Zastosowania",
-      "customerSupport": "Obsługa klienta",
-      "leadQualification": "Kwalifikacja leadów",
-      "appointmentBooking": "Rezerwacja spotkań",
-      "salesAutomation": "Automatyzacja sprzedaży"
+      "customerSupport": "Przetwarzanie zdarzeń",
+      "leadQualification": "Integracja API",
+      "appointmentBooking": "Automatyzacja w tle",
+      "salesAutomation": "Niestandardowe protokoły"
     },
     "company": {
       "title": "Firma",
@@ -151,17 +152,17 @@
     "acknowledge": "Rozumiem"
   },
   "featureNames": {
-    "aiCallAgentPlatform": "Platforma agentów AI",
+    "aiCallAgentPlatform": "Platforma agentów w tle",
     "accountRegistration": "Rejestracja konta",
     "useCasesExamples": "Przykłady zastosowań",
-    "callFlowBuilder": "Kreator przebiegu rozmów",
-    "voiceCustomization": "Dostosowanie głosu",
+    "callFlowBuilder": "Kreator przepływów zdarzeń",
+    "voiceCustomization": "Dostosowanie integracji",
     "thirdPartyIntegrations": "Integracje zewnętrzne",
     "analyticsDashboard": "Panel analityki",
-    "customerSupportUseCases": "Zastosowania: Obsługa klienta",
-    "leadQualificationExamples": "Przykłady kwalifikacji leadów",
-    "appointmentBookingSolutions": "Rozwiązania do rezerwacji",
-    "salesAutomationWorkflows": "Przepływy automatyzacji sprzedaży",
+    "customerSupportUseCases": "Zastosowania przetwarzania zdarzeń",
+    "leadQualificationExamples": "Przykłady integracji API",
+    "appointmentBookingSolutions": "Rozwiązania automatyzacji w tle",
+    "salesAutomationWorkflows": "Przepływy niestandardowych protokołów",
     "aboutCortano": "O Cortano",
     "cortanoBlog": "Blog Cortano",
     "careerOpportunities": "Oferty pracy",
@@ -175,12 +176,12 @@
   },
   "visualWorkflow": {
     "title": "Wizualny kreator przepływów",
-    "description": "Przeciągaj i upuszczaj, aby tworzyć złożone przebiegi rozmów",
+    "description": "Przeciągaj i upuszczaj, aby tworzyć złożone przepływy sterowane zdarzeniami",
     "steps": {
-      "incomingCall": "Połączenie przychodzące",
-      "aiAnalysis": "Analiza AI",
-      "bookMeeting": "Zarezerwuj spotkanie",
-      "sendInfo": "Wyślij informacje"
+      "incomingCall": "Zdarzenie wyzwolone",
+      "aiAnalysis": "Przetwarzanie w tle",
+      "bookMeeting": "Wykonaj akcję",
+      "sendInfo": "Wyślij odpowiedź"
     }
   },
   "movingPartners": {
@@ -189,12 +190,12 @@
   },
   "visualFlow": {
     "title": "Jak to działa",
-    "step1": "Połączenie odebrane",
-    "step2": "Przetwarzanie przez AI",
-    "step3": "Wygenerowana odpowiedź",
-    "step4": "Podjęta akcja"
+    "step1": "Zdarzenie odebrane",
+    "step2": "Przetwarzanie w tle",
+    "step3": "Akcja wygenerowana",
+    "step4": "Zadanie ukończone"
   },
   "languageShowcase": {
-    "title": "Obsługuje wiele języków"
+    "title": "Obsługuje wiele protokołów"
   }
 }

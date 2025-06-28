@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
 import { FeatureComingSoonDialog } from "@/components/ui/feature-coming-soon-dialog"
 import {
   NavigationMenu,
@@ -15,37 +16,44 @@ import {
 import { cn } from "@/lib/utils"
 import { useScrollDirection } from "@/hooks/useScrollDirection"
 import { useTranslations } from 'next-intl'
+import { Workflow, Link2, Boxes, BarChart3 } from "lucide-react"
 import React from "react"
 
 export function Navbar() {
   const { scrollDirection, isAtTop } = useScrollDirection()
   const t = useTranslations('navbar')
   const tFeatures = useTranslations('featureNames')
+  const tCommon = useTranslations('common')
 
   const components = [
     {
       title: t('components.callFlows.title'),
-      href: "/features/call-flows",
+      href: "/features/event-workflows",
       description: t('components.callFlows.description'),
-      featureName: tFeatures('callFlowBuilder')
+      featureName: tFeatures('callFlowBuilder'),
+      icon: Workflow
     },
     {
       title: t('components.voiceOptions.title'),
-      href: "/features/voices",
+      href: "/features/integrations",
       description: t('components.voiceOptions.description'),
-      featureName: tFeatures('voiceCustomization')
+      featureName: tFeatures('voiceCustomization'),
+      icon: Link2
     },
     {
       title: t('components.integrations.title'),
-      href: "/features/integrations",
+      href: "/features/mcp-builder",
       description: t('components.integrations.description'),
-      featureName: tFeatures('thirdPartyIntegrations')
+      featureName: tFeatures('thirdPartyIntegrations'),
+      icon: Boxes,
+      comingSoon: true
     },
     {
       title: t('components.analytics.title'),
       href: "/features/analytics",
       description: t('components.analytics.description'),
-      featureName: tFeatures('analyticsDashboard')
+      featureName: tFeatures('analyticsDashboard'),
+      icon: BarChart3
     },
   ]
 
@@ -80,8 +88,18 @@ export function Navbar() {
                         <FeatureComingSoonDialog
                           featureName={component.featureName}
                         >
-                          <div className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer">
-                            <div className="text-sm font-medium leading-none">{component.title}</div>
+                          <div className="block select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer">
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-2">
+                                <component.icon className="h-4 w-4 text-primary" />
+                                <div className="text-sm font-medium leading-none">{component.title}</div>
+                              </div>
+                              {component.comingSoon && (
+                                <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs px-2 py-0.5">
+                                  {tCommon('soon')}
+                                </Badge>
+                              )}
+                            </div>
                             <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
                               {component.description}
                             </p>
