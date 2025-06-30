@@ -17,15 +17,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup Bun
-      uses: oven-sh/setup-bun@v2
-      with:
-        bun-version: latest
-
     - name: Get version from package.json
       id: get_version
       run: |
-        VERSION=$(bun run -s -p "JSON.parse(require('fs').readFileSync('package.json', 'utf8')).version")
+        VERSION=$(node -p "require('./package.json').version")
         echo "version=$VERSION" >> $GITHUB_OUTPUT
         echo "Version: $VERSION"
 
