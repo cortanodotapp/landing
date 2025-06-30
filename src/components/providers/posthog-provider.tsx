@@ -5,6 +5,8 @@ import { usePathname, useSearchParams } from 'next/navigation'
 import posthog from 'posthog-js'
 import { initPostHog } from '@/lib/posthog'
 import { getCookieConsent } from '@/lib/cookie-consent'
+import { ErrorBoundary } from '@/components/error-boundary'
+import { errorTracking } from '@/lib/error-tracking'
 
 export function PostHogProvider({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
@@ -15,6 +17,11 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     console.log('PostHogProvider: Initializing PostHog...')
     initPostHog()
+    
+    // Initialize error tracking after PostHog is set up
+    setTimeout(() => {
+      errorTracking.init()
+    }, 1000)
   }, [])
 
   // Check for cookie consent changes
@@ -66,5 +73,9 @@ export function PostHogProvider({ children }: { children: React.ReactNode }) {
     }
   }, [pathname, searchParams])
 
-  return <>{children}</>
+  return (
+    <ErrorBoundary>
+      {children}
+    </ErrorBoundary>
+  )
 }

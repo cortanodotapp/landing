@@ -1,6 +1,7 @@
 import { NextResponse } from 'next/server'
+import { withErrorHandling } from '@/lib/api-error-handler'
 
-export async function GET() {
+export const GET = withErrorHandling(async () => {
   return NextResponse.json(
     {
       status: 'ok',
@@ -9,4 +10,4 @@ export async function GET() {
     },
     { status: 200 }
   )
-}
+})
