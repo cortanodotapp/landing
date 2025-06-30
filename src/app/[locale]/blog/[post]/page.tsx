@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 import { ArrowLeft, Calendar, User, Tag } from "lucide-react"
 import ReactMarkdown from 'react-markdown'
 import { mdxComponents } from "@/components/mdx-components"
@@ -20,7 +20,7 @@ interface BlogPostPageProps {
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
   const { locale, post } = await params
-  const t = useTranslations('blog')
+  const t = await getTranslations('blog')
   const blogPost = getBlogPost(locale, post)
 
   if (!blogPost) {

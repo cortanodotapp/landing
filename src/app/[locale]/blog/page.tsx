@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import Link from "next/link"
 import { notFound } from "next/navigation"
-import { useTranslations } from "next-intl"
+import { getTranslations } from "next-intl/server"
 
 interface BlogPageProps {
   params: Promise<{
@@ -16,7 +16,7 @@ interface BlogPageProps {
 
 export default async function BlogPage({ params }: BlogPageProps) {
   const { locale } = await params
-  const t = useTranslations('blog')
+  const t = await getTranslations('blog')
   const posts = getAllBlogPosts(locale)
 
   if (!posts || posts.length === 0) {
