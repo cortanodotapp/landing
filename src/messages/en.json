@@ -59,56 +59,36 @@
     }
   },  "pricing": {
     "badge": "Pricing Plans",
-    "title": "Choose the perfect plan for your background agents",
-    "subtitle": "Scale from your first automation to millions of events. Transparent pricing with no hidden fees.",
-    "popular": "Popular",
-    "perMonth": "/month",
-    "billing": {
-      "monthly": "Monthly",
-      "yearly": "Yearly",
-      "savings": "Save 20%"
-    },
+    "title": "Choose the perfect plan for your agents",
+    "subtitle": "Start free and scale as you grow. No hidden fees, transparent pricing for every team size.",
+    "popular": "Most Popular",
     "plans": {
-      "starter": {
-        "name": "Starter",
-        "description": "Perfect for trying out background agents and small automations.",
-        "cta": "Start Now",
+      "free": {
+        "name": "Always Free",
+        "description": "Perfect for getting started with agent automation and exploring the platform.",
+        "price": "Free",
+        "cta": "Get Started Free",
         "features": {
-          "callMinutes": "10,000 events processed / month",
-          "phoneNumber": "5 API endpoints",
-          "voiceModels": "Basic integration connectors",
-          "workspace": "Single workspace",
-          "agents": "3 background agents",
+          "agents": "3 Agents",
+          "runsPerDay": "Maximum of 2 runs per day per agent",
+          "mcpServers": "1 Custom MCP server",
+          "integrations": "Standard Integrations",
+          "apiAccess": "Limited API access",
           "support": "Basic Support"
         }
       },
-      "professional": {
-        "name": "Professional",
-        "description": "Everything you need to build and scale your automation business.",
-        "cta": "Start Pro",
+      "payAsYouGo": {
+        "name": "Pay as you Go",
+        "description": "Scale your automation with unlimited agents and premium features for growing teams.",
+        "price": "Usage-based",
+        "cta": "Start Growing",
         "features": {
-          "callMinutes": "100,000 events processed / month",
-          "phoneNumber": "25 API endpoints",
-          "voiceModels": "Advanced integration connectors",
-          "workflowBuilder": "Custom MCP builder",
-          "agents": "Unlimited background agents",
-          "support": "Priority support",
-          "integrations": "Custom protocol development"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "description": "Critical scale, security, and dedicated support for your business.",
-        "customPrice": "Custom",
-        "cta": "Contact Sales",
-        "features": {
-          "callMinutes": "Unlimited events processed",
-          "phoneNumbers": "Unlimited API endpoints",
-          "voiceModels": "Custom integration protocols",
-          "architecture": "Multi-tenant architecture",
-          "sla": "SLA guarantees",
-          "manager": "Dedicated success manager",
-          "whiteLabel": "White-label options"
+          "agents": "Unlimited Agents",
+          "runsPerDay": "Maximum of 48 runs per day per agent",
+          "mcpServers": "Unlimited MCP servers",
+          "integrations": "Premium integrations",
+          "apiAccess": "Unlimited API Access",
+          "support": "Premium support"
         }
       }
     }
@@ -168,8 +148,10 @@
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "starterPlan": "Starter Plan",
-    "professionalPlan": "Professional Plan",
-    "enterprisePlan": "Enterprise Plan"
+    "professionalPlan": "Professional Plan", 
+    "enterprisePlan": "Enterprise Plan",
+    "freePlan": "Always Free Plan",
+    "payAsYouGoPlan": "Pay as you Go Plan"
   },  "visualWorkflow": {
     "title": "Visual Workflow Builder",
     "description": "Drag and drop to create complex event-driven workflows",

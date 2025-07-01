@@ -61,56 +61,36 @@
   },
   "pricing": {
     "badge": "Plany cenowe",
-    "title": "Wybierz idealny plan dla swoich agentów w tle",
-    "subtitle": "Skaluj od pierwszej automatyzacji do milionów zdarzeń. Przejrzysty cennik bez ukrytych opłat.",
-    "popular": "Popularny",
-    "perMonth": "/miesiąc",
-    "billing": {
-      "monthly": "Miesięcznie",
-      "yearly": "Rocznie",
-      "savings": "Oszczędź 20%"
-    },
+    "title": "Wybierz idealny plan dla swoich agentów",
+    "subtitle": "Zacznij za darmo i skaluj się wraz ze wzrostem. Bez ukrytych opłat, przejrzyste ceny dla zespołów każdej wielkości.",
+    "popular": "Najpopularniejszy",
     "plans": {
-      "starter": {
-        "name": "Startowy",
-        "description": "Idealny do testowania agentów w tle i małych automatyzacji.",
-        "cta": "Zacznij teraz",
+      "free": {
+        "name": "Zawsze Darmowy",
+        "description": "Idealny do rozpoczęcia automatyzacji agentów i poznawania platformy.",
+        "price": "Darmowy",
+        "cta": "Zacznij za darmo",
         "features": {
-          "callMinutes": "10 000 przetworzonych zdarzeń / miesiąc",
-          "phoneNumber": "5 punktów końcowych API",
-          "voiceModels": "Podstawowe konektory integracji",
-          "workspace": "Jedna przestrzeń robocza",
-          "agents": "3 agentów w tle",
+          "agents": "3 Agentów",
+          "runsPerDay": "Maksymalnie 2 uruchomienia dziennie na agenta",
+          "mcpServers": "1 Niestandardowy serwer MCP",
+          "integrations": "Standardowe integracje",
+          "apiAccess": "Ograniczony dostęp do API",
           "support": "Podstawowe wsparcie"
         }
       },
-      "professional": {
-        "name": "Profesjonalny",
-        "description": "Wszystko, czego potrzebujesz, by rozwijać firmę opartą na automatyzacji.",
-        "cta": "Zacznij Pro",
+      "payAsYouGo": {
+        "name": "Płać ile używasz",
+        "description": "Skaluj automatyzację z nieograniczonymi agentami i funkcjami premium dla rozwijających się zespołów.",
+        "price": "Oparte na użyciu",
+        "cta": "Zacznij rozwijać",
         "features": {
-          "callMinutes": "100 000 przetworzonych zdarzeń / miesiąc",
-          "phoneNumber": "25 punktów końcowych API",
-          "voiceModels": "Zaawansowane konektory integracji",
-          "workflowBuilder": "Niestandardowy kreator MCP",
-          "agents": "Nieograniczona liczba agentów w tle",
-          "support": "Priorytetowe wsparcie",
-          "integrations": "Rozwój niestandardowych protokołów"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "description": "Krytyczna skala, bezpieczeństwo i dedykowane wsparcie dla Twojej firmy.",
-        "customPrice": "Indywidualna wycena",
-        "cta": "Skontaktuj się",
-        "features": {
-          "callMinutes": "Nieograniczone przetwarzanie zdarzeń",
-          "phoneNumbers": "Nieograniczone punkty końcowe API",
-          "voiceModels": "Niestandardowe protokoły integracji",
-          "architecture": "Architektura multi-tenant",
-          "sla": "Gwarancje SLA",
-          "manager": "Dedykowany menedżer sukcesu",
-          "whiteLabel": "Opcje white-label"
+          "agents": "Nieograniczeni agenci",
+          "runsPerDay": "Maksymalnie 48 uruchomień dziennie na agenta",
+          "mcpServers": "Nieograniczone serwery MCP",
+          "integrations": "Integracje premium",
+          "apiAccess": "Nieograniczony dostęp do API",
+          "support": "Wsparcie premium"
         }
       }
     }
@@ -172,7 +152,9 @@
     "cookiePolicy": "Polityka cookies",
     "starterPlan": "Plan Startowy",
     "professionalPlan": "Plan Profesjonalny",
-    "enterprisePlan": "Plan Enterprise"
+    "enterprisePlan": "Plan Enterprise",
+    "freePlan": "Plan Zawsze Darmowy",
+    "payAsYouGoPlan": "Plan Płać ile używasz"
   },
   "visualWorkflow": {
     "title": "Wizualny kreator przepływów",

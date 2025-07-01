@@ -1,6 +1,4 @@
 'use client';
-import { Tabs, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import NumberFlow from '@number-flow/react';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import {
@@ -13,77 +11,49 @@ import {
 } from '@/components/ui/card';
 import { FeatureComingSoonDialog } from '@/components/ui/feature-coming-soon-dialog';
 import { cn } from '@/lib/utils';
-import { Sparkles, ArrowRight, Check, Star, Zap, Shield } from 'lucide-react';
+import { Sparkles, ArrowRight, Check, Star, Zap } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 
 export default function SimplePricing() {
-  const [frequency, setFrequency] = useState<string>('monthly');
   const [mounted, setMounted] = useState(false);
   const t = useTranslations('pricing');
   const tFeatures = useTranslations('featureNames');
 
   const plans = [
     {
-      id: 'starter',
-      name: t('plans.starter.name'),
+      id: 'free',
+      name: t('plans.free.name'),
       icon: Star,
-      price: {
-        monthly: 40,
-        yearly: 32,
-      },
-      description: t('plans.starter.description'),
+      price: t('plans.free.price'),
+      description: t('plans.free.description'),
       features: [
-        t('plans.starter.features.callMinutes'),
-        t('plans.starter.features.phoneNumber'),
-        t('plans.starter.features.voiceModels'),
-        t('plans.starter.features.workspace'),
-        t('plans.starter.features.agents'),
-        t('plans.starter.features.support'),
+        t('plans.free.features.agents'),
+        t('plans.free.features.runsPerDay'),
+        t('plans.free.features.mcpServers'),
+        t('plans.free.features.integrations'),
+        t('plans.free.features.apiAccess'),
+        t('plans.free.features.support'),
       ],
-      cta: t('plans.starter.cta'),
+      cta: t('plans.free.cta'),
     },
     {
-      id: 'pro',
-      name: t('plans.professional.name'),
+      id: 'payAsYouGo',
+      name: t('plans.payAsYouGo.name'),
       icon: Zap,
-      price: {
-        monthly: 80,
-        yearly: 62,
-      },
-      description: t('plans.professional.description'),
+      price: t('plans.payAsYouGo.price'),
+      description: t('plans.payAsYouGo.description'),
       features: [
-        t('plans.professional.features.callMinutes'),
-        t('plans.professional.features.phoneNumber'),
-        t('plans.professional.features.voiceModels'),
-        t('plans.professional.features.workflowBuilder'),
-        t('plans.professional.features.agents'),
-        t('plans.professional.features.support'),
-        t('plans.professional.features.integrations'),
+        t('plans.payAsYouGo.features.agents'),
+        t('plans.payAsYouGo.features.runsPerDay'),
+        t('plans.payAsYouGo.features.mcpServers'),
+        t('plans.payAsYouGo.features.integrations'),
+        t('plans.payAsYouGo.features.apiAccess'),
+        t('plans.payAsYouGo.features.support'),
       ],
-      cta: t('plans.professional.cta'),
+      cta: t('plans.payAsYouGo.cta'),
       popular: true,
-    },
-    {
-      id: 'enterprise',
-      name: t('plans.enterprise.name'),
-      icon: Shield,
-      price: {
-        monthly: t('plans.enterprise.customPrice'),
-        yearly: t('plans.enterprise.customPrice'),
-      },
-      description: t('plans.enterprise.description'),
-      features: [
-        t('plans.enterprise.features.callMinutes'),
-        t('plans.enterprise.features.phoneNumbers'),
-        t('plans.enterprise.features.voiceModels'),
-        t('plans.enterprise.features.architecture'),
-        t('plans.enterprise.features.sla'),
-        t('plans.enterprise.features.manager'),
-        t('plans.enterprise.features.whiteLabel'),
-      ],
-      cta: t('plans.enterprise.cta'),
     },
   ];
 
@@ -126,41 +96,7 @@ export default function SimplePricing() {
           </motion.p>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.4, delay: 0.2 }}
-          className="flex justify-center mb-12"
-        >
-          <Tabs
-            defaultValue={frequency}
-            onValueChange={setFrequency}
-            className="inline-block rounded-full bg-card border border-border p-1"
-          >
-            <TabsList className="bg-transparent">
-              <TabsTrigger
-                value="monthly"
-                className="rounded-full transition-all duration-300 data-[state=active]:bg-primary/10 data-[state=active]:text-primary"
-              >
-                {t('billing.monthly')}
-              </TabsTrigger>
-              <TabsTrigger
-                value="yearly"
-                className="rounded-full transition-all duration-300 data-[state=active]:bg-primary/10 data-[state=active]:text-primary"
-              >
-                {t('billing.yearly')}
-                <Badge
-                  variant="secondary"
-                  className="ml-2 bg-primary/10 text-primary hover:bg-primary/15"
-                >
-                  {t('billing.savings')}
-                </Badge>
-              </TabsTrigger>
-            </TabsList>
-          </Tabs>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {plans.map((plan, index) => (
             <motion.div
               key={plan.id}
@@ -212,40 +148,14 @@ export default function SimplePricing() {
                   <CardDescription className="mt-4 space-y-3">
                     <p className="text-sm text-muted-foreground leading-relaxed">{plan.description}</p>
                     <div className="pt-3">
-                      {typeof plan.price[
-                        frequency as keyof typeof plan.price
-                      ] === 'number' ? (
-                        <div className="flex items-baseline gap-1">
-                          <NumberFlow
-                            className={cn(
-                              'text-3xl font-bold',
-                              plan.popular ? 'text-primary' : 'text-card-foreground',
-                            )}
-                            format={{
-                              style: 'currency',
-                              currency: 'USD',
-                              maximumFractionDigits: 0,
-                            }}
-                            value={
-                              plan.price[
-                                frequency as keyof typeof plan.price
-                              ] as number
-                            }
-                          />
-                          <span className="text-sm text-muted-foreground">
-                            {t('perMonth')}
-                          </span>
-                        </div>
-                      ) : (
-                        <span
-                          className={cn(
-                            'text-2xl font-bold',
-                            plan.popular ? 'text-primary' : 'text-card-foreground',
-                          )}
-                        >
-                          {plan.price[frequency as keyof typeof plan.price]}
-                        </span>
-                      )}
+                      <span
+                        className={cn(
+                          'text-3xl font-bold',
+                          plan.popular ? 'text-primary' : 'text-card-foreground',
+                        )}
+                      >
+                        {plan.price}
+                      </span>
                     </div>
                   </CardDescription>
                 </CardHeader>
@@ -276,7 +186,7 @@ export default function SimplePricing() {
                 </CardContent>
                 <CardFooter className="pt-6">
                   <FeatureComingSoonDialog
-                    featureName={tFeatures(plan.id === 'starter' ? 'starterPlan' : plan.id === 'pro' ? 'professionalPlan' : 'enterprisePlan')}
+                    featureName={tFeatures(plan.id === 'free' ? 'freePlan' : 'payAsYouGoPlan')}
                   >
                     <Button
                       variant={plan.popular ? 'default' : 'outline'}

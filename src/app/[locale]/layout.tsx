@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bricolage_Grotesque } from "next/font/google";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -13,6 +13,15 @@ const Bricolage = Bricolage_Grotesque({
   variable: "--font-bricolage",
   display: "swap",
 });
+
+export const viewport : Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  minimumScale: 1,
+  userScalable: false,
+  themeColor: "#66C72E"
+}
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +46,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Cortano" }],
   creator: "Cortano",
   publisher: "Cortano",
-  metadataBase: new URL("https://cortano.com"), // Update with your actual domain
+  metadataBase: new URL("https://cortano.app"), // Update with your actual domain
   alternates: {
     canonical: "/",
     languages: {
@@ -50,16 +59,22 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Cortano - Background Agents & MCP Builder",
     description: "Deploy intelligent background agents for your business in minutes. Automate event processing, build custom MCP protocols, and create seamless integrations with our no-code platform.",
-    url: "https://cortano.com", // Update with your actual domain
+    url: "https://cortano.app", // Update with your actual domain
     siteName: "Cortano",
     locale: "en_US",
     type: "website",
+    images: [
+      "https://upload.cortano.app/banner.png"
+    ]
   },
   twitter: {
     card: "summary_large_image",
     title: "Cortano - Background Agents & MCP Builder",
     description: "Deploy intelligent background agents for your business in minutes. Automate event processing, build custom MCP protocols, and create seamless integrations with our no-code platform.",
     creator: "@cortanodotapp", // Update with your actual Twitter handle
+    images: [
+      "https://upload.cortano.app/banner.png"
+    ]
   },
   robots: {
     index: true,
@@ -104,8 +119,8 @@ export default async function LocaleLayout({
     "@type": "Organization",
     "name": "Cortano",
     "description": "Deploy intelligent background agents for your business in minutes. Automate event processing, build custom MCP protocols, and create seamless integrations with our no-code platform.",
-    "url": "https://cortano.com", // Update with your actual domain
-    "logo": "https://cortano.com/logo.png", // Update with your actual logo URL
+    "url": "https://cortano.app", // Update with your actual domain
+    "logo": "https://cortano.app/logo.png", // Update with your actual logo URL
     "sameAs": [
       // Add your social media profiles
       // "https://twitter.com/cortano",

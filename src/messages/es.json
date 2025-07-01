@@ -61,56 +61,36 @@
   },
   "pricing": {
     "badge": "Planes de precios",
-    "title": "Elige el plan perfecto para tus agentes en segundo plano",
-    "subtitle": "Escala desde tu primera automatización hasta millones de eventos. Precios transparentes y sin cargos ocultos.",
-    "popular": "Popular",
-    "perMonth": "/mes",
-    "billing": {
-      "monthly": "Mensual",
-      "yearly": "Anual",
-      "savings": "Ahorra 20%"
-    },
+    "title": "Elige el plan perfecto para tus agentes",
+    "subtitle": "Comienza gratis y escala mientras creces. Sin cargos ocultos, precios transparentes para equipos de cualquier tamaño.",
+    "popular": "Más Popular",
     "plans": {
-      "starter": {
-        "name": "Inicial",
-        "description": "Perfecto para probar agentes en segundo plano y pequeñas automatizaciones.",
-        "cta": "Comenzar ahora",
+      "free": {
+        "name": "Siempre Gratis",
+        "description": "Perfecto para comenzar con automatización de agentes y explorar la plataforma.",
+        "price": "Gratis",
+        "cta": "Comenzar Gratis",
         "features": {
-          "callMinutes": "10,000 eventos procesados / mes",
-          "phoneNumber": "5 endpoints de API",
-          "voiceModels": "Conectores de integración básicos",
-          "workspace": "Un solo espacio de trabajo",
-          "agents": "3 agentes en segundo plano",
+          "agents": "3 Agentes",
+          "runsPerDay": "Máximo de 2 ejecuciones por día por agente",
+          "mcpServers": "1 Servidor MCP personalizado",
+          "integrations": "Integraciones estándar",
+          "apiAccess": "Acceso API limitado",
           "support": "Soporte básico"
         }
       },
-      "professional": {
-        "name": "Profesional",
-        "description": "Todo lo que necesitas para escalar tu negocio de automatización.",
-        "cta": "Comenzar Pro",
+      "payAsYouGo": {
+        "name": "Paga según uses",
+        "description": "Escala tu automatización con agentes ilimitados y características premium para equipos en crecimiento.",
+        "price": "Basado en uso",
+        "cta": "Comenzar a crecer",
         "features": {
-          "callMinutes": "100,000 eventos procesados / mes",
-          "phoneNumber": "25 endpoints de API",
-          "voiceModels": "Conectores de integración avanzados",
-          "workflowBuilder": "Constructor MCP personalizado",
-          "agents": "Agentes en segundo plano ilimitados",
-          "support": "Soporte prioritario",
-          "integrations": "Desarrollo de protocolos personalizados"
-        }
-      },
-      "enterprise": {
-        "name": "Enterprise",
-        "description": "Escala crítica, seguridad y soporte dedicado para tu empresa.",
-        "customPrice": "Personalizado",
-        "cta": "Contactar ventas",
-        "features": {
-          "callMinutes": "Eventos procesados ilimitados",
-          "phoneNumbers": "Endpoints de API ilimitados",
-          "voiceModels": "Protocolos de integración personalizados",
-          "architecture": "Arquitectura multiusuario",
-          "sla": "Garantías SLA",
-          "manager": "Gerente de éxito dedicado",
-          "whiteLabel": "Opciones marca blanca"
+          "agents": "Agentes ilimitados",
+          "runsPerDay": "Máximo de 48 ejecuciones por día por agente",
+          "mcpServers": "Servidores MCP ilimitados",
+          "integrations": "Integraciones premium",
+          "apiAccess": "Acceso API ilimitado",
+          "support": "Soporte premium"
         }
       }
     }
@@ -172,7 +152,9 @@
     "cookiePolicy": "Política de cookies",
     "starterPlan": "Plan Inicial",
     "professionalPlan": "Plan Profesional",
-    "enterprisePlan": "Plan Enterprise"
+    "enterprisePlan": "Plan Enterprise",
+    "freePlan": "Plan Siempre Gratis",
+    "payAsYouGoPlan": "Plan Paga según uses"
   },
   "visualWorkflow": {
     "title": "Creador visual de flujos",
