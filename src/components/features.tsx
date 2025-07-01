@@ -40,7 +40,7 @@ export function Features() {
           <BentoCard size="lg" background="gradient" className="lg:col-span-2 lg:row-span-2">
             <VisualWorkflowBuilder />
           </BentoCard>          {/* Quick Deployment */}
-          <BentoCard size="md" background="pattern">
+          <BentoCard size="md" background="pattern" compact>
             <FeatureHighlight
               title={t('deployInMinutes.title')}
               description={t('deployInMinutes.description')}
@@ -56,7 +56,7 @@ export function Features() {
           <BentoCard size="sm" background="solid">
             <LanguageShowcase />
           </BentoCard>          {/* Enterprise Grade */}
-          <BentoCard size="md" background="pattern">
+          <BentoCard size="md" background="pattern" compact>
             <FeatureHighlight
               title={t('enterpriseSecurity.title')}
               description={t('enterpriseSecurity.description')}
@@ -64,7 +64,7 @@ export function Features() {
           </BentoCard>
 
           {/* Global Scale */}
-          <BentoCard size="md" background="pattern">
+          <BentoCard size="md" background="pattern" compact>
             <FeatureHighlight
               title={t('globalInfrastructure.title')}
               description={t('globalInfrastructure.description')}
@@ -74,8 +74,8 @@ export function Features() {
           {/* Visual Flow - How it Works */}
           <BentoCard size="md" background="gradient" className="lg:col-span-2">
             <VisualFlow />
-          </BentoCard>{/* Advanced Analytics */}
-          <BentoCard size="md" background="pattern">
+          </BentoCard>          {/* Advanced Analytics */}
+          <BentoCard size="md" background="pattern" compact>
             <FeatureHighlight
               title={t('advancedAnalytics.title')}
               description={t('advancedAnalytics.description')}

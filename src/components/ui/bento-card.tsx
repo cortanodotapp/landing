@@ -9,6 +9,7 @@ interface BentoCardProps {
   className?: string
   size?: "sm" | "md" | "lg" | "xl"
   background?: "gradient" | "solid" | "pattern"
+  compact?: boolean
 }
 
 const sizeClasses = {
@@ -22,7 +23,8 @@ export function BentoCard({
   children, 
   className, 
   size = "sm",
-  background = "solid"
+  background = "solid",
+  compact = false
 }: BentoCardProps) {
   const backgroundClasses = {
     gradient: "bg-gradient-to-br from-primary/5 via-background to-accent/5",
@@ -41,6 +43,7 @@ export function BentoCard({
         "group relative overflow-hidden rounded-2xl border border-border p-6 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5",
         sizeClasses[size],
         backgroundClasses[background],
+        compact && "min-h-[140px] md:min-h-[200px]",
         className
       )}
     >
