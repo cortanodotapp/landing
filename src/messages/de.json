@@ -256,5 +256,14 @@
     "publishedBy": "Veröffentlicht von",
     "on": "am",
     "readingTime": "Min Lesezeit"
+  },
+  "legal": {
+    "backToHome": "Zurück zur Startseite",
+    "lastUpdated": "Zuletzt aktualisiert",
+    "documentIntro": "Dieses Dokument beschreibt unsere Richtlinien und Ihre Rechte. Bitte lesen Sie es sorgfältig durch und kontaktieren Sie uns bei Fragen.",
+    "privacyPolicy": "Datenschutzrichtlinie",
+    "termsOfService": "Nutzungsbedingungen",
+    "cookiePolicy": "Cookie-Richtlinie",
+    "englishOnlyAlert": "Dieses Dokument ist nur in englischer Version verfügbar"
   }
 }

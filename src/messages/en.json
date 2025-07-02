@@ -250,5 +250,14 @@
     "publishedBy": "Published by",
     "on": "on",
     "readingTime": "min read"
+  },
+  "legal": {
+    "backToHome": "Back to Home",
+    "lastUpdated": "Last updated",
+    "documentIntro": "This document outlines our policies and your rights. Please read it carefully and contact us if you have any questions.",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "englishOnlyAlert": "This document is only provided in English version"
   }
 }

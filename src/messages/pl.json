@@ -256,5 +256,14 @@
     "publishedBy": "Opublikowany przez",
     "on": "dnia",
     "readingTime": "min czytania"
+  },
+  "legal": {
+    "backToHome": "Powrót do Strony Głównej",
+    "lastUpdated": "Ostatnia aktualizacja",
+    "documentIntro": "Ten dokument przedstawia nasze zasady i Twoje prawa. Prosimy o uważne przeczytanie i skontaktowanie się z nami w przypadku pytań.",
+    "privacyPolicy": "Polityka Prywatności",
+    "termsOfService": "Warunki Usługi",
+    "cookiePolicy": "Polityka Cookies",
+    "englishOnlyAlert": "Ten dokument jest dostępny tylko w wersji angielskiej"
   }
 }
