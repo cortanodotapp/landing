@@ -3,11 +3,13 @@
 import Link from "next/link"
 import { FeatureComingSoonDialog } from "@/components/ui/feature-coming-soon-dialog"
 import { useTranslations } from 'next-intl'
+import { useLocale } from 'next-intl'
 
 export function Footer() {
   const t = useTranslations('footer')
   const tFeatures = useTranslations('featureNames')
   const tCommon = useTranslations('common')
+  const locale = useLocale()
 
   return (
     <footer className="relative bg-background border-t border-white/10">
@@ -189,20 +191,18 @@ export function Footer() {
             <div className="text-sm text-muted-foreground">
               {t('legal.copyright')}
             </div>            <div className="flex space-x-6">
-              <FeatureComingSoonDialog
-                featureName={tFeatures('privacyPolicy')}
+              <Link 
+                href={`/${locale}/legal/privacy`}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
               >
-                <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  {t('legal.privacyPolicy')}
-                </span>
-              </FeatureComingSoonDialog>
-              <FeatureComingSoonDialog
-                featureName={tFeatures('termsOfService')}
+                {t('legal.privacyPolicy')}
+              </Link>
+              <Link 
+                href={`/${locale}/legal/terms`}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
               >
-                <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  {t('legal.termsOfService')}
-                </span>
-              </FeatureComingSoonDialog>
+                {t('legal.termsOfService')}
+              </Link>
               <FeatureComingSoonDialog
                 featureName={tFeatures('cookiePolicy')}
               >

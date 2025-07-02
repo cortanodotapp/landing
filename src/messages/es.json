@@ -256,5 +256,14 @@
     "publishedBy": "Publicado por",
     "on": "el",
     "readingTime": "min de lectura"
+  },
+  "legal": {
+    "backToHome": "Volver al Inicio",
+    "lastUpdated": "Última actualización",
+    "documentIntro": "Este documento describe nuestras políticas y sus derechos. Por favor, léalo cuidadosamente y contáctenos si tiene alguna pregunta.",
+    "privacyPolicy": "Política de Privacidad",
+    "termsOfService": "Términos de Servicio",
+    "cookiePolicy": "Política de Cookies",
+    "englishOnlyAlert": "Este documento solo está disponible en versión en inglés"
   }
 }
