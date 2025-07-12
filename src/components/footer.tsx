@@ -71,115 +71,93 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Product Links */}
+          {/* Products */}
           <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">{t('product.title')}</h3>
-            <ul className="space-y-3">              <li>                <FeatureComingSoonDialog
-              featureName={tFeatures('callFlowBuilder')}
-            >
-              <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                {t('product.callFlows')}
-              </span>
-            </FeatureComingSoonDialog>
-            </li>
+            <h3 className="text-sm font-semibold text-foreground mb-4">{t('products.title')}</h3>
+            <ul className="space-y-3">
               <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('voiceCustomization')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('product.voiceOptions')}
-                  </span>
-                </FeatureComingSoonDialog>
-              </li>
-              <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('thirdPartyIntegrations')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('product.integrations')}
-                  </span>
-                </FeatureComingSoonDialog>
-              </li>
-              <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('analyticsDashboard')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  {t('product.analytics')}
-                </span>
-              </FeatureComingSoonDialog>
-              </li>
-            </ul>
-          </div>          {/* Use Cases */}
-          <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">{t('useCases.title')}</h3>
-            <ul className="space-y-3">              <li>
-              <FeatureComingSoonDialog
-                featureName={tFeatures('customerSupportUseCases')}
-              >
-                <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  {t('useCases.customerSupport')}
-                </span>
-              </FeatureComingSoonDialog>
-            </li>
-              <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('leadQualificationExamples')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('useCases.leadQualification')}
-                  </span>
-                </FeatureComingSoonDialog>
-              </li>
-              <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('appointmentBookingSolutions')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('useCases.appointmentBooking')}
-                  </span>
-                </FeatureComingSoonDialog>
-              </li>
-              <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('salesAutomationWorkflows')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('useCases.salesAutomation')}
-                  </span>
-                </FeatureComingSoonDialog>
-              </li>
-            </ul>
-          </div>          {/* Company */}
-          <div>
-            <h3 className="text-sm font-semibold text-foreground mb-4">{t('company.title')}</h3>
-            <ul className="space-y-3">              <li>
-              <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
-                {t('company.aboutUs')}
-              </Link>
-            </li>
-              <li>
-                <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
-                  {t('company.blog')}
+                <Link href="/products/call-agent" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('products.callAgent')}
                 </Link>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName={tFeatures('careerOpportunities')}
+                  featureName={tFeatures('digitalCallAgent')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('company.careers')}
+                    {t('products.digitalCallAgent')}
+                  </span>
+                </FeatureComingSoonDialog>
+              </li>
+              <li>
+                <Link href="/#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('products.pricing')}
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Developer */}
+          <div>
+            <h3 className="text-sm font-semibold text-foreground mb-4">{t('developer.title')}</h3>
+            <ul className="space-y-3">
+              <li>
+                <FeatureComingSoonDialog
+                  featureName={tFeatures('developerDocs')}
+                >
+                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
+                    {t('developer.documentation')}
                   </span>
                 </FeatureComingSoonDialog>
               </li>
               <li>
                 <FeatureComingSoonDialog
-                  featureName={tFeatures('contactSupport')}
+                  featureName={tFeatures('apiStatus')}
                 >
                   <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('company.contact')}
+                    {t('developer.apiStatus')}
                   </span>
                 </FeatureComingSoonDialog>
+              </li>
+              <li>
+                <FeatureComingSoonDialog
+                  featureName={tFeatures('apiChangelog')}
+                >
+                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
+                    {t('developer.apiChangelog')}
+                  </span>
+                </FeatureComingSoonDialog>
+              </li>
+            </ul>
+          </div>
+
+          {/* Resources */}
+          <div>
+            <h3 className="text-sm font-semibold text-foreground mb-4">{t('resources.title')}</h3>
+            <ul className="space-y-3">
+              <li>
+                <Link href="/legal" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('resources.legal')}
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('resources.about')}
+                </Link>
+              </li>
+              <li>
+                <FeatureComingSoonDialog
+                  featureName={tFeatures('hiring')}
+                >
+                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
+                    {t('resources.hiring')}
+                  </span>
+                </FeatureComingSoonDialog>
+              </li>
+              <li>
+                <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('resources.blog')}
+                </Link>
               </li>
             </ul>
           </div>

@@ -7,115 +7,195 @@
     "soon": "Soon"
   },
   "navbar": {
-    "features": "Features",
-    "useCases": "Use Cases",
-    "pricing": "Pricing",
+    "products": "Products",
+    "developer": "Developer", 
+    "resources": "Resources",
     "getStarted": "Get Started",
-    "components": {
-      "callFlows": {
-        "title": "Event Workflows",
-        "description": "Design automated workflows triggered by events, integrations, and API requests."
+    "productItems": {
+      "callAgent": {
+        "title": "Call Agent",
+        "description": "AI-powered phone agents that handle customer calls, book appointments, and provide 24/7 support."
       },
-      "voiceOptions": {
-        "title": "Integration Options", 
-        "description": "Connect with APIs, webhooks, and build custom MCP protocols seamlessly."
+      "digitalCallAgent": {
+        "title": "Digital Call Agent",
+        "description": "Web-based AI agents that provide real-time customer support through your website."
       },
-      "integrations": {
-        "title": "MCP Builder",
-        "description": "Build custom Model Context Protocols with our visual no-code builder."
+      "pricing": {
+        "title": "Pricing",
+        "description": "Transparent pricing plans for businesses of all sizes. Start free and scale as you grow."
+      }
+    },
+    "developerItems": {
+      "documentation": {
+        "title": "Developer Documentation",
+        "description": "Complete API documentation, guides, and tutorials to integrate Cortano into your applications."
       },
-      "analytics": {
-        "title": "Task Analytics",
-        "description": "Track background agent performance, event processing, and automation insights."
+      "apiStatus": {
+        "title": "API Status",
+        "description": "Real-time status monitoring and uptime information for all Cortano services."
+      },
+      "apiChangelog": {
+        "title": "API Changelog",
+        "description": "Latest updates, new features, and changes to the Cortano API and platform."
+      }
+    },
+    "resourceItems": {
+      "legal": {
+        "title": "Legal Stuff",
+        "description": "Privacy policy, terms of service, and other legal documentation."
+      },
+      "about": {
+        "title": "About Us",
+        "description": "Learn about our mission, team, and the story behind Cortano."
+      },
+      "hiring": {
+        "title": "Hiring",
+        "description": "Join our team and help us build the future of AI-powered customer interactions."
+      },
+      "blog": {
+        "title": "Blog",
+        "description": "Latest insights, tutorials, and updates from the Cortano team."
       }
     }
   },
   "hero": {
-    "badge": "Background Agents Now Available",
-    "headline": "Turn events into",
-    "headlineHighlight": "automated actions",
-    "description": "Never miss an opportunity again. Our intelligent background agents process events, trigger workflows, and automate your business operations - working 24/7 even when your team is offline.",
-    "cta": "Start Automating Events"
+    "badge": "AI Call Agents Now Available",
+    "headline": "Transform customer calls with",
+    "headlineHighlight": "intelligent AI agents",
+    "description": "Never miss a customer call again. Our AI call agents handle inquiries, book appointments, qualify leads, and provide 24/7 customer support - even when your team is unavailable.",
+    "cta": "Start with AI Calls"
   },
   "features": {
     "badge": "Features",
-    "title": "Everything you need to build powerful background automation",
-    "description": "From drag-and-drop workflows to enterprise-grade infrastructure, we've got the tools to bring your automation vision to life.",
+    "title": "Everything you need to build powerful AI call agents",
+    "description": "From intelligent conversation flows to enterprise-grade call handling, we've got the tools to bring your AI call agent vision to life.",
     "deployInMinutes": {
       "title": "Deploy in Minutes",
-      "description": "Go from idea to live background agent in under 5 minutes. Our streamlined deployment process gets your automation running instantly."
+      "description": "Go from idea to live AI call agent in under 5 minutes. Our streamlined setup gets your phone support running instantly."
     },
     "enterpriseSecurity": {
       "title": "Enterprise Security",
-      "description": "Bank-grade encryption, SOC 2 compliance, and 99.9% uptime SLA. Your automations are secure and always available."
+      "description": "Bank-grade encryption, SOC 2 compliance, and 99.9% uptime SLA. Your call data is secure and always protected."
     },
     "globalInfrastructure": {
-      "title": "Global Infrastructure", 
-      "description": "Process events worldwide with our distributed edge network. Low latency, high availability, everywhere."
+      "title": "Global Phone Network", 
+      "description": "Handle calls worldwide with our distributed phone infrastructure. Low latency, high availability, everywhere."
     },
     "advancedAnalytics": {
-      "title": "Advanced Analytics",
-      "description": "Deep insights into automation performance, event patterns, and agent efficiency with real-time dashboards."
+      "title": "Call Analytics",
+      "description": "Deep insights into call performance, conversation patterns, and agent effectiveness with real-time dashboards."
     }
   },  "pricing": {
     "badge": "Pricing Plans",
-    "title": "Choose the perfect plan for your agents",
-    "subtitle": "Start free and scale as you grow. No hidden fees, transparent pricing for every team size.",
+    "title": "Choose the perfect plan for your AI call agents",
+    "subtitle": "Start with our Starter plan and scale as you grow. No hidden fees, transparent pricing for every business size.",
     "popular": "Most Popular",
+    "currencySelector": {
+      "label": "Select your region:"
+    },
     "plans": {
-      "free": {
-        "name": "Always Free",
-        "description": "Perfect for getting started with agent automation and exploring the platform.",
-        "price": "Free",
-        "cta": "Get Started Free",
+      "starter": {
+        "name": "Starter",
+        "description": "Perfect for small businesses getting started with AI call agents.",
+        "price": "{currency}{price}/month",
+        "cta": "Start Free Trial",
         "features": {
-          "agents": "3 Agents",
-          "runsPerDay": "Maximum of 2 runs per day per agent",
-          "mcpServers": "1 Custom MCP server",
-          "integrations": "Standard Integrations",
-          "apiAccess": "Limited API access",
-          "support": "Basic Support"
+          "minutes": "500 call minutes/month",
+          "agents": "1 AI Call Agent",
+          "integrations": "Simple integrations",
+          "support": "Basic support",
+          "apiAccess": "No API access"
+        }
+      },
+      "medium": {
+        "name": "Medium",
+        "description": "Ideal for growing businesses with higher call volumes.",
+        "price": "{currency}{price}/month",
+        "cta": "Start Free Trial",
+        "features": {
+          "minutes": "1,500 call minutes/month",
+          "agents": "3 AI Call Agents",
+          "integrations": "Advanced integrations",
+          "support": "Priority support",
+          "apiAccess": "Full API access"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "For large organizations with custom requirements and unlimited scale.",
+        "price": "Custom pricing",
+        "cta": "Contact Sales",
+        "features": {
+          "minutes": "Unlimited call minutes",
+          "agents": "Unlimited AI Call Agents",
+          "integrations": "Custom integrations",
+          "support": "Priority support",
+          "apiAccess": "Full API access"
         }
       },
       "payAsYouGo": {
-        "name": "Pay as you Go",
-        "description": "Scale your automation with unlimited agents and premium features for growing teams.",
-        "price": "Usage-based",
-        "cta": "Start Growing",
+        "name": "Pay as you go",
+        "description": "Perfect for businesses with variable call volumes. Only pay for what you use.",
+        "price": "{currency}{price}/min",
+        "cta": "Get Started",
         "features": {
-          "agents": "Unlimited Agents",
-          "runsPerDay": "Maximum of 48 runs per day per agent",
-          "mcpServers": "Unlimited MCP servers",
-          "integrations": "Premium integrations",
-          "apiAccess": "Unlimited API Access",
-          "support": "Premium support"
+          "minutes": "Call minutes: {currency}{price} per minute",
+          "phoneNumber": "Phone Number: {currency}{price}",
+          "agents": "Agents: {currency}{price} per month per agent",
+          "support": "Basic email support",
+          "apiAccess": "No API access",
+          "integrations": "Basic integrations"
+        },
+        "labels": {
+          "callMinutes": "Call Minutes",
+          "phoneNumber": "Phone Number",
+          "aiAgents": "AI Agents",
+          "support": "Support",
+          "apiAccess": "API Access",
+          "integrations": "Integrations"
+        },
+        "descriptions": {
+          "callMinutes": "Pay only for minutes you use",
+          "phoneNumber": "Monthly subscription fee",
+          "aiAgents": "Per agent per month",
+          "support": "Basic email support",
+          "apiAccess": "Not included in this plan",
+          "integrations": "Core integrations included"
+        },
+        "pricing": {
+          "callMinutes": "{currency}{price}/min",
+          "phoneNumber": "{currency}{price}/mo",
+          "aiAgents": "{currency}{price}/mo"
+        },
+        "status": {
+          "email": "Email",
+          "basic": "Basic",
+          "notIncluded": "Not included"
         }
       }
-    }
+    },
+    "note": "* Prices may vary by region"
   },
   "footer": {
-    "description": "Deploy intelligent background agents for your business in minutes. Automate event processing, integration workflows, and business operations with our no-code platform.",
-    "product": {
-      "title": "Product",
-      "callFlows": "Event Workflows",
-      "voiceOptions": "Integration Options",
-      "integrations": "MCP Builder",
-      "pricing": "Pricing",
-      "analytics": "Task Analytics"
+    "description": "Deploy intelligent AI call agents for your business in minutes. Handle customer calls, book appointments, and provide 24/7 support with our no-code platform.",
+    "products": {
+      "title": "Products",
+      "callAgent": "Call Agent",
+      "digitalCallAgent": "Digital Call Agent",
+      "pricing": "Pricing"
     },
-    "useCases": {
-      "title": "Use Cases",
-      "customerSupport": "Event Processing",
-      "leadQualification": "API Integration",
-      "appointmentBooking": "Background Automation",
-      "salesAutomation": "Custom Protocols"
+    "developer": {
+      "title": "Developer",
+      "documentation": "Documentation",
+      "apiStatus": "API Status",
+      "apiChangelog": "API Changelog"
     },
-    "company": {
-      "title": "Company",
-      "aboutUs": "About Us",
-      "blog": "Blog", 
-      "careers": "Careers",
-      "contact": "Contact"
+    "resources": {
+      "title": "Resources",
+      "legal": "Legal Stuff",
+      "about": "About Us",
+      "hiring": "Hiring",
+      "blog": "Blog"
     },
     "legal": {
       "copyright": "© 2025 Cortano. All rights reserved.",
@@ -129,113 +209,103 @@
     "acknowledge": "Got it"
   },
   "featureNames": {
-    "aiCallAgentPlatform": "Background Agent Platform",
+    "aiCallAgentPlatform": "AI Call Agent Platform",
     "accountRegistration": "Account Registration",
-    "useCasesExamples": "Use Cases & Examples",
-    "callFlowBuilder": "Event Workflow Builder",
-    "voiceCustomization": "Integration Customization",
-    "thirdPartyIntegrations": "Third-party Integrations",
-    "analyticsDashboard": "Analytics Dashboard",
-    "customerSupportUseCases": "Event Processing Use Cases",
-    "leadQualificationExamples": "API Integration Examples",
-    "appointmentBookingSolutions": "Background Automation Solutions",
-    "salesAutomationWorkflows": "Custom Protocol Workflows",
-    "aboutCortano": "About Cortano",
-    "cortanoBlog": "Cortano Blog",
-    "careerOpportunities": "Career Opportunities",
-    "contactSupport": "Contact & Support",
-    "privacyPolicy": "Privacy Policy",
-    "termsOfService": "Terms of Service",
+    "callAgent": "Call Agent",
+    "digitalCallAgent": "Digital Call Agent",
+    "developerDocs": "Developer Documentation",
+    "apiStatus": "API Status",
+    "apiChangelog": "API Changelog",
+    "hiring": "Career Opportunities",
     "cookiePolicy": "Cookie Policy",
     "starterPlan": "Starter Plan",
-    "professionalPlan": "Professional Plan", 
+    "mediumPlan": "Medium Plan",
     "enterprisePlan": "Enterprise Plan",
-    "freePlan": "Always Free Plan",
-    "payAsYouGoPlan": "Pay as you Go Plan"
+    "payAsYouGoPlan": "Pay as you go Plan"
   },  "visualWorkflow": {
-    "title": "Visual Workflow Builder",
-    "description": "Drag and drop to create complex event-driven workflows",
+    "title": "Visual Call Flow Builder",
+    "description": "Drag and drop to create intelligent conversation flows",
     "steps": {
-      "incomingCall": "Event Triggered",
-      "aiAnalysis": "Background Processing",
-      "bookMeeting": "Execute Action",
-      "sendInfo": "Send Response"
+      "incomingCall": "Incoming Call",
+      "aiAnalysis": "AI Processing",
+      "bookMeeting": "Book Meeting",
+      "sendInfo": "Send Information"
     }
   },"movingPartners": {
     "title": "Backed by Industry Leaders",
     "subtitle": "Leading companies"
   },  "visualFlow": {
     "title": "How It Works",
-    "step1": "Event Received",
-    "step2": "Background Processing", 
-    "step3": "Action Generated",
-    "step4": "Task Completed"
+    "step1": "Call Received",
+    "step2": "AI Processing", 
+    "step3": "Response Generated",
+    "step4": "Action Completed"
   },
   "languageShowcase": {
-    "title": "Supports multiple protocols"
+    "title": "Supports multiple languages"
   },
   "about": {
     "hero": {
       "badge": "About Cortano",
       "title": "Building the future of",
-      "titleHighlight": "business automation",
-      "description": "We're on a mission to make intelligent background automation accessible to every business, from startups to enterprises. Our platform empowers teams to focus on what matters most while our agents handle the rest."
+      "titleHighlight": "AI call agents",
+      "description": "We specialize in creating intelligent AI call agents that revolutionize how businesses handle customer interactions. Our advanced AI technology provides 24/7 phone support, automates customer service, and ensures no call goes unanswered."
     },
     "mission": {
       "title": "Our Mission",
-      "description": "We believe every business should have access to intelligent automation that works around the clock.",
+      "description": "We believe every business deserves intelligent AI call agents that never sleep, ensuring exceptional customer service around the clock.",
       "goals": {
         "title": "Clear Goals",
-        "description": "Democratize background automation by making it simple, accessible, and powerful for businesses of all sizes."
+        "description": "Make AI call agent technology accessible and powerful for businesses of all sizes, from small startups to large enterprises."
       },
       "innovation": {
         "title": "Innovation First",
-        "description": "Push the boundaries of what's possible with event-driven automation and intelligent background processing."
+        "description": "Continuously advance conversational AI technology to create more natural, intelligent, and effective call agents."
       },
       "community": {
-        "title": "Community Driven",
-        "description": "Build tools that empower developers and business teams to create automation solutions together."
+        "title": "Customer Success",
+        "description": "Empower businesses to provide exceptional phone support experiences that delight customers and drive growth."
       }
     },
     "values": {
       "title": "Our Values",
-      "description": "The principles that guide everything we do and help us build better automation solutions.",
+      "description": "The principles that guide our AI call agent development and shape how we serve our customers.",
       "customerFirst": {
         "title": "Customer First",
-        "description": "Every decision we make is driven by delivering exceptional value to our users and their businesses."
+        "description": "Every AI call agent we build prioritizes delivering exceptional customer experiences and driving business success."
       },
       "reliability": {
         "title": "Reliability",
-        "description": "We build systems that work when you need them most, with enterprise-grade uptime and security."
+        "description": "Our AI call agents work 24/7 with enterprise-grade uptime, ensuring your customers always receive professional service."
       },
       "innovation": {
         "title": "Innovation",
-        "description": "We constantly push boundaries to make automation more intelligent, efficient, and accessible."
+        "description": "We constantly improve our AI call technology to make conversations more natural, intelligent, and effective."
       },
       "accessibility": {
         "title": "Accessibility",
-        "description": "Powerful automation should be available to everyone, regardless of technical expertise or company size."
+        "description": "Advanced AI call agent technology should be available to every business, regardless of size or technical expertise."
       }
     },
     "team": {
       "badge": "Meet the Team",
       "title": "The minds behind Cortano",
-      "description": "We're a passionate team of engineers, designers, and automation experts dedicated to revolutionizing how businesses operate.",
+      "description": "We're a passionate team of AI engineers, conversational experts, and customer success specialists dedicated to revolutionizing business phone support.",
       "members": {
         "cto": {
           "role": "Founder & CTO",
-          "description": "Leading our technical vision and architecture. Passionate about building scalable automation systems that revolutionize how businesses operate."
+          "description": "Leading our AI call agent technology and conversational AI architecture. Passionate about building intelligent systems that transform customer interactions."
         },
         "sales": {
           "role": "Founder & Head of Sales",
-          "description": "Driving business growth and partnerships. Expert at understanding customer needs and building relationships that fuel our mission."
+          "description": "Driving business growth and customer success. Expert at understanding how AI call agents can solve real business challenges and improve customer satisfaction."
         },
         "design": {
-          "role": "Founder & Head of Graphic",
-          "description": "Crafting beautiful, intuitive experiences that make complex automation accessible. Focused on user-centered design and visual storytelling."
+          "role": "Founder & Head of Design",
+          "description": "Crafting intuitive experiences that make powerful AI call agent technology accessible. Focused on user-centered design for complex conversational systems."
         }
       },
-      "joinTeam": "Interested in joining our mission? We're always looking for talented individuals who share our passion for automation."
+      "joinTeam": "Interested in joining our mission to revolutionize customer phone support with AI? We're always looking for talented individuals passionate about conversational AI and customer experience."
     }
   },
   "blog": {
@@ -259,5 +329,50 @@
     "termsOfService": "Terms of Service",
     "cookiePolicy": "Cookie Policy",
     "englishOnlyAlert": "This document is only provided in English version"
+  },
+  "ctaSection": {
+    "badge": "Ready to Transform?",
+    "headline": "Start Your AI Journey",
+    "headlineHighlight": "Today",
+    "description": "Join thousands of businesses already using AI to revolutionize their customer interactions. Set up your first AI agent in minutes and see the difference it makes.",
+    "primaryCta": "Start Free Trial",
+    "secondaryCta": "View Documentation",
+    "trustIndicator1": "No setup fees",
+    "trustIndicator2": "5-minute setup",
+    "trustIndicator3": "Enterprise secure"
+  },
+  "faqSection": {
+    "badge": "FAQ",
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our AI call agents and platform.",
+    "questions": [
+      {
+        "question": "How quickly can I set up my first AI call agent?",
+        "answer": "You can have your first AI call agent up and running in under 5 minutes. Our intuitive setup wizard guides you through the process, and you can start receiving calls immediately after configuration."
+      },
+      {
+        "question": "What languages does the AI call agent support?",
+        "answer": "Our AI call agents support over 50 languages and can automatically detect the caller's language. They're trained to handle regional accents and dialects for natural, human-like conversations."
+      },
+      {
+        "question": "How does pricing work? Are there any hidden fees?",
+        "answer": "We offer transparent, usage-based pricing with no setup fees or hidden costs. You only pay for the minutes your AI agents are actively handling calls. Start with our free tier to test the platform."
+      },
+      {
+        "question": "Can the AI agent integrate with my existing CRM or business tools?",
+        "answer": "Yes! Our platform offers seamless integrations with popular CRMs like Salesforce, HubSpot, and Zapier. We also provide REST APIs for custom integrations with your existing business workflows."
+      },
+      {
+        "question": "How secure is my customer data?",
+        "answer": "We take security seriously. All data is encrypted in transit and at rest using industry-standard AES-256 encryption. We're SOC 2 compliant and follow GDPR guidelines for data protection."
+      },
+      {
+        "question": "What happens if the AI agent can't handle a call?",
+        "answer": "Our AI agents are designed to handle 95% of common inquiries. When they encounter complex issues, they can seamlessly transfer calls to human agents with full context and conversation history."
+      }
+    ],
+    "contactTitle": "Still have questions?",
+    "contactDescription": "Can't find the answer you're looking for? Our support team is here to help.",
+    "contactButton": "Contact Support"
   }
 }

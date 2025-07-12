@@ -7,9 +7,9 @@ import { useTranslations } from 'next-intl'
 
 const languages = [
   { name: "English", code: "US", isoCode: "EN" },
-  { name: "Polish", code: "PL", isoCode: "PL" },
-  { name: "Spanish", code: "ES", isoCode: "ES" },
-  { name: "German", code: "DE", isoCode: "DE" },
+  { name: "Polski", code: "PL", isoCode: "PL" },
+  { name: "Español", code: "ES", isoCode: "ES" },
+  { name: "Deutsch", code: "DE", isoCode: "DE" },
 ]
 
 export function LanguageShowcase() {
@@ -57,9 +57,6 @@ export function LanguageShowcase() {
             <div className="flex flex-col min-w-0">
               <span className="text-xs font-medium text-card-foreground truncate">
                 {language.name}
-              </span>
-              <span className="text-xs text-muted-foreground">
-                {language.isoCode}
               </span>
             </div>
           </motion.div>

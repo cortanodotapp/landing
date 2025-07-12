@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"
-import { ArrowRight, Zap, Settings, Brain, CheckCircle } from "lucide-react"
+import { ArrowRight, Phone, MessageSquare, Brain, CheckCircle } from "lucide-react"
 import { useEffect, useState } from "react"
 import { useTranslations } from 'next-intl'
 
@@ -11,8 +11,8 @@ export function VisualFlow() {
   const t = useTranslations('visualFlow')
 
   const steps = [
-    { label: t('step1'), color: "bg-blue-500", icon: Zap },
-    { label: t('step2'), color: "bg-green-500", icon: Settings },
+    { label: t('step1'), color: "bg-blue-500", icon: Phone },
+    { label: t('step2'), color: "bg-green-500", icon: MessageSquare },
     { label: t('step3'), color: "bg-purple-500", icon: Brain },
     { label: t('step4'), color: "bg-orange-500", icon: CheckCircle }
   ]

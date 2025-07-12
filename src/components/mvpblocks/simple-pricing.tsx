@@ -9,51 +9,255 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '@/components/ui/select';
 import { FeatureComingSoonDialog } from '@/components/ui/feature-coming-soon-dialog';
 import { cn } from '@/lib/utils';
-import { Sparkles, ArrowRight, Check, Star, Zap } from 'lucide-react';
+import { Sparkles, ArrowRight, Check, Star, Zap, Crown, Calculator, Globe } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
+import ReactCountryFlag from 'react-country-flag';
 
 export default function SimplePricing() {
   const [mounted, setMounted] = useState(false);
+  const [selectedCountry, setSelectedCountry] = useState<string>('us');
   const t = useTranslations('pricing');
   const tFeatures = useTranslations('featureNames');
+  const locale = useLocale();
+
+  // Extended country list with pricing
+  const countries = [
+    { code: 'us', name: 'United States', flag: 'US', currency: 'USD', symbol: '$' },
+    { code: 'uk', name: 'United Kingdom', flag: 'GB', currency: 'GBP', symbol: '£' },
+    { code: 'de', name: 'Germany', flag: 'DE', currency: 'EUR', symbol: '€' },
+    { code: 'fr', name: 'France', flag: 'FR', currency: 'EUR', symbol: '€' },
+    { code: 'es', name: 'Spain', flag: 'ES', currency: 'EUR', symbol: '€' },
+    { code: 'it', name: 'Italy', flag: 'IT', currency: 'EUR', symbol: '€' },
+    { code: 'nl', name: 'Netherlands', flag: 'NL', currency: 'EUR', symbol: '€' },
+    { code: 'pl', name: 'Poland', flag: 'PL', currency: 'PLN', symbol: 'zł' },
+    { code: 'ca', name: 'Canada', flag: 'CA', currency: 'CAD', symbol: 'C$' },
+    { code: 'au', name: 'Australia', flag: 'AU', currency: 'AUD', symbol: 'A$' },
+    { code: 'jp', name: 'Japan', flag: 'JP', currency: 'JPY', symbol: '¥' },
+    { code: 'kr', name: 'South Korea', flag: 'KR', currency: 'KRW', symbol: '₩' },
+    { code: 'sg', name: 'Singapore', flag: 'SG', currency: 'SGD', symbol: 'S$' },
+    { code: 'in', name: 'India', flag: 'IN', currency: 'INR', symbol: '₹' },
+    { code: 'br', name: 'Brazil', flag: 'BR', currency: 'BRL', symbol: 'R$' },
+    { code: 'mx', name: 'Mexico', flag: 'MX', currency: 'MXN', symbol: '$' },
+  ];
+
+  // Pricing data for different countries/currencies
+  const pricingData = {
+    starter: {
+      us: { price: 29, currency: 'USD', symbol: '$' },
+      uk: { price: 24, currency: 'GBP', symbol: '£' },
+      de: { price: 27, currency: 'EUR', symbol: '€' },
+      fr: { price: 27, currency: 'EUR', symbol: '€' },
+      es: { price: 27, currency: 'EUR', symbol: '€' },
+      it: { price: 27, currency: 'EUR', symbol: '€' },
+      nl: { price: 27, currency: 'EUR', symbol: '€' },
+      pl: { price: 119, currency: 'PLN', symbol: 'zł' },
+      ca: { price: 39, currency: 'CAD', symbol: 'C$' },
+      au: { price: 42, currency: 'AUD', symbol: 'A$' },
+      jp: { price: 4200, currency: 'JPY', symbol: '¥' },
+      kr: { price: 38000, currency: 'KRW', symbol: '₩' },
+      sg: { price: 40, currency: 'SGD', symbol: 'S$' },
+      in: { price: 2400, currency: 'INR', symbol: '₹' },
+      br: { price: 145, currency: 'BRL', symbol: 'R$' },
+      mx: { price: 580, currency: 'MXN', symbol: '$' }
+    },
+    medium: {
+      us: { price: 99, currency: 'USD', symbol: '$' },
+      uk: { price: 82, currency: 'GBP', symbol: '£' },
+      de: { price: 92, currency: 'EUR', symbol: '€' },
+      fr: { price: 92, currency: 'EUR', symbol: '€' },
+      es: { price: 92, currency: 'EUR', symbol: '€' },
+      it: { price: 92, currency: 'EUR', symbol: '€' },
+      nl: { price: 92, currency: 'EUR', symbol: '€' },
+      pl: { price: 399, currency: 'PLN', symbol: 'zł' },
+      ca: { price: 132, currency: 'CAD', symbol: 'C$' },
+      au: { price: 145, currency: 'AUD', symbol: 'A$' },
+      jp: { price: 14500, currency: 'JPY', symbol: '¥' },
+      kr: { price: 129000, currency: 'KRW', symbol: '₩' },
+      sg: { price: 135, currency: 'SGD', symbol: 'S$' },
+      in: { price: 8200, currency: 'INR', symbol: '₹' },
+      br: { price: 495, currency: 'BRL', symbol: 'R$' },
+      mx: { price: 1980, currency: 'MXN', symbol: '$' }
+    },
+    payAsYouGo: {
+      callMinute: {
+        us: { price: 0.20, currency: 'USD', symbol: '$' },
+        uk: { price: 0.17, currency: 'GBP', symbol: '£' },
+        de: { price: 0.18, currency: 'EUR', symbol: '€' },
+        fr: { price: 0.18, currency: 'EUR', symbol: '€' },
+        es: { price: 0.18, currency: 'EUR', symbol: '€' },
+        it: { price: 0.18, currency: 'EUR', symbol: '€' },
+        nl: { price: 0.18, currency: 'EUR', symbol: '€' },
+        pl: { price: 0.80, currency: 'PLN', symbol: 'zł' },
+        ca: { price: 0.27, currency: 'CAD', symbol: 'C$' },
+        au: { price: 0.29, currency: 'AUD', symbol: 'A$' },
+        jp: { price: 29, currency: 'JPY', symbol: '¥' },
+        kr: { price: 260, currency: 'KRW', symbol: '₩' },
+        sg: { price: 0.27, currency: 'SGD', symbol: 'S$' },
+        in: { price: 16, currency: 'INR', symbol: '₹' },
+        br: { price: 1.0, currency: 'BRL', symbol: 'R$' },
+        mx: { price: 4, currency: 'MXN', symbol: '$' }
+      },
+      phoneNumber: {
+        us: { price: 5, currency: 'USD', symbol: '$' },
+        uk: { price: 4.2, currency: 'GBP', symbol: '£' },
+        de: { price: 4.5, currency: 'EUR', symbol: '€' },
+        fr: { price: 4.5, currency: 'EUR', symbol: '€' },
+        es: { price: 4.5, currency: 'EUR', symbol: '€' },
+        it: { price: 4.5, currency: 'EUR', symbol: '€' },
+        nl: { price: 4.5, currency: 'EUR', symbol: '€' },
+        pl: { price: 20, currency: 'PLN', symbol: 'zł' },
+        ca: { price: 6.7, currency: 'CAD', symbol: 'C$' },
+        au: { price: 7.3, currency: 'AUD', symbol: 'A$' },
+        jp: { price: 730, currency: 'JPY', symbol: '¥' },
+        kr: { price: 6500, currency: 'KRW', symbol: '₩' },
+        sg: { price: 6.8, currency: 'SGD', symbol: 'S$' },
+        in: { price: 415, currency: 'INR', symbol: '₹' },
+        br: { price: 25, currency: 'BRL', symbol: 'R$' },
+        mx: { price: 100, currency: 'MXN', symbol: '$' }
+      },
+      aiAgents: {
+        us: { price: 2.50, currency: 'USD', symbol: '$' },
+        uk: { price: 2.1, currency: 'GBP', symbol: '£' },
+        de: { price: 2.3, currency: 'EUR', symbol: '€' },
+        fr: { price: 2.3, currency: 'EUR', symbol: '€' },
+        es: { price: 2.3, currency: 'EUR', symbol: '€' },
+        it: { price: 2.3, currency: 'EUR', symbol: '€' },
+        nl: { price: 2.3, currency: 'EUR', symbol: '€' },
+        pl: { price: 10, currency: 'PLN', symbol: 'zł' },
+        ca: { price: 3.4, currency: 'CAD', symbol: 'C$' },
+        au: { price: 3.6, currency: 'AUD', symbol: 'A$' },
+        jp: { price: 365, currency: 'JPY', symbol: '¥' },
+        kr: { price: 3250, currency: 'KRW', symbol: '₩' },
+        sg: { price: 3.4, currency: 'SGD', symbol: 'S$' },
+        in: { price: 207, currency: 'INR', symbol: '₹' },
+        br: { price: 12.5, currency: 'BRL', symbol: 'R$' },
+        mx: { price: 50, currency: 'MXN', symbol: '$' }
+      }
+    }
+  };
+
+  // Map locale to default country
+  useEffect(() => {
+    if (locale === 'pl') {
+      setSelectedCountry('pl');
+    } else if (locale === 'de') {
+      setSelectedCountry('de');
+    } else if (locale === 'es') {
+      setSelectedCountry('es');
+    } else {
+      setSelectedCountry('us');
+    }
+  }, [locale]);
+
+  // Get current country data
+  const getCurrentCountryData = (country: string) => {
+    return countries.find(c => c.code === country) || countries[0];
+  };
+
+  // Safe pricing data access with fallback
+  const getPricingData = (plan: 'starter' | 'medium', country: string) => {
+    const planData = pricingData[plan];
+    const countryData = planData[country as keyof typeof planData];
+    return countryData || planData.us; // Fallback to US pricing
+  };
+
+  const getPayAsYouGoPricingData = (item: 'callMinute' | 'phoneNumber' | 'aiAgents', country: string) => {
+    const itemData = pricingData.payAsYouGo[item];
+    const countryData = itemData[country as keyof typeof itemData];
+    return countryData || itemData.us; // Fallback to US pricing
+  };
 
   const plans = [
     {
-      id: 'free',
-      name: t('plans.free.name'),
+      id: 'starter',
+      name: t('plans.starter.name'),
       icon: Star,
-      price: t('plans.free.price'),
-      description: t('plans.free.description'),
+      price: t('plans.starter.price', { 
+        price: getPricingData('starter', selectedCountry).price,
+        currency: getPricingData('starter', selectedCountry).symbol 
+      }),
+      description: t('plans.starter.description'),
       features: [
-        t('plans.free.features.agents'),
-        t('plans.free.features.runsPerDay'),
-        t('plans.free.features.mcpServers'),
-        t('plans.free.features.integrations'),
-        t('plans.free.features.apiAccess'),
-        t('plans.free.features.support'),
+        t('plans.starter.features.minutes'),
+        t('plans.starter.features.agents'),
+        t('plans.starter.features.integrations'),
+        t('plans.starter.features.support'),
+        t('plans.starter.features.apiAccess'),
       ],
-      cta: t('plans.free.cta'),
+      cta: t('plans.starter.cta'),
+    },
+    {
+      id: 'medium',
+      name: t('plans.medium.name'),
+      icon: Zap,
+      price: t('plans.medium.price', { 
+        price: getPricingData('medium', selectedCountry).price,
+        currency: getPricingData('medium', selectedCountry).symbol 
+      }),
+      description: t('plans.medium.description'),
+      features: [
+        t('plans.medium.features.minutes'),
+        t('plans.medium.features.agents'),
+        t('plans.medium.features.integrations'),
+        t('plans.medium.features.support'),
+        t('plans.medium.features.apiAccess'),
+      ],
+      cta: t('plans.medium.cta'),
+      popular: true,
+    },
+    {
+      id: 'enterprise',
+      name: t('plans.enterprise.name'),
+      icon: Crown,
+      price: t('plans.enterprise.price'),
+      description: t('plans.enterprise.description'),
+      features: [
+        t('plans.enterprise.features.minutes'),
+        t('plans.enterprise.features.agents'),
+        t('plans.enterprise.features.integrations'),
+        t('plans.enterprise.features.support'),
+        t('plans.enterprise.features.apiAccess'),
+      ],
+      cta: t('plans.enterprise.cta'),
     },
     {
       id: 'payAsYouGo',
       name: t('plans.payAsYouGo.name'),
-      icon: Zap,
-      price: t('plans.payAsYouGo.price'),
+      icon: Calculator,
+      price: t('plans.payAsYouGo.price', { 
+        price: getPayAsYouGoPricingData('callMinute', selectedCountry).price,
+        currency: getPayAsYouGoPricingData('callMinute', selectedCountry).symbol 
+      }),
       description: t('plans.payAsYouGo.description'),
       features: [
-        t('plans.payAsYouGo.features.agents'),
-        t('plans.payAsYouGo.features.runsPerDay'),
-        t('plans.payAsYouGo.features.mcpServers'),
-        t('plans.payAsYouGo.features.integrations'),
-        t('plans.payAsYouGo.features.apiAccess'),
+        t('plans.payAsYouGo.features.minutes', { 
+          price: getPayAsYouGoPricingData('callMinute', selectedCountry).price,
+          currency: getPayAsYouGoPricingData('callMinute', selectedCountry).symbol 
+        }),
+        t('plans.payAsYouGo.features.phoneNumber', { 
+          price: getPayAsYouGoPricingData('phoneNumber', selectedCountry).price,
+          currency: getPayAsYouGoPricingData('phoneNumber', selectedCountry).symbol 
+        }),
+        t('plans.payAsYouGo.features.agents', { 
+          price: getPayAsYouGoPricingData('aiAgents', selectedCountry).price,
+          currency: getPayAsYouGoPricingData('aiAgents', selectedCountry).symbol 
+        }),
         t('plans.payAsYouGo.features.support'),
+        t('plans.payAsYouGo.features.apiAccess'),
+        t('plans.payAsYouGo.features.integrations'),
       ],
       cta: t('plans.payAsYouGo.cta'),
-      popular: true,
     },
   ];
 
@@ -94,10 +298,54 @@ export default function SimplePricing() {
           >
             {t('subtitle')}
           </motion.p>
+
+          {/* Country/Currency Selector */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-8 flex justify-center"
+          >
+            <div className="flex items-center gap-3">
+              <Globe className="h-4 w-4 text-muted-foreground" />
+              <span className="text-sm text-muted-foreground">{t('currencySelector.label')}</span>
+              <Select value={selectedCountry} onValueChange={setSelectedCountry}>
+                <SelectTrigger className="w-[280px]">
+                  <div className="flex items-center gap-2">
+                    <ReactCountryFlag
+                      countryCode={getCurrentCountryData(selectedCountry).flag}
+                      svg
+                      style={{ width: '16px', height: '12px' }}
+                    />
+                    <span>{getCurrentCountryData(selectedCountry).name}</span>
+                    <span className="text-muted-foreground">({getCurrentCountryData(selectedCountry).currency})</span>
+                  </div>
+                </SelectTrigger>
+                <SelectContent>
+                  {countries.map((country) => (
+                    <SelectItem key={country.code} value={country.code}>
+                      <div className="flex items-center gap-2 w-full">
+                        <ReactCountryFlag
+                          countryCode={country.flag}
+                          svg
+                          style={{ width: '16px', height: '12px' }}
+                        />
+                        <span>{country.name}</span>
+                        <span className="ml-auto text-muted-foreground text-xs">
+                          {country.currency}
+                        </span>
+                      </div>
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </div>
+          </motion.div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          {plans.map((plan, index) => (
+        {/* Main pricing cards - first 3 plans */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto mb-12">
+          {plans.slice(0, 3).map((plan, index) => (
             <motion.div
               key={plan.id}
               initial={{ opacity: 0, y: 20 }}
@@ -186,7 +434,12 @@ export default function SimplePricing() {
                 </CardContent>
                 <CardFooter className="pt-6">
                   <FeatureComingSoonDialog
-                    featureName={tFeatures(plan.id === 'free' ? 'freePlan' : 'payAsYouGoPlan')}
+                    featureName={tFeatures(
+                      plan.id === 'starter' ? 'starterPlan' : 
+                      plan.id === 'medium' ? 'mediumPlan' : 
+                      plan.id === 'enterprise' ? 'enterprisePlan' :
+                      'payAsYouGoPlan'
+                    )}
                   >
                     <Button
                       variant={plan.popular ? 'default' : 'outline'}
@@ -211,6 +464,167 @@ export default function SimplePricing() {
             </motion.div>
           ))}
         </div>
+
+        {/* Pay as you go horizontal card */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+          className="max-w-6xl mx-auto"
+        >
+          {(() => {
+            const payAsYouGoPlan = plans[3]; // Get the Pay as you go plan
+            return (
+              <Card className="relative bg-card border border-border transition-all duration-300 hover:shadow-lg hover:border-primary/30">
+                <div className="p-8">
+                  {/* Header */}
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground">
+                      <payAsYouGoPlan.icon className="h-5 w-5" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-card-foreground">{payAsYouGoPlan.name}</h3>
+                      <p className="text-sm text-muted-foreground mt-1">{payAsYouGoPlan.description}</p>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <FeatureComingSoonDialog
+                        featureName={tFeatures('payAsYouGoPlan')}
+                      >
+                        <Button
+                          variant="outline"
+                          className="font-medium transition-all duration-300 group border-border hover:border-primary/50 hover:bg-primary/5 hover:text-primary px-8"
+                        >
+                          {payAsYouGoPlan.cta}
+                          <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                        </Button>
+                      </FeatureComingSoonDialog>
+                    </div>
+                  </div>
+
+                  {/* Pricing Details Grid */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {/* Call Minutes */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.6 }}
+                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.callMinutes')}</span>
+                        <span className="text-lg font-bold text-primary">
+                          {t('plans.payAsYouGo.pricing.callMinutes', { 
+                            price: getPayAsYouGoPricingData('callMinute', selectedCountry).price,
+                            currency: getPayAsYouGoPricingData('callMinute', selectedCountry).symbol 
+                          })}
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground">{t('plans.payAsYouGo.descriptions.callMinutes')}</p>
+                    </motion.div>
+
+                    {/* Phone Number */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.65 }}
+                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.phoneNumber')}</span>
+                        <span className="text-lg font-bold text-primary">
+                          {t('plans.payAsYouGo.pricing.phoneNumber', { 
+                            price: getPayAsYouGoPricingData('phoneNumber', selectedCountry).price,
+                            currency: getPayAsYouGoPricingData('phoneNumber', selectedCountry).symbol 
+                          })}
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground">{t('plans.payAsYouGo.descriptions.phoneNumber')}</p>
+                    </motion.div>
+
+                    {/* AI Agents */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.7 }}
+                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.aiAgents')}</span>
+                        <span className="text-lg font-bold text-primary">
+                          {t('plans.payAsYouGo.pricing.aiAgents', { 
+                            price: getPayAsYouGoPricingData('aiAgents', selectedCountry).price,
+                            currency: getPayAsYouGoPricingData('aiAgents', selectedCountry).symbol 
+                          })}
+                        </span>
+                      </div>
+                      <p className="text-xs text-muted-foreground">{t('plans.payAsYouGo.descriptions.aiAgents')}</p>
+                    </motion.div>
+
+                    {/* Support */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.75 }}
+                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.support')}</span>
+                        <div className="flex items-center">
+                          <Check className="h-4 w-4 text-green-500 mr-1" />
+                          <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.status.email')}</span>
+                        </div>
+                      </div>
+                      <p className="text-xs text-muted-foreground">{t('plans.payAsYouGo.descriptions.support')}</p>
+                    </motion.div>
+
+                    {/* API Access */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.8 }}
+                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.apiAccess')}</span>
+                        <span className="text-sm font-medium text-muted-foreground">{t('plans.payAsYouGo.status.notIncluded')}</span>
+                      </div>
+                      <p className="text-xs text-muted-foreground">{t('plans.payAsYouGo.descriptions.apiAccess')}</p>
+                    </motion.div>
+
+                    {/* Integrations */}
+                    <motion.div
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.3, delay: 0.85 }}
+                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                    >
+                      <div className="flex items-center justify-between mb-2">
+                        <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.integrations')}</span>
+                        <div className="flex items-center">
+                          <Check className="h-4 w-4 text-green-500 mr-1" />
+                          <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.status.basic')}</span>
+                        </div>
+                      </div>
+                      <p className="text-xs text-muted-foreground">{t('plans.payAsYouGo.descriptions.integrations')}</p>
+                    </motion.div>
+                  </div>
+                </div>
+              </Card>
+            );
+          })()}
+        </motion.div>
+
+        {/* Explanatory note */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="text-center mt-12"
+        >
+          <p className="text-sm text-muted-foreground">
+            {t('note')}
+          </p>
+        </motion.div>
       </div>
     </section>
   );

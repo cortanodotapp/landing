@@ -8,116 +8,197 @@
     "soon": "Bald"
   },
   "navbar": {
-    "features": "Funktionen",
-    "useCases": "Anwendungsfälle",
+    "products": "Produkte",
+    "developer": "Entwickler", 
+    "resources": "Ressourcen",
     "pricing": "Preise",
     "getStarted": "Loslegen",
-    "components": {
-      "callFlows": {
-        "title": "Event-Workflows",
-        "description": "Gestalten Sie automatisierte Workflows, die durch Events, Integrationen und API-Anfragen ausgelöst werden."
+    "productItems": {
+      "callAgent": {
+        "title": "Anruf-Agent",
+        "description": "KI-gesteuerte Telefon-Agenten, die Kundenanrufe bearbeiten, Termine buchen und rund um die Uhr Support bieten."
       },
-      "voiceOptions": {
-        "title": "Integrationsoptionen",
-        "description": "Verbinden Sie APIs, Webhooks und erstellen Sie benutzerdefinierte MCP-Protokolle nahtlos."
+      "digitalCallAgent": {
+        "title": "Digitaler Anruf-Agent",
+        "description": "Web-basierte KI-Agenten, die Echtzeit-Kundensupport über Ihre Website bereitstellen."
       },
-      "integrations": {
-        "title": "MCP-Builder",
-        "description": "Erstellen Sie benutzerdefinierte Model Context Protocols mit unserem visuellen No-Code-Builder."
+      "pricing": {
+        "title": "Preise",
+        "description": "Transparente Preispläne für Unternehmen jeder Größe. Starten Sie kostenlos und skalieren Sie mit Ihrem Wachstum."
+      }
+    },
+    "developerItems": {
+      "documentation": {
+        "title": "Entwickler-Dokumentation",
+        "description": "Vollständige API-Dokumentation, Anleitungen und Tutorials zur Integration von Cortano in Ihre Anwendungen."
       },
-      "analytics": {
-        "title": "Aufgaben-Analysen",
-        "description": "Verfolgen Sie die Leistung von Hintergrundagenten, Event-Verarbeitung und Automatisierungs-Insights."
+      "apiStatus": {
+        "title": "API-Status",
+        "description": "Echtzeit-Status-Überwachung und Verfügbarkeitsinformationen für alle Cortano-Services."
+      },
+      "apiChangelog": {
+        "title": "API-Changelog",
+        "description": "Neueste Updates, neue Features und Änderungen an der Cortano-API und -Plattform."
+      }
+    },
+    "resourceItems": {
+      "legal": {
+        "title": "Rechtliches",
+        "description": "Datenschutzrichtlinie, Nutzungsbedingungen und andere rechtliche Dokumentation."
+      },
+      "about": {
+        "title": "Über uns",
+        "description": "Erfahren Sie mehr über unsere Mission, unser Team und die Geschichte hinter Cortano."
+      },
+      "hiring": {
+        "title": "Stellenausschreibungen",
+        "description": "Treten Sie unserem Team bei und helfen Sie uns, die Zukunft KI-gestützter Kundeninteraktionen zu gestalten."
+      },
+      "blog": {
+        "title": "Blog",
+        "description": "Neueste Erkenntnisse, Tutorials und Updates vom Cortano-Team."
       }
     }
   },
   "hero": {
-    "badge": "Hintergrundagenten jetzt verfügbar",
-    "headline": "Verwandeln Sie Events in",
-    "headlineHighlight": "automatisierte Aktionen",
-    "description": "Verpassen Sie nie wieder eine Gelegenheit. Unsere intelligenten Hintergrundagenten verarbeiten Events, lösen Workflows aus und automatisieren Ihre Geschäftsprozesse - 24/7, selbst wenn Ihr Team offline ist.",
-    "cta": "Events automatisieren starten"
+    "badge": "KI-Anrufagenten jetzt verfügbar",
+    "headline": "Transformieren Sie Kundenanrufe mit",
+    "headlineHighlight": "intelligenten KI-Agenten",
+    "description": "Verpassen Sie nie wieder einen Kundenanruf. Unsere KI-Anrufagenten bearbeiten Anfragen, buchen Termine, qualifizieren Leads und bieten 24/7-Kundensupport - auch wenn Ihr Team nicht verfügbar ist.",
+    "cta": "Mit KI-Anrufen starten"
   },
   "features": {
     "badge": "Funktionen",
-    "title": "Alles, was Sie brauchen, um leistungsstarke Hintergrundautomatisierung zu erstellen",
-    "description": "Von Drag-and-Drop-Workflows bis hin zu Enterprise-Infrastruktur – wir bieten die Werkzeuge, um Ihre Automatisierungsvision zu realisieren.",
+    "title": "Alles, was Sie brauchen, um leistungsstarke KI-Anrufagenten zu erstellen",
+    "description": "Von intelligenten Gesprächsabläufen bis hin zu Enterprise-grade Anrufbehandlung – wir bieten die Werkzeuge, um Ihre KI-Anrufagenten-Vision zu realisieren.",
     "deployInMinutes": {
       "title": "Bereitstellung in Minuten",
-      "description": "Von der Idee zum Live-Hintergrundagenten in unter 5 Minuten. Unser optimierter Prozess bringt Ihre Automatisierung sofort zum Laufen."
+      "description": "Von der Idee zum Live-KI-Anrufagenten in unter 5 Minuten. Unser optimiertes Setup bringt Ihren Telefonsupport sofort zum Laufen."
     },
     "enterpriseSecurity": {
       "title": "Enterprise-Sicherheit",
-      "description": "Bankenähnliche Verschlüsselung, SOC 2-Konformität und 99,9 % Uptime SLA. Ihre Automatisierungen sind sicher und jederzeit verfügbar."
+      "description": "Bankenähnliche Verschlüsselung, SOC 2-Konformität und 99,9 % Uptime SLA. Ihre Anrufdaten sind sicher und jederzeit geschützt."
     },
     "globalInfrastructure": {
-      "title": "Globale Infrastruktur",
-      "description": "Verarbeiten Sie Events weltweit mit unserem Edge-Netzwerk. Geringe Latenz, hohe Verfügbarkeit – überall."
+      "title": "Globales Telefonnetzwerk",
+      "description": "Bearbeiten Sie Anrufe weltweit mit unserer verteilten Telefon-Infrastruktur. Geringe Latenz, hohe Verfügbarkeit – überall."
     },
     "advancedAnalytics": {
-      "title": "Erweiterte Analysen",
-      "description": "Tiefgehende Einblicke in Automatisierungsleistung, Event-Muster und Agenteneffizienz mit Echtzeit-Dashboards."
+      "title": "Anruf-Analysen",
+      "description": "Tiefgehende Einblicke in Anrufleistung, Gesprächsmuster und Agenten-Effektivität mit Echtzeit-Dashboards."
     }
   },
   "pricing": {
     "badge": "Preispläne",
-    "title": "Wählen Sie den perfekten Plan für Ihre Agenten",
-    "subtitle": "Starten Sie kostenlos und skalieren Sie mit Ihrem Wachstum. Keine versteckten Gebühren, transparente Preise für jede Teamgröße.",
+    "title": "Wählen Sie den perfekten Plan für Ihre KI-Anrufagenten",
+    "subtitle": "Beginnen Sie mit unserem Starter-Plan und skalieren Sie mit Ihrem Wachstum. Keine versteckten Gebühren, transparente Preise für jede Unternehmensgröße.",
     "popular": "Beliebteste",
+    "currencySelector": {
+      "label": "Wählen Sie Ihre Region:"
+    },
     "plans": {
-      "free": {
-        "name": "Immer Kostenlos",
-        "description": "Perfekt für den Einstieg in die Agenten-Automatisierung und das Erkunden der Plattform.",
-        "price": "Kostenlos",
-        "cta": "Kostenlos loslegen",
+      "starter": {
+        "name": "Starter",
+        "description": "Perfekt für kleine Unternehmen, die mit KI-Anrufagenten beginnen.",
+        "price": "{price}{currency}/Monat",
+        "cta": "Kostenlose Testversion starten",
         "features": {
-          "agents": "3 Agenten",
-          "runsPerDay": "Maximal 2 Ausführungen pro Tag pro Agent",
-          "mcpServers": "1 Benutzerdefinierter MCP-Server",
-          "integrations": "Standard-Integrationen",
-          "apiAccess": "Begrenzter API-Zugriff",
-          "support": "Basis-Support"
+          "minutes": "500 Anrufminuten/Monat",
+          "agents": "1 KI-Anrufagent",
+          "integrations": "Einfache Integrationen",
+          "support": "Basis-Support",
+          "apiAccess": "Kein API-Zugriff"
+        }
+      },
+      "medium": {
+        "name": "Medium",
+        "description": "Ideal für wachsende Unternehmen mit höherem Anrufvolumen.",
+        "price": "{price}{currency}/Monat",
+        "cta": "Kostenlose Testversion starten",
+        "features": {
+          "minutes": "1.500 Anrufminuten/Monat",
+          "agents": "3 KI-Anrufagenten",
+          "integrations": "Erweiterte Integrationen",
+          "support": "Priority-Support",
+          "apiAccess": "Vollständiger API-Zugriff"
+        }
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "description": "Für große Unternehmen mit individuellen Anforderungen und unbegrenzter Skalierung.",
+        "price": "Individuelle Preise",
+        "cta": "Vertrieb kontaktieren",
+        "features": {
+          "minutes": "Unbegrenzte Anrufminuten",
+          "agents": "Unbegrenzte KI-Anrufagenten",
+          "integrations": "Individuelle Integrationen",
+          "support": "Priority-Support",
+          "apiAccess": "Vollständiger API-Zugriff"
         }
       },
       "payAsYouGo": {
-        "name": "Nach Verbrauch zahlen",
-        "description": "Skalieren Sie Ihre Automatisierung mit unbegrenzten Agenten und Premium-Features für wachsende Teams.",
-        "price": "Nutzungsbasiert",
-        "cta": "Jetzt wachsen",
+        "name": "Pay as you go",
+        "description": "Perfekt für Unternehmen mit variablen Anrufvolumen. Zahlen Sie nur für das, was Sie nutzen.",
+        "price": "{price}{currency}/Min",
+        "cta": "Loslegen",
         "features": {
-          "agents": "Unbegrenzte Agenten",
-          "runsPerDay": "Maximal 48 Ausführungen pro Tag pro Agent",
-          "mcpServers": "Unbegrenzte MCP-Server",
-          "integrations": "Premium-Integrationen",
-          "apiAccess": "Unbegrenzter API-Zugriff",
-          "support": "Premium-Support"
+          "minutes": "Anrufminuten: {price}{currency} pro Minute",
+          "phoneNumber": "Telefonnummer: {price}{currency}",
+          "agents": "Agenten: {price}{currency} pro Monat pro Agent",
+          "support": "Basis E-Mail-Support",
+          "apiAccess": "Kein API-Zugriff",
+          "integrations": "Basis-Integrationen"
+        },
+        "labels": {
+          "callMinutes": "Anrufminuten",
+          "phoneNumber": "Telefonnummer",
+          "aiAgents": "KI-Agenten",
+          "support": "Support",
+          "apiAccess": "API-Zugriff",
+          "integrations": "Integrationen"
+        },
+        "descriptions": {
+          "callMinutes": "Zahlen Sie nur für genutzte Minuten",
+          "phoneNumber": "Monatliche Abonnementgebühr",
+          "aiAgents": "Pro Agent pro Monat",
+          "support": "Basis E-Mail-Support",
+          "apiAccess": "Nicht in diesem Plan enthalten",
+          "integrations": "Kern-Integrationen inklusive"
+        },
+        "pricing": {
+          "callMinutes": "{price}{currency}/Min",
+          "phoneNumber": "{price}{currency}/Mo",
+          "aiAgents": "{price}{currency}/Mo"
+        },
+        "status": {
+          "email": "E-Mail",
+          "basic": "Basis",
+          "notIncluded": "Nicht enthalten"
         }
       }
-    }
+    },
+    "note": "* Preise können je nach Region variieren"
   },
   "footer": {
-    "description": "Stellen Sie intelligente Hintergrundagenten in Minuten bereit. Automatisieren Sie Event-Verarbeitung, Integrations-Workflows und Geschäftsprozesse mit unserer No-Code-Plattform.",
-    "product": {
-      "title": "Produkt",
-      "callFlows": "Event-Workflows",
-      "voiceOptions": "Integrationsoptionen",
-      "integrations": "MCP-Builder",
-      "pricing": "Preise",
-      "analytics": "Aufgaben-Analysen"
+    "description": "Stellen Sie intelligente KI-Anrufagenten in Minuten bereit. Bearbeiten Sie Kundenanrufe, buchen Sie Termine und bieten Sie 24/7-Support mit unserer No-Code-Plattform.",
+    "products": {
+      "title": "Produkte",
+      "callAgent": "Anruf-Agent",
+      "digitalCallAgent": "Digitaler Anruf-Agent",
+      "pricing": "Preise"
     },
-    "useCases": {
-      "title": "Anwendungsfälle",
-      "customerSupport": "Event-Verarbeitung",
-      "leadQualification": "API-Integration",
-      "appointmentBooking": "Hintergrundautomatisierung",
-      "salesAutomation": "Benutzerdefinierte Protokolle"
+    "developer": {
+      "title": "Entwickler",
+      "documentation": "Dokumentation",
+      "apiStatus": "API-Status",
+      "apiChangelog": "API-Changelog"
     },
-    "company": {
-      "title": "Unternehmen",
-      "aboutUs": "Über uns",
-      "blog": "Blog",
-      "careers": "Karriere",
-      "contact": "Kontakt"
+    "resources": {
+      "title": "Ressourcen",
+      "legal": "Rechtliches",
+      "about": "Über uns",
+      "hiring": "Stellenausschreibungen",
+      "blog": "Blog"
     },
     "legal": {
       "copyright": "© 2025 Cortano. Alle Rechte vorbehalten.",
@@ -132,38 +213,28 @@
     "acknowledge": "Verstanden"
   },
   "featureNames": {
-    "aiCallAgentPlatform": "Hintergrundagenten-Plattform",
+    "aiCallAgentPlatform": "KI-Anrufagenten-Plattform",
     "accountRegistration": "Konto Registrierung",
-    "useCasesExamples": "Anwendungsbeispiele",
-    "callFlowBuilder": "Event-Workflow-Builder",
-    "voiceCustomization": "Integrations-Anpassung",
-    "thirdPartyIntegrations": "Drittanbieter-Integrationen",
-    "analyticsDashboard": "Analyse-Dashboard",
-    "customerSupportUseCases": "Event-Verarbeitungs-Anwendungsfälle",
-    "leadQualificationExamples": "API-Integrationsbeispiele",
-    "appointmentBookingSolutions": "Hintergrundautomatisierungs-Lösungen",
-    "salesAutomationWorkflows": "Benutzerdefinierte Protokoll-Workflows",
-    "aboutCortano": "Über Cortano",
-    "cortanoBlog": "Cortano-Blog",
-    "careerOpportunities": "Karrieremöglichkeiten",
-    "contactSupport": "Kontakt & Support",
-    "privacyPolicy": "Datenschutzrichtlinie",
-    "termsOfService": "Nutzungsbedingungen",
+    "callAgent": "Anruf-Agent",
+    "digitalCallAgent": "Digitaler Anruf-Agent",
+    "developerDocs": "Entwickler-Dokumentation",
+    "apiStatus": "API-Status",
+    "apiChangelog": "API-Changelog",
+    "hiring": "Karrieremöglichkeiten",
     "cookiePolicy": "Cookie-Richtlinie",
-    "starterPlan": "Starter-Tarif",
-    "professionalPlan": "Professioneller Tarif",
-    "enterprisePlan": "Enterprise-Tarif",
-    "freePlan": "Immer kostenloser Tarif",
-    "payAsYouGoPlan": "Pay-as-you-Go-Tarif"
+    "starterPlan": "Starter-Plan",
+    "mediumPlan": "Medium-Plan",
+    "enterprisePlan": "Enterprise-Plan",
+    "payAsYouGoPlan": "Pay as you go-Plan"
   },
   "visualWorkflow": {
-    "title": "Visueller Workflow-Builder",
-    "description": "Ziehen und ablegen, um komplexe event-gesteuerte Workflows zu erstellen",
+    "title": "Visueller Anrufablauf-Builder",
+    "description": "Ziehen und ablegen, um intelligente Gesprächsabläufe zu erstellen",
     "steps": {
-      "incomingCall": "Event ausgelöst",
-      "aiAnalysis": "Hintergrundverarbeitung",
-      "bookMeeting": "Aktion ausführen",
-      "sendInfo": "Antwort senden"
+      "incomingCall": "Eingehender Anruf",
+      "aiAnalysis": "KI-Verarbeitung",
+      "bookMeeting": "Termin buchen",
+      "sendInfo": "Informationen senden"
     }
   },
   "movingPartners": {
@@ -172,76 +243,76 @@
   },
   "visualFlow": {
     "title": "Wie es funktioniert",
-    "step1": "Event empfangen",
-    "step2": "Hintergrundverarbeitung",
-    "step3": "Aktion generiert",
-    "step4": "Aufgabe abgeschlossen"
+    "step1": "Anruf empfangen",
+    "step2": "KI-Verarbeitung",
+    "step3": "Antwort generiert",
+    "step4": "Aktion abgeschlossen"
   },
   "languageShowcase": {
-    "title": "Unterstützt mehrere Protokolle"
+    "title": "Unterstützt mehrere Sprachen"
   },
   "about": {
     "hero": {
       "badge": "Über Cortano",
       "title": "Die Zukunft der",
-      "titleHighlight": "Geschäftsautomatisierung gestalten",
-      "description": "Wir haben es uns zur Aufgabe gemacht, intelligente Hintergrundautomatisierung für jedes Unternehmen zugänglich zu machen, von Startups bis hin zu Großunternehmen. Unsere Plattform ermöglicht es Teams, sich auf das Wesentliche zu konzentrieren, während unsere Agenten den Rest übernehmen."
+      "titleHighlight": "KI-Anrufagenten gestalten",
+      "description": "Wir spezialisieren uns auf die Entwicklung intelligenter KI-Anrufagenten, die revolutionieren, wie Unternehmen Kundeninteraktionen handhaben. Unsere fortschrittliche KI-Technologie bietet 24/7-Telefonsupport, automatisiert den Kundenservice und stellt sicher, dass kein Anruf unbeantwortet bleibt."
     },
     "mission": {
       "title": "Unsere Mission",
-      "description": "Wir glauben, dass jedes Unternehmen Zugang zu intelligenter Automatisierung haben sollte, die rund um die Uhr funktioniert.",
+      "description": "Wir glauben, dass jedes Unternehmen intelligente KI-Anrufagenten verdient, die niemals schlafen und rund um die Uhr außergewöhnlichen Kundenservice gewährleisten.",
       "goals": {
         "title": "Klare Ziele",
-        "description": "Hintergrundautomatisierung demokratisieren, indem wir sie einfach, zugänglich und leistungsstark für Unternehmen jeder Größe machen."
+        "description": "KI-Anrufagenten-Technologie für Unternehmen jeder Größe zugänglich und leistungsstark machen, von kleinen Startups bis zu großen Konzernen."
       },
       "innovation": {
         "title": "Innovation zuerst",
-        "description": "Die Grenzen des Möglichen mit ereignisgesteuerter Automatisierung und intelligenter Hintergrundverarbeitung erweitern."
+        "description": "Kontinuierliche Weiterentwicklung der Konversations-KI-Technologie für natürlichere, intelligentere und effektivere Anrufagenten."
       },
       "community": {
-        "title": "Community-getrieben",
-        "description": "Tools entwickeln, die Entwickler und Geschäftsteams befähigen, gemeinsam Automatisierungslösungen zu erstellen."
+        "title": "Kundenerfolg",
+        "description": "Unternehmen dabei unterstützen, außergewöhnliche Telefonsupport-Erfahrungen zu bieten, die Kunden begeistern und Wachstum fördern."
       }
     },
     "values": {
       "title": "Unsere Werte",
-      "description": "Die Prinzipien, die alles leiten, was wir tun und uns helfen, bessere Automatisierungslösungen zu entwickeln.",
+      "description": "Die Prinzipien, die unsere KI-Anrufagenten-Entwicklung leiten und wie wir unsere Kunden bedienen.",
       "customerFirst": {
         "title": "Kunde zuerst",
-        "description": "Jede Entscheidung, die wir treffen, wird davon geleitet, außergewöhnlichen Wert für unsere Nutzer und ihre Unternehmen zu liefern."
+        "description": "Jeder KI-Anrufagent, den wir entwickeln, priorisiert außergewöhnliche Kundenerfahrungen und Geschäftserfolg."
       },
       "reliability": {
         "title": "Zuverlässigkeit",
-        "description": "Wir entwickeln Systeme, die funktionieren, wenn Sie sie am meisten brauchen, mit Unternehmens-Verfügbarkeit und -Sicherheit."
+        "description": "Unsere KI-Anrufagenten arbeiten 24/7 mit Unternehmens-Verfügbarkeit und gewährleisten professionellen Service für Ihre Kunden."
       },
       "innovation": {
         "title": "Innovation",
-        "description": "Wir erweitern ständig Grenzen, um Automatisierung intelligenter, effizienter und zugänglicher zu machen."
+        "description": "Wir verbessern kontinuierlich unsere KI-Anruftechnologie, um Gespräche natürlicher, intelligenter und effektiver zu machen."
       },
       "accessibility": {
         "title": "Zugänglichkeit",
-        "description": "Leistungsstarke Automatisierung sollte für jeden verfügbar sein, unabhängig von technischem Fachwissen oder Unternehmensgröße."
+        "description": "Fortschrittliche KI-Anrufagenten-Technologie sollte für jedes Unternehmen verfügbar sein, unabhängig von Größe oder technischem Fachwissen."
       }
     },
     "team": {
       "badge": "Das Team kennenlernen",
       "title": "Die Köpfe hinter Cortano",
-      "description": "Wir sind ein leidenschaftliches Team von Ingenieuren, Designern und Automatisierungsexperten, die sich dafür einsetzen, die Art und Weise zu revolutionieren, wie Unternehmen arbeiten.",
+      "description": "Wir sind ein leidenschaftliches Team von KI-Ingenieuren, Konversationsexperten und Kundenerfolgs-Spezialisten, die sich der Revolution des Geschäftstelefonsuports widmen.",
       "members": {
         "cto": {
           "role": "Gründer & CTO",
-          "description": "Führt unsere technische Vision und Architektur. Leidenschaftlich für den Aufbau skalierbarer Automatisierungssysteme, die revolutionieren, wie Unternehmen arbeiten."
+          "description": "Führt unsere KI-Anrufagenten-Technologie und Konversations-KI-Architektur. Leidenschaftlich für den Aufbau intelligenter Systeme, die Kundeninteraktionen transformieren."
         },
         "sales": {
           "role": "Gründer & Leiter Vertrieb",
-          "description": "Treibt Geschäftswachstum und Partnerschaften voran. Experte im Verstehen von Kundenbedürfnissen und Aufbau von Beziehungen, die unsere Mission vorantreiben."
+          "description": "Treibt Geschäftswachstum und Kundenerfolg voran. Experte darin zu verstehen, wie KI-Anrufagenten echte Geschäftsherausforderungen lösen und Kundenzufriedenheit verbessern können."
         },
         "design": {
-          "role": "Gründer & Leiter Grafik",
-          "description": "Gestaltet schöne, intuitive Erfahrungen, die komplexe Automatisierung zugänglich machen. Fokussiert auf nutzerzentriertes Design und visuelles Storytelling."
+          "role": "Gründer & Leiter Design",
+          "description": "Gestaltet intuitive Erfahrungen, die leistungsstarke KI-Anrufagenten-Technologie zugänglich machen. Fokussiert auf nutzerzentriertes Design für komplexe Konversationssysteme."
         }
       },
-      "joinTeam": "Interessiert daran, unserer Mission beizutreten? Wir suchen immer nach talentierten Personen, die unsere Leidenschaft für Automatisierung teilen."
+      "joinTeam": "Interessiert daran, unserer Mission beizutreten, den Kundentelefonsuport mit KI zu revolutionieren? Wir suchen immer nach talentierten Personen mit Leidenschaft für Konversations-KI und Kundenerfahrung."
     }
   },
   "blog": {
@@ -265,5 +336,50 @@
     "termsOfService": "Nutzungsbedingungen",
     "cookiePolicy": "Cookie-Richtlinie",
     "englishOnlyAlert": "Dieses Dokument ist nur in englischer Version verfügbar"
+  },
+  "ctaSection": {
+    "badge": "Bereit für den Wandel?",
+    "headline": "Starten Sie Ihre KI-Reise",
+    "headlineHighlight": "Heute",
+    "description": "Schließen Sie sich Tausenden von Unternehmen an, die bereits KI nutzen, um ihre Kundeninteraktionen zu revolutionieren. Richten Sie Ihren ersten KI-Agenten in wenigen Minuten ein und sehen Sie den Unterschied.",
+    "primaryCta": "Kostenlose Testversion starten",
+    "secondaryCta": "Dokumentation ansehen",
+    "trustIndicator1": "Keine Einrichtungsgebühren",
+    "trustIndicator2": "5-Minuten-Setup",
+    "trustIndicator3": "Unternehmenssicher"
+  },
+  "faqSection": {
+    "badge": "FAQ",
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über unsere KI-Anrufagenten und Plattform wissen müssen.",
+    "questions": [
+      {
+        "question": "Wie schnell kann ich meinen ersten KI-Anrufagenten einrichten?",
+        "answer": "Sie können Ihren ersten KI-Anrufagenten in weniger als 5 Minuten einrichten und betriebsbereit haben. Unser intuitiver Setup-Assistent führt Sie durch den Prozess, und Sie können sofort nach der Konfiguration Anrufe empfangen."
+      },
+      {
+        "question": "Welche Sprachen unterstützt der KI-Anrufagent?",
+        "answer": "Unsere KI-Anrufagenten unterstützen über 50 Sprachen und können die Sprache des Anrufers automatisch erkennen. Sie sind darauf trainiert, regionale Akzente und Dialekte für natürliche, menschenähnliche Gespräche zu verstehen."
+      },
+      {
+        "question": "Wie funktioniert die Preisgestaltung? Gibt es versteckte Gebühren?",
+        "answer": "Wir bieten transparente, nutzungsbasierte Preise ohne Einrichtungsgebühren oder versteckte Kosten. Sie zahlen nur für die Minuten, in denen Ihre KI-Agenten aktiv Anrufe bearbeiten. Beginnen Sie mit unserem kostenlosen Tarif, um die Plattform zu testen."
+      },
+      {
+        "question": "Kann der KI-Agent in mein bestehendes CRM oder Geschäftstools integriert werden?",
+        "answer": "Ja! Unsere Plattform bietet nahtlose Integrationen mit beliebten CRMs wie Salesforce, HubSpot und Zapier. Wir stellen auch REST-APIs für benutzerdefinierte Integrationen in Ihre bestehenden Geschäftsprozesse zur Verfügung."
+      },
+      {
+        "question": "Wie sicher sind meine Kundendaten?",
+        "answer": "Wir nehmen Sicherheit ernst. Alle Daten werden während der Übertragung und im Ruhezustand mit branchenüblicher AES-256-Verschlüsselung verschlüsselt. Wir sind SOC 2-konform und befolgen GDPR-Richtlinien für den Datenschutz."
+      },
+      {
+        "question": "Was passiert, wenn der KI-Agent einen Anruf nicht bearbeiten kann?",
+        "answer": "Unsere KI-Agenten sind darauf ausgelegt, 95% der häufigen Anfragen zu bearbeiten. Wenn sie auf komplexe Probleme stoßen, können sie Anrufe nahtlos an menschliche Agenten mit vollständigem Kontext und Gesprächsverlauf weiterleiten."
+      }
+    ],
+    "contactTitle": "Haben Sie noch Fragen?",
+    "contactDescription": "Können Sie die Antwort, die Sie suchen, nicht finden? Unser Support-Team ist hier, um zu helfen.",
+    "contactButton": "Support kontaktieren"
   }
 }

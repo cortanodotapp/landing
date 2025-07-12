@@ -25,23 +25,27 @@ export const viewport : Viewport = {
 
 export const metadata: Metadata = {
   title: {
-    default: "Cortano - Background Agents & MCP Builder",
+    default: "Cortano - AI Call Agents for Business",
     template: "%s | Cortano"
   },
-  description: "Deploy intelligent background agents for your business in minutes. Automate event processing, build custom MCP protocols, and create seamless integrations with our no-code platform.",
+  description: "Deploy intelligent AI call agents for your business in minutes. Handle customer calls, book appointments, qualify leads, and provide 24/7 phone support with our no-code platform.",
   keywords: [
-    "background agents",
-    "event automation",
-    "MCP builder",
-    "Model Context Protocol",
-    "API integration",
-    "webhook automation",
-    "business process automation",
-    "no-code platform",
-    "event-driven automation",
-    "custom protocols",
-    "background processing",
-    "integration orchestration"
+    "AI call agents",
+    "AI phone support",
+    "automated customer service",
+    "AI receptionist",
+    "call handling automation",
+    "AI phone assistant",
+    "business phone automation",
+    "AI customer support",
+    "automated appointment booking",
+    "lead qualification calls",
+    "AI voice agents",
+    "intelligent call routing",
+    "24/7 phone support",
+    "conversational AI",
+    "AI call center",
+    "voice AI technology"
   ],
   authors: [{ name: "Cortano" }],
   creator: "Cortano",
@@ -57,8 +61,8 @@ export const metadata: Metadata = {
     }
   },
   openGraph: {
-    title: "Cortano - Background Agents & MCP Builder",
-    description: "Deploy intelligent background agents for your business in minutes. Automate event processing, build custom MCP protocols, and create seamless integrations with our no-code platform.",
+    title: "Cortano - AI Call Agents for Business",
+    description: "Deploy intelligent AI call agents for your business in minutes. Handle customer calls, book appointments, qualify leads, and provide 24/7 phone support with our no-code platform.",
     url: "https://cortano.app", // Update with your actual domain
     siteName: "Cortano",
     locale: "en_US",
@@ -69,8 +73,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Cortano - Background Agents & MCP Builder",
-    description: "Deploy intelligent background agents for your business in minutes. Automate event processing, build custom MCP protocols, and create seamless integrations with our no-code platform.",
+    title: "Cortano - AI Call Agents for Business",
+    description: "Deploy intelligent AI call agents for your business in minutes. Handle customer calls, book appointments, qualify leads, and provide 24/7 phone support with our no-code platform.",
     creator: "@cortanodotapp", // Update with your actual Twitter handle
     images: [
       "https://upload.cortano.app/banner.png"
@@ -118,7 +122,7 @@ export default async function LocaleLayout({
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Cortano",
-    "description": "Deploy intelligent background agents for your business in minutes. Automate event processing, build custom MCP protocols, and create seamless integrations with our no-code platform.",
+    "description": "Deploy intelligent AI call agents for your business in minutes. Handle customer calls, book appointments, qualify leads, and provide 24/7 phone support with our no-code platform.",
     "url": "https://cortano.app", // Update with your actual domain
     "logo": "https://cortano.app/logo.png", // Update with your actual logo URL
     "sameAs": [
@@ -138,8 +142,8 @@ export default async function LocaleLayout({
     },
     "offers": {
       "@type": "Offer",
-      "description": "Background Agent & MCP Builder Services",
-      "category": "Business Process Automation Software"
+      "description": "AI Call Agent Services & Phone Automation Solutions",
+      "category": "Artificial Intelligence Software"
     }
   };
   return (

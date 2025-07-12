@@ -4,6 +4,8 @@ import { Features } from "@/components/features"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { Footer } from "@/components/footer"
 import SimplePricing from "@/components/mvpblocks/simple-pricing"
+import { CTA } from "@/components/cta"
+import { FAQ } from "@/components/faq"
 
 export default function Home() {
   return (
@@ -12,6 +14,8 @@ export default function Home() {
       <Hero />
       <Features />
       <SimplePricing />
+      <CTA />
+      <FAQ />
       <LanguageSwitcher />
       <Footer />
     </main>

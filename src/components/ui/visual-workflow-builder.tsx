@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "motion/react"
-import { Bot, MessageSquare, Calendar, Zap, ArrowDown, ArrowDownRight, ArrowDownLeft } from "lucide-react"
+import { Phone, MessageSquare, Calendar, Zap, ArrowDown, ArrowDownRight, ArrowDownLeft } from "lucide-react"
 import { useState, useEffect } from "react"
 import { useTranslations } from 'next-intl'
 
@@ -62,7 +62,7 @@ export function VisualWorkflowBuilder() {
             }}
             transition={{ duration: 0.3 }}
           >
-            <Bot className={`h-5 w-5 transition-colors duration-300 ${activeStep === 0 ? 'text-primary' : 'text-muted-foreground'}`} />
+            <Phone className={`h-5 w-5 transition-colors duration-300 ${activeStep === 0 ? 'text-primary' : 'text-muted-foreground'}`} />
             <span className={`text-sm font-medium transition-colors duration-300 ${activeStep === 0 ? 'text-card-foreground' : 'text-muted-foreground'}`}>{t('steps.incomingCall')}</span>
           </motion.div>
         </motion.div>
