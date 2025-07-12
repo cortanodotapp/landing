@@ -1,6 +1,6 @@
 {
   "name": "landing",
-  "version": "0.1.4-preview",
+  "version": "0.1.5-preview",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
