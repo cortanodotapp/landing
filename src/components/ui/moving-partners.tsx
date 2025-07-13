@@ -7,18 +7,18 @@ import { useTranslations } from 'next-intl'
 const partners = [
   { 
     name: "OpenAI",
-    logoUrl: "https://upload.cortano.app/brandbird-OpenAI-logotype.svg"
+    logoUrl: "https://upload.cortano.app/logos/external/openai.svg"
   },
   { 
     name: "Google",
-    logoUrl: "https://upload.cortano.app/brandbird-Google-logotype.svg"
+    logoUrl: "https://upload.cortano.app/logos/external/google.svg"
   },
   { 
     name: "Microsoft Azure",
-    logoUrl: "https://upload.cortano.app/brandbird-Microsoft%20Azure-logotype.svg"
+    logoUrl: "https://upload.cortano.app/logos/external/azure.svg"
   },  { 
     name: "Stripe",
-    logoUrl: "https://upload.cortano.app/brandbird-Stripe-logotype.svg"
+    logoUrl: "https://upload.cortano.app/logos/external/stripe.svg"
   },
 ]
 

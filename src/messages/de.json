@@ -101,10 +101,11 @@
         "name": "Starter",
         "description": "Perfekt für kleine Unternehmen, die mit KI-Anrufagenten beginnen.",
         "price": "{price}{currency}/Monat",
-        "cta": "Kostenlose Testversion starten",
+        "cta": "Jetzt starten",
         "features": {
           "minutes": "500 Anrufminuten/Monat",
           "agents": "1 KI-Anrufagent",
+          "phoneNumber": "1 Telefonnummer inklusive",
           "integrations": "Einfache Integrationen",
           "support": "Basis-Support",
           "apiAccess": "Kein API-Zugriff"
@@ -114,10 +115,11 @@
         "name": "Medium",
         "description": "Ideal für wachsende Unternehmen mit höherem Anrufvolumen.",
         "price": "{price}{currency}/Monat",
-        "cta": "Kostenlose Testversion starten",
+        "cta": "Jetzt starten",
         "features": {
           "minutes": "1.500 Anrufminuten/Monat",
           "agents": "3 KI-Anrufagenten",
+          "phoneNumber": "1 Telefonnummer inklusive",
           "integrations": "Erweiterte Integrationen",
           "support": "Priority-Support",
           "apiAccess": "Vollständiger API-Zugriff"
@@ -131,6 +133,7 @@
         "features": {
           "minutes": "Unbegrenzte Anrufminuten",
           "agents": "Unbegrenzte KI-Anrufagenten",
+          "phoneNumber": "1 Telefonnummer inklusive",
           "integrations": "Individuelle Integrationen",
           "support": "Priority-Support",
           "apiAccess": "Vollständiger API-Zugriff"
@@ -342,7 +345,7 @@
     "headline": "Starten Sie Ihre KI-Reise",
     "headlineHighlight": "Heute",
     "description": "Schließen Sie sich Tausenden von Unternehmen an, die bereits KI nutzen, um ihre Kundeninteraktionen zu revolutionieren. Richten Sie Ihren ersten KI-Agenten in wenigen Minuten ein und sehen Sie den Unterschied.",
-    "primaryCta": "Kostenlose Testversion starten",
+    "primaryCta": "Jetzt starten",
     "secondaryCta": "Dokumentation ansehen",
     "trustIndicator1": "Keine Einrichtungsgebühren",
     "trustIndicator2": "5-Minuten-Setup",
@@ -381,5 +384,17 @@
     "contactTitle": "Haben Sie noch Fragen?",
     "contactDescription": "Können Sie die Antwort, die Sie suchen, nicht finden? Unser Support-Team ist hier, um zu helfen.",
     "contactButton": "Support kontaktieren"
+  },
+  "countries": {
+    "us": "Vereinigte Staaten",
+    "uk": "Vereinigtes Königreich", 
+    "de": "Deutschland",
+    "nl": "Niederlande",
+    "pl": "Polen",
+    "ca": "Kanada",
+    "au": "Australien",
+    "jp": "Japan",
+    "br": "Brasilien",
+    "mx": "Mexiko"
   }
 }

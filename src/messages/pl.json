@@ -3,7 +3,7 @@
     "cortano": "cortano",
     "loading": "Ładowanie...",
     "month": "/miesiąc",
-    "currency": "USD",
+    "currency": "PLN",
     "close": "Zamknij",
     "soon": "Wkrótce"
   },
@@ -14,12 +14,12 @@
     "getStarted": "Rozpocznij",
     "productItems": {
       "callAgent": {
-        "title": "Agent połączeń",
-        "description": "Agenci telefoniczni napędzani przez AI, którzy obsługują połączenia klientów, rezerwują spotkania i zapewniają wsparcie 24/7."
+        "title": "Agent rozmów",
+        "description": "Agenci telefoniczni napędzani przez AI, którzy obsługują rozmowy klientów, umówienia wizyt i zapewniają wsparcie 24/7."
       },
       "digitalCallAgent": {
-        "title": "Cyfrowy agent połączeń",
-        "description": "Agenci AI oparci na sieci web, którzy zapewniają wsparcie klientów w czasie rzeczywistym przez Twoją stronę internetową."
+        "title": "Cyfrowy agent rozmów",
+        "description": "Agenci AI działający w internecie, którzy zapewniają wsparcie klientów w czasie rzeczywistym przez Twoją stronę internetową."
       },
       "pricing": {
         "title": "Cennik",
@@ -28,8 +28,8 @@
     },
     "developerItems": {
       "documentation": {
-        "title": "Dokumentacja deweloperska",
-        "description": "Kompletna dokumentacja API, przewodniki i tutoriale do integracji Cortano z Twoimi aplikacjami."
+        "title": "Dokumentacja dla deweloperów",
+        "description": "Kompletna dokumentacja API, przewodniki i samouczki do integracji Cortano z Twoimi aplikacjami."
       },
       "apiStatus": {
         "title": "Status API",
@@ -42,55 +42,55 @@
     },
     "resourceItems": {
       "legal": {
-        "title": "Sprawy prawne",
-        "description": "Polityka prywatności, warunki usługi i inna dokumentacja prawna."
+        "title": "Kwestie prawne",
+        "description": "Polityka prywatności, warunki korzystania z usługi i inna dokumentacja prawna."
       },
       "about": {
         "title": "O nas",
-        "description": "Poznaj naszą misję, zespół i historię stojącą za Cortano."
+        "description": "Poznaj naszą misję, zespół i historię powstania Cortano."
       },
       "hiring": {
-        "title": "Rekrutacja",
+        "title": "Praca",
         "description": "Dołącz do naszego zespołu i pomóż nam budować przyszłość interakcji z klientami napędzanych przez AI."
       },
       "blog": {
         "title": "Blog",
-        "description": "Najnowsze spostrzeżenia, tutoriale i aktualizacje od zespołu Cortano."
+        "description": "Najnowsze spostrzeżenia, samouczki i aktualizacje od zespołu Cortano."
       }
     }
   },
   "hero": {
-    "badge": "Agenci połączeń AI są już dostępni",
-    "headline": "Transformuj połączenia klientów dzięki",
+    "badge": "Agenci rozmów AI już dostępni",
+    "headline": "Przekształć rozmowy z klientami dzięki",
     "headlineHighlight": "inteligentnym agentom AI",
-    "description": "Nigdy więcej nie przegapisz połączenia od klienta. Nasi agenci połączeń AI obsługują zapytania, rezerwują spotkania, kwalifikują leady i zapewniają wsparcie 24/7 - nawet gdy Twój zespół jest niedostępny.",
-    "cta": "Zacznij z połączeniami AI"
+    "description": "Nigdy więcej nie przegap rozmowy z klientem. Nasi agenci rozmów AI obsługują zapytania, umówienia wizyt, kwalifikują leadów i zapewniają wsparcie 24/7 - nawet gdy Twój zespół jest niedostępny.",
+    "cta": "Rozpocznij z rozmowami AI"
   },
   "features": {
     "badge": "Funkcje",
-    "title": "Wszystko, czego potrzebujesz, aby tworzyć potężnych agentów połączeń AI",
-    "description": "Od inteligentnych przepływów konwersacji po obsługę połączeń klasy enterprise — mamy narzędzia, które ożywią Twoją wizję agentów połączeń AI.",
+    "title": "Wszystko czego potrzebujesz do budowy potężnych agentów rozmów AI",
+    "description": "Od inteligentnych przepływów rozmów po obsługę rozmów na poziomie korporacyjnym - mamy narzędzia do realizacji Twojej wizji agentów rozmów AI.",
     "deployInMinutes": {
-      "title": "Wdrażaj w kilka minut",
-      "description": "Od pomysłu do działającego agenta połączeń AI w mniej niż 5 minut. Nasza uproszczona konfiguracja natychmiast uruchamia wsparcie telefoniczne."
+      "title": "Wdrożenie w minutach",
+      "description": "Od pomysłu do działającego agenta rozmów AI w mniej niż 5 minut. Nasza uproszczona konfiguracja uruchamia Twoje wsparcie telefoniczne natychmiast."
     },
     "enterpriseSecurity": {
-      "title": "Bezpieczeństwo klasy enterprise",
-      "description": "Szyfrowanie na poziomie bankowym, zgodność z SOC 2 i SLA na poziomie 99,9%. Twoje dane połączeń są bezpieczne i zawsze chronione."
+      "title": "Bezpieczeństwo korporacyjne",
+      "description": "Szyfrowanie na poziomie bankowym, zgodność z SOC 2 i SLA 99,9% dostępności. Twoje dane rozmów są bezpieczne i zawsze chronione."
     },
     "globalInfrastructure": {
       "title": "Globalna sieć telefoniczna",
-      "description": "Obsługuj połączenia na całym świecie dzięki naszej rozproszonej infrastrukturze telefonicznej. Niskie opóźnienia, wysoka dostępność — wszędzie."
+      "description": "Obsługuj rozmowy na całym świecie dzięki naszej rozproszonej infrastrukturze telefonicznej. Niska latencja, wysoka dostępność, wszędzie."
     },
     "advancedAnalytics": {
-      "title": "Analityka połączeń",
-      "description": "Głębokie informacje o wydajności połączeń, wzorcach konwersacji i efektywności agentów dzięki pulpitom na żywo."
+      "title": "Analityka rozmów",
+      "description": "Głębokie spostrzeżenia dotyczące wydajności rozmów, wzorców konwersacji i skuteczności agentów z dashboardami w czasie rzeczywistym."
     }
   },
   "pricing": {
     "badge": "Plany cenowe",
-    "title": "Wybierz idealny plan dla swoich agentów połączeń AI",
-    "subtitle": "Zacznij z naszym planem Starter i skaluj się wraz ze wzrostem. Bez ukrytych opłat, przejrzyste ceny dla firm każdej wielkości.",
+    "title": "Wybierz idealny plan dla swoich agentów rozmów AI",
+    "subtitle": "Zacznij z naszym planem Starter i skaluj wraz z rozwojem. Brak ukrytych opłat, przejrzyste ceny dla firm każdej wielkości.",
     "popular": "Najpopularniejszy",
     "currencySelector": {
       "label": "Wybierz swój region:"
@@ -98,12 +98,13 @@
     "plans": {
       "starter": {
         "name": "Starter",
-        "description": "Idealny dla małych firm rozpoczynających z agentami połączeń AI.",
-        "price": "{price} {currency}/miesiąc",
-        "cta": "Rozpocznij darmowy okres próbny",
+        "description": "Idealny dla małych firm rozpoczynających przygodę z agentami rozmów AI.",
+        "price": "{currency}{price}/miesiąc",
+        "cta": "Rozpocznij teraz",
         "features": {
-          "minutes": "500 minut połączeń/miesiąc",
-          "agents": "1 Agent połączeń AI",
+          "minutes": "500 minut rozmów/miesiąc",
+          "agents": "1 Agent rozmów AI",
+          "phoneNumber": "1 numer telefonu w cenie",
           "integrations": "Proste integracje",
           "support": "Podstawowe wsparcie",
           "apiAccess": "Brak dostępu do API"
@@ -111,14 +112,15 @@
       },
       "medium": {
         "name": "Medium",
-        "description": "Idealny dla rozwijających się firm z większym wolumenem połączeń.",
-        "price": "{price} {currency}/miesiąc",
-        "cta": "Rozpocznij darmowy okres próbny",
+        "description": "Idealny dla rozwijających się firm z większą liczbą rozmów.",
+        "price": "{currency}{price}/miesiąc",
+        "cta": "Rozpocznij teraz",
         "features": {
-          "minutes": "1.500 minut połączeń/miesiąc",
-          "agents": "3 Agentów połączeń AI",
+          "minutes": "1 500 minut rozmów/miesiąc",
+          "agents": "3 Agentów rozmów AI",
+          "phoneNumber": "1 numer telefonu w cenie",
           "integrations": "Zaawansowane integracje",
-          "support": "Wsparcie priorytetowe",
+          "support": "Priorytetowe wsparcie",
           "apiAccess": "Pełny dostęp do API"
         }
       },
@@ -128,62 +130,63 @@
         "price": "Ceny indywidualne",
         "cta": "Skontaktuj się z działem sprzedaży",
         "features": {
-          "minutes": "Nieograniczone minuty połączeń",
-          "agents": "Nieograniczeni agenci połączeń AI",
+          "minutes": "Nieograniczone minuty rozmów",
+          "agents": "Nieograniczeni agenci rozmów AI",
+          "phoneNumber": "1 numer telefonu w cenie",
           "integrations": "Niestandardowe integracje",
-          "support": "Wsparcie priorytetowe",
+          "support": "Priorytetowe wsparcie",
           "apiAccess": "Pełny dostęp do API"
         }
       },
       "payAsYouGo": {
         "name": "Płać za użycie",
-        "description": "Idealne dla firm z zmienną liczbą połączeń. Płać tylko za to, czego używasz.",
-        "price": "{price} {currency}/min",
+        "description": "Idealny dla firm ze zmienną liczbą rozmów. Płać tylko za to, czego używasz.",
+        "price": "{currency}{price}/min",
         "cta": "Rozpocznij",
         "features": {
-          "minutes": "Minuty połączeń: {price} {currency} za minutę",
-          "phoneNumber": "Numer telefonu: {price} {currency}",
-          "agents": "Agenci: {price} {currency} miesięcznie za agenta",
-          "support": "Podstawowe wsparcie mailowe",
+          "minutes": "Minuty rozmów: {currency}{price} za minutę",
+          "phoneNumber": "Numer telefonu: {currency}{price}",
+          "agents": "Agenci: {currency}{price} miesięcznie za agenta",
+          "support": "Podstawowe wsparcie e-mail",
           "apiAccess": "Brak dostępu do API",
           "integrations": "Podstawowe integracje"
         },
         "labels": {
-          "callMinutes": "Minuty połączeń",
+          "callMinutes": "Minuty rozmów",
           "phoneNumber": "Numer telefonu",
           "aiAgents": "Agenci AI",
           "support": "Wsparcie",
-          "apiAccess": "Dostęp API",
+          "apiAccess": "Dostęp do API",
           "integrations": "Integracje"
         },
         "descriptions": {
-          "callMinutes": "Płać tylko za wykorzystane minuty",
+          "callMinutes": "Płać tylko za minuty, których używasz",
           "phoneNumber": "Miesięczna opłata abonamentowa",
           "aiAgents": "Za agenta miesięcznie",
-          "support": "Podstawowe wsparcie mailowe",
-          "apiAccess": "Nie zawarte w tym planie",
+          "support": "Podstawowe wsparcie e-mail",
+          "apiAccess": "Nie wliczone w ten plan",
           "integrations": "Podstawowe integracje wliczone"
         },
         "pricing": {
-          "callMinutes": "{price} {currency}/min",
-          "phoneNumber": "{price} {currency}/mies",
-          "aiAgents": "{price} {currency}/mies"
+          "callMinutes": "{currency}{price}/min",
+          "phoneNumber": "{currency}{price}/mies",
+          "aiAgents": "{currency}{price}/mies"
         },
         "status": {
-          "email": "Email",
+          "email": "E-mail",
           "basic": "Podstawowy",
-          "notIncluded": "Nie zawarte"
+          "notIncluded": "Nie wliczone"
         }
       }
     },
     "note": "* Ceny mogą się różnić w zależności od regionu"
   },
   "footer": {
-    "description": "Wdrażaj inteligentnych agentów połączeń AI w swojej firmie w kilka minut. Obsługuj połączenia klientów, rezerwuj spotkania i zapewniaj wsparcie 24/7 dzięki naszej platformie bez kodu.",
+    "description": "Wdrażaj inteligentnych agentów rozmów AI dla swojej firmy w minuty. Obsługuj rozmowy klientów, umów wizyty i zapewniaj wsparcie 24/7 dzięki naszej platformie bez kodu.",
     "products": {
       "title": "Produkty",
-      "callAgent": "Agent połączeń",
-      "digitalCallAgent": "Cyfrowy agent połączeń",
+      "callAgent": "Agent rozmów",
+      "digitalCallAgent": "Cyfrowy agent rozmów",
       "pricing": "Cennik"
     },
     "developer": {
@@ -194,33 +197,33 @@
     },
     "resources": {
       "title": "Zasoby",
-      "legal": "Aspekty prawne",
+      "legal": "Kwestie prawne",
       "about": "O nas",
-      "hiring": "Oferty pracy",
+      "hiring": "Praca",
       "blog": "Blog"
     },
     "legal": {
-      "copyright": "© 2025 Cortano. Wszelkie prawa zastrzeżone.",
+      "copyright": "© 2025 Cortano. Wszystkie prawa zastrzeżone.",
       "privacyPolicy": "Polityka prywatności",
-      "termsOfService": "Regulamin",
-      "cookiePolicy": "Polityka cookies"
+      "termsOfService": "Warunki korzystania z usługi",
+      "cookiePolicy": "Polityka plików cookie"
     }
   },
   "dialog": {
-    "comingSoon": "Wkrótce dostępne",
-    "featureNotPublished": "Ta funkcja jest obecnie w fazie rozwoju i wkrótce będzie dostępna.",
+    "comingSoon": "Wkrótce",
+    "featureNotPublished": "Ta funkcja jest obecnie w fazie rozwoju i będzie dostępna wkrótce.",
     "acknowledge": "Rozumiem"
   },
   "featureNames": {
-    "aiCallAgentPlatform": "Platforma agentów połączeń AI",
+    "aiCallAgentPlatform": "Platforma agentów rozmów AI",
     "accountRegistration": "Rejestracja konta",
-    "callAgent": "Agent połączeń",
-    "digitalCallAgent": "Cyfrowy agent połączeń",
-    "developerDocs": "Dokumentacja deweloperska",
+    "callAgent": "Agent rozmów",
+    "digitalCallAgent": "Cyfrowy agent rozmów",
+    "developerDocs": "Dokumentacja dla deweloperów",
     "apiStatus": "Status API",
     "apiChangelog": "Dziennik zmian API",
-    "hiring": "Oferty pracy",
-    "cookiePolicy": "Polityka cookies",
+    "hiring": "Możliwości kariery",
+    "cookiePolicy": "Polityka plików cookie",
     "starterPlan": "Plan Starter",
     "mediumPlan": "Plan Medium",
     "enterprisePlan": "Plan Enterprise",
@@ -228,21 +231,21 @@
   },
   "visualWorkflow": {
     "title": "Wizualny kreator przepływów rozmów",
-    "description": "Przeciągaj i upuszczaj, aby tworzyć inteligentne przepływy konwersacji",
+    "description": "Przeciągnij i upuść, aby tworzyć inteligentne przepływy konwersacji",
     "steps": {
-      "incomingCall": "Połączenie przychodzące",
+      "incomingCall": "Rozmowa przychodząca",
       "aiAnalysis": "Przetwarzanie AI",
-      "bookMeeting": "Zarezerwuj spotkanie",
+      "bookMeeting": "Umów spotkanie",
       "sendInfo": "Wyślij informacje"
     }
   },
   "movingPartners": {
-    "title": "Wsparcie liderów branży",
+    "title": "Wspierani przez liderów branży",
     "subtitle": "Wiodące firmy"
   },
   "visualFlow": {
     "title": "Jak to działa",
-    "step1": "Połączenie odebrane",
+    "step1": "Rozmowa odebrana",
     "step2": "Przetwarzanie AI",
     "step3": "Odpowiedź wygenerowana",
     "step4": "Akcja ukończona"
@@ -254,131 +257,143 @@
     "hero": {
       "badge": "O Cortano",
       "title": "Budujemy przyszłość",
-      "titleHighlight": "agentów AI do rozmów telefonicznych",
-      "description": "Specjalizujemy się w tworzeniu inteligentnych agentów AI do rozmów telefonicznych, które rewolucjonizują sposób obsługi interakcji z klientami przez firmy. Nasza zaawansowana technologia AI zapewnia wsparcie telefoniczne 24/7, automatyzuje obsługę klienta i gwarantuje, że żadna rozmowa nie pozostanie bez odpowiedzi."
+      "titleHighlight": "agentów rozmów AI",
+      "description": "Specjalizujemy się w tworzeniu inteligentnych agentów rozmów AI, którzy rewolucjonizują sposób, w jaki firmy obsługują interakcje z klientami. Nasza zaawansowana technologia AI zapewnia wsparcie telefoniczne 24/7, automatyzuje obsługę klienta i gwarantuje, że żadna rozmowa nie pozostanie bez odpowiedzi."
     },
     "mission": {
-      "title": "Nasza Misja",
-      "description": "Wierzymy, że każda firma zasługuje na inteligentnych agentów AI do rozmów telefonicznych, którzy nigdy nie śpią, zapewniając wyjątkową obsługę klienta przez całą dobę.",
+      "title": "Nasza misja",
+      "description": "Wierzymy, że każda firma zasługuje na inteligentnych agentów rozmów AI, którzy nigdy nie śpią, zapewniając wyjątkową obsługę klienta przez całą dobę.",
       "goals": {
-        "title": "Jasne Cele",
-        "description": "Uczynienie technologii agentów AI do rozmów telefonicznych dostępną i potężną dla firm każdej wielkości, od małych startupów po duże korporacje."
+        "title": "Jasne cele",
+        "description": "Uczynić technologię agentów rozmów AI dostępną i potężną dla firm każdej wielkości, od małych startupów po duże przedsiębiorstwa."
       },
       "innovation": {
-        "title": "Innowacje na Pierwszym Miejscu",
-        "description": "Ciągłe rozwijanie technologii konwersacyjnej AI w celu tworzenia bardziej naturalnych, inteligentnych i skutecznych agentów rozmów telefonicznych."
+        "title": "Innowacja na pierwszym miejscu",
+        "description": "Ciągłe rozwijanie technologii konwersacyjnej AI w celu tworzenia bardziej naturalnych, inteligentnych i skutecznych agentów rozmów."
       },
       "community": {
-        "title": "Sukces Klienta",
-        "description": "Wspieranie firm w dostarczaniu wyjątkowych doświadczeń wsparcia telefonicznego, które zachwycają klientów i napędzają wzrost."
+        "title": "Sukces klienta",
+        "description": "Wspieranie firm w zapewnianiu wyjątkowych doświadczeń wsparcia telefonicznego, które zachwycają klientów i napędzają rozwój."
       }
     },
     "values": {
-      "title": "Nasze Wartości",
-      "description": "Zasady, które kierują naszym rozwojem agentów AI do rozmów telefonicznych i sposobem obsługi naszych klientów.",
+      "title": "Nasze wartości",
+      "description": "Zasady, które kierują naszym rozwojem agentów rozmów AI i kształtują sposób, w jaki służymy naszym klientom.",
       "customerFirst": {
-        "title": "Klient na Pierwszym Miejscu",
-        "description": "Każdy agent AI do rozmów telefonicznych, którego budujemy, priorytetowo traktuje dostarczanie wyjątkowych doświadczeń klienta i sukces biznesowy."
+        "title": "Klient na pierwszym miejscu",
+        "description": "Każdy agent rozmów AI, którego budujemy, priorytetowo traktuje dostarczanie wyjątkowych doświadczeń klienta i napędzanie sukcesu biznesowego."
       },
       "reliability": {
         "title": "Niezawodność",
-        "description": "Nasi agenci AI do rozmów telefonicznych pracują 24/7 z czasem pracy na poziomie przedsiębiorstwa, zapewniając, że Twoi klienci zawsze otrzymują profesjonalną obsługę."
+        "description": "Nasi agenci rozmów AI pracują 24/7 z dostępnością na poziomie korporacyjnym, zapewniając, że Twoi klienci zawsze otrzymują profesjonalną obsługę."
       },
       "innovation": {
-        "title": "Innowacje",
-        "description": "Nieustannie ulepszamy naszą technologię rozmów AI, aby uczynić konwersacje bardziej naturalnymi, inteligentnymi i skutecznymi."
+        "title": "Innowacja",
+        "description": "Stale ulepszamy naszą technologię rozmów AI, aby uczynić konwersacje bardziej naturalnymi, inteligentnymi i skutecznymi."
       },
       "accessibility": {
         "title": "Dostępność",
-        "description": "Zaawansowana technologia agentów AI do rozmów telefonicznych powinna być dostępna dla każdej firmy, niezależnie od wielkości czy wiedzy technicznej."
+        "description": "Zaawansowana technologia agentów rozmów AI powinna być dostępna dla każdej firmy, niezależnie od wielkości czy doświadczenia technicznego."
       }
     },
     "team": {
-      "badge": "Poznaj Zespół",
+      "badge": "Poznaj zespół",
       "title": "Umysły stojące za Cortano",
-      "description": "Jesteśmy pasjonatami zespołem inżynierów AI, ekspertów konwersacyjnych i specjalistów sukcesu klienta, którzy poświęcają się rewolucjonizowaniu biznesowego wsparcia telefonicznego.",
+      "description": "Jesteśmy zespołem pełnym pasji inżynierów AI, ekspertów od konwersacji i specjalistów od sukcesu klienta, oddanych rewolucjonizowaniu wsparcia telefonicznego firm.",
       "members": {
         "cto": {
           "role": "Założyciel i CTO",
-          "description": "Prowadzi naszą technologię agentów AI do rozmów telefonicznych i architekturę konwersacyjnej AI. Pasjonat budowania inteligentnych systemów, które transformują interakcje z klientami."
+          "description": "Kieruje naszą technologią agentów rozmów AI i architekturą konwersacyjnej AI. Pasjonat budowania inteligentnych systemów, które transformują interakcje z klientami."
         },
         "sales": {
           "role": "Założyciel i Szef Sprzedaży",
-          "description": "Napędza wzrost biznesu i sukces klienta. Ekspert w rozumieniu, jak agenci AI do rozmów telefonicznych mogą rozwiązywać rzeczywiste wyzwania biznesowe i poprawiać satysfakcję klientów."
+          "description": "Napędza rozwój biznesu i sukces klienta. Ekspert w rozumieniu, jak agenci rozmów AI mogą rozwiązywać prawdziwe wyzwania biznesowe i poprawiać satysfakcję klientów."
         },
         "design": {
           "role": "Założyciel i Szef Designu",
-          "description": "Tworzy intuicyjne doświadczenia, które czynią potężną technologię agentów AI do rozmów telefonicznych dostępną. Skupiony na projektowaniu zorientowanym na użytkownika dla złożonych systemów konwersacyjnych."
+          "description": "Tworzy intuicyjne doświadczenia, które czynią potężną technologię agentów rozmów AI dostępną. Skupiony na projektowaniu zorientowanym na użytkownika dla złożonych systemów konwersacyjnych."
         }
       },
-      "joinTeam": "Chcesz dołączyć do naszej misji rewolucjonizowania obsługi telefonicznej klientów za pomocą AI? Zawsze szukamy utalentowanych osób pasjonujących się konwersacyjną AI i doświadczeniem klienta."
+      "joinTeam": "Zainteresowany dołączeniem do naszej misji rewolucjonizowania telefonicznego wsparcia klientów dzięki AI? Zawsze szukamy utalentowanych osób pasjonujących się konwersacyjną AI i doświadczeniem klienta."
     }
   },
   "blog": {
     "title": "Blog",
-    "subtitle": "Spostrzeżenia, tutoriale i aktualizacje od zespołu Cortano",
-    "featured": "Wyróżnione Posty",
-    "featuredBadge": "Wyróżniony",
-    "allPosts": "Wszystkie Posty",
-    "latestPosts": "Najnowsze Posty",
-    "noPosts": "Jeszcze nie ma dostępnych postów na blogu. Wróć wkrótce!",
-    "backToBlog": "Powrót do Bloga",
-    "publishedBy": "Opublikowany przez",
+    "subtitle": "Spostrzeżenia, samouczki i aktualizacje od zespołu Cortano",
+    "featured": "Wyróżnione posty",
+    "featuredBadge": "Wyróżnione",
+    "allPosts": "Wszystkie posty",
+    "latestPosts": "Najnowsze posty",
+    "noPosts": "Brak dostępnych postów na blogu. Sprawdź ponownie wkrótce!",
+    "backToBlog": "Powrót do bloga",
+    "publishedBy": "Opublikowane przez",
     "on": "dnia",
     "readingTime": "min czytania"
   },
   "legal": {
-    "backToHome": "Powrót do Strony Głównej",
+    "backToHome": "Powrót do strony głównej",
     "lastUpdated": "Ostatnia aktualizacja",
-    "documentIntro": "Ten dokument przedstawia nasze zasady i Twoje prawa. Prosimy o uważne przeczytanie i skontaktowanie się z nami w przypadku pytań.",
-    "privacyPolicy": "Polityka Prywatności",
-    "termsOfService": "Warunki Usługi",
-    "cookiePolicy": "Polityka Cookies",
+    "documentIntro": "Ten dokument przedstawia nasze polityki i Twoje prawa. Przeczytaj go uważnie i skontaktuj się z nami, jeśli masz pytania.",
+    "privacyPolicy": "Polityka prywatności",
+    "termsOfService": "Warunki korzystania z usługi",
+    "cookiePolicy": "Polityka plików cookie",
     "englishOnlyAlert": "Ten dokument jest dostępny tylko w wersji angielskiej"
   },
   "ctaSection": {
-    "badge": "Gotowy na zmianę?",
+    "badge": "Gotowy na transformację?",
     "headline": "Rozpocznij swoją podróż z AI",
-    "headlineHighlight": "Dziś",
-    "description": "Dołącz do tysięcy firm, które już używają AI do rewolucjonizowania interakcji z klientami. Skonfiguruj swojego pierwszego agenta AI w kilka minut i zobacz różnicę.",
-    "primaryCta": "Rozpocznij darmowy okres próbny",
+    "headlineHighlight": "dzisiaj",
+    "description": "Dołącz do tysięcy firm, które już używają AI do rewolucjonizowania interakcji z klientami. Skonfiguruj swojego pierwszego agenta AI w minuty i zobacz różnicę, jaką robi.",
+    "primaryCta": "Rozpocznij teraz",
     "secondaryCta": "Zobacz dokumentację",
-    "trustIndicator1": "Bez opłat za konfigurację",
+    "trustIndicator1": "Brak opłat konfiguracyjnych",
     "trustIndicator2": "5-minutowa konfiguracja",
     "trustIndicator3": "Bezpieczeństwo korporacyjne"
   },
   "faqSection": {
     "badge": "FAQ",
-    "title": "Najczęściej zadawane pytania",
-    "subtitle": "Wszystko, co musisz wiedzieć o naszych agentach połączeń AI i platformie.",
+    "title": "Często zadawane pytania",
+    "subtitle": "Wszystko, co musisz wiedzieć o naszych agentach rozmów AI i platformie.",
     "questions": [
       {
-        "question": "Jak szybko mogę skonfigurować swojego pierwszego agenta połączeń AI?",
-        "answer": "Możesz mieć swojego pierwszego agenta połączeń AI działającego w mniej niż 5 minut. Nasz intuicyjny kreator konfiguracji przeprowadzi Cię przez proces, a możesz zacząć odbierać połączenia natychmiast po konfiguracji."
+        "question": "Jak szybko mogę skonfigurować swojego pierwszego agenta rozmów AI?",
+        "answer": "Możesz mieć swojego pierwszego agenta rozmów AI działającego w mniej niż 5 minut. Nasz intuicyjny kreator konfiguracji prowadzi Cię przez proces, a możesz zacząć odbierać rozmowy natychmiast po konfiguracji."
       },
       {
-        "question": "Jakie języki obsługuje agent połączeń AI?",
-        "answer": "Nasi agenci połączeń AI obsługują ponad 50 języków i mogą automatycznie wykryć język dzwoniącego. Są wytrenowani do obsługi regionalnych akcentów i dialektów dla naturalnych, podobnych do ludzkich rozmów."
+        "question": "Jakie języki obsługuje agent rozmów AI?",
+        "answer": "Nasi agenci rozmów AI obsługują ponad 50 języków i mogą automatycznie wykrywać język dzwoniącego. Są wytrenowani do obsługi regionalnych akcentów i dialektów dla naturalnych, podobnych do ludzkich rozmów."
       },
       {
-        "question": "Jak działa cennik? Czy są jakieś ukryte opłaty?",
-        "answer": "Oferujemy przejrzyste ceny oparte na użytkowaniu bez opłat za konfigurację ani ukrytych kosztów. Płacisz tylko za minuty, w których Twoi agenci AI aktywnie obsługują połączenia. Zacznij od naszego darmowego planu, aby przetestować platformę."
+        "question": "Jak działają ceny? Czy są jakieś ukryte opłaty?",
+        "answer": "Oferujemy przejrzyste, oparte na użytkowaniu ceny bez opłat konfiguracyjnych ani ukrytych kosztów. Płacisz tylko za minuty, kiedy Twoi agenci AI aktywnie obsługują rozmowy. Zacznij z naszym darmowym planem, aby przetestować platformę."
       },
       {
         "question": "Czy agent AI może zintegrować się z moim istniejącym CRM lub narzędziami biznesowymi?",
-        "answer": "Tak! Nasza platforma oferuje bezproblemowe integracje z popularnymi CRM-ami jak Salesforce, HubSpot i Zapier. Zapewniamy również REST API dla niestandardowych integracji z Twoimi istniejącymi przepływami pracy biznesowej."
+        "answer": "Tak! Nasza platforma oferuje bezproblemowe integracje z popularnymi CRM-ami jak Salesforce, HubSpot i Zapier. Zapewniamy również API REST do niestandardowych integracji z Twoimi istniejącymi przepływami pracy biznesowej."
       },
       {
         "question": "Jak bezpieczne są dane moich klientów?",
-        "answer": "Poważnie traktujemy bezpieczeństwo. Wszystkie dane są szyfrowane w transporcie i w spoczynku przy użyciu standardowego w branży szyfrowania AES-256. Jesteśmy zgodni z SOC 2 i przestrzegamy wytycznych GDPR w zakresie ochrony danych."
+        "answer": "Traktujemy bezpieczeństwo poważnie. Wszystkie dane są szyfrowane w tranzycie i spoczynku przy użyciu branżowego standardu szyfrowania AES-256. Jesteśmy zgodni z SOC 2 i przestrzegamy wytycznych GDPR dotyczących ochrony danych."
       },
       {
-        "question": "Co się dzieje, jeśli agent AI nie może obsłużyć połączenia?",
-        "answer": "Nasi agenci AI są zaprojektowani do obsługi 95% typowych zapytań. Gdy napotkają złożone problemy, mogą bezproblemowo przekierować połączenia do ludzkich agentów z pełnym kontekstem i historią rozmowy."
+        "question": "Co się dzieje, jeśli agent AI nie może obsłużyć rozmowy?",
+        "answer": "Nasi agenci AI są zaprojektowani do obsługi 95% typowych zapytań. Gdy napotykają złożone problemy, mogą bezproblemowo przekierować rozmowy do ludzkich agentów z pełnym kontekstem i historią rozmowy."
       }
     ],
-    "contactTitle": "Masz jeszcze pytania?",
+    "contactTitle": "Nadal masz pytania?",
     "contactDescription": "Nie możesz znaleźć odpowiedzi, której szukasz? Nasz zespół wsparcia jest tutaj, aby pomóc.",
-    "contactButton": "Skontaktuj się ze wsparciem"
+    "contactButton": "Skontaktuj się z wsparciem"
+  },
+  "countries": {
+    "us": "Stany Zjednoczone",
+    "uk": "Wielka Brytania", 
+    "de": "Niemcy",
+    "nl": "Holandia",
+    "pl": "Polska",
+    "ca": "Kanada",
+    "au": "Australia",
+    "jp": "Japonia",
+    "br": "Brazylia",
+    "mx": "Meksyk"
   }
 }

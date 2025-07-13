@@ -29,26 +29,21 @@ export default function SimplePricing() {
   const [selectedCountry, setSelectedCountry] = useState<string>('us');
   const t = useTranslations('pricing');
   const tFeatures = useTranslations('featureNames');
+  const tCountries = useTranslations('countries');
   const locale = useLocale();
 
   // Extended country list with pricing
   const countries = [
-    { code: 'us', name: 'United States', flag: 'US', currency: 'USD', symbol: '$' },
-    { code: 'uk', name: 'United Kingdom', flag: 'GB', currency: 'GBP', symbol: '£' },
-    { code: 'de', name: 'Germany', flag: 'DE', currency: 'EUR', symbol: '€' },
-    { code: 'fr', name: 'France', flag: 'FR', currency: 'EUR', symbol: '€' },
-    { code: 'es', name: 'Spain', flag: 'ES', currency: 'EUR', symbol: '€' },
-    { code: 'it', name: 'Italy', flag: 'IT', currency: 'EUR', symbol: '€' },
-    { code: 'nl', name: 'Netherlands', flag: 'NL', currency: 'EUR', symbol: '€' },
-    { code: 'pl', name: 'Poland', flag: 'PL', currency: 'PLN', symbol: 'zł' },
-    { code: 'ca', name: 'Canada', flag: 'CA', currency: 'CAD', symbol: 'C$' },
-    { code: 'au', name: 'Australia', flag: 'AU', currency: 'AUD', symbol: 'A$' },
-    { code: 'jp', name: 'Japan', flag: 'JP', currency: 'JPY', symbol: '¥' },
-    { code: 'kr', name: 'South Korea', flag: 'KR', currency: 'KRW', symbol: '₩' },
-    { code: 'sg', name: 'Singapore', flag: 'SG', currency: 'SGD', symbol: 'S$' },
-    { code: 'in', name: 'India', flag: 'IN', currency: 'INR', symbol: '₹' },
-    { code: 'br', name: 'Brazil', flag: 'BR', currency: 'BRL', symbol: 'R$' },
-    { code: 'mx', name: 'Mexico', flag: 'MX', currency: 'MXN', symbol: '$' },
+    { code: 'us', flag: 'US', currency: 'USD', symbol: '$' },
+    { code: 'uk', flag: 'GB', currency: 'GBP', symbol: '£' },
+    { code: 'de', flag: 'DE', currency: 'EUR', symbol: '€' },
+    { code: 'nl', flag: 'NL', currency: 'EUR', symbol: '€' },
+    { code: 'pl', flag: 'PL', currency: 'PLN', symbol: 'zł' },
+    { code: 'ca', flag: 'CA', currency: 'CAD', symbol: 'C$' },
+    { code: 'au', flag: 'AU', currency: 'AUD', symbol: 'A$' },
+    { code: 'jp', flag: 'JP', currency: 'JPY', symbol: '¥' },
+    { code: 'br', flag: 'BR', currency: 'BRL', symbol: 'R$' },
+    { code: 'mx', flag: 'MX', currency: 'MXN', symbol: '$' },
   ];
 
   // Pricing data for different countries/currencies
@@ -57,17 +52,11 @@ export default function SimplePricing() {
       us: { price: 29, currency: 'USD', symbol: '$' },
       uk: { price: 24, currency: 'GBP', symbol: '£' },
       de: { price: 27, currency: 'EUR', symbol: '€' },
-      fr: { price: 27, currency: 'EUR', symbol: '€' },
-      es: { price: 27, currency: 'EUR', symbol: '€' },
-      it: { price: 27, currency: 'EUR', symbol: '€' },
       nl: { price: 27, currency: 'EUR', symbol: '€' },
       pl: { price: 119, currency: 'PLN', symbol: 'zł' },
       ca: { price: 39, currency: 'CAD', symbol: 'C$' },
       au: { price: 42, currency: 'AUD', symbol: 'A$' },
       jp: { price: 4200, currency: 'JPY', symbol: '¥' },
-      kr: { price: 38000, currency: 'KRW', symbol: '₩' },
-      sg: { price: 40, currency: 'SGD', symbol: 'S$' },
-      in: { price: 2400, currency: 'INR', symbol: '₹' },
       br: { price: 145, currency: 'BRL', symbol: 'R$' },
       mx: { price: 580, currency: 'MXN', symbol: '$' }
     },
@@ -75,72 +64,48 @@ export default function SimplePricing() {
       us: { price: 99, currency: 'USD', symbol: '$' },
       uk: { price: 82, currency: 'GBP', symbol: '£' },
       de: { price: 92, currency: 'EUR', symbol: '€' },
-      fr: { price: 92, currency: 'EUR', symbol: '€' },
-      es: { price: 92, currency: 'EUR', symbol: '€' },
-      it: { price: 92, currency: 'EUR', symbol: '€' },
       nl: { price: 92, currency: 'EUR', symbol: '€' },
       pl: { price: 399, currency: 'PLN', symbol: 'zł' },
       ca: { price: 132, currency: 'CAD', symbol: 'C$' },
       au: { price: 145, currency: 'AUD', symbol: 'A$' },
       jp: { price: 14500, currency: 'JPY', symbol: '¥' },
-      kr: { price: 129000, currency: 'KRW', symbol: '₩' },
-      sg: { price: 135, currency: 'SGD', symbol: 'S$' },
-      in: { price: 8200, currency: 'INR', symbol: '₹' },
       br: { price: 495, currency: 'BRL', symbol: 'R$' },
       mx: { price: 1980, currency: 'MXN', symbol: '$' }
     },
     payAsYouGo: {
       callMinute: {
-        us: { price: 0.20, currency: 'USD', symbol: '$' },
-        uk: { price: 0.17, currency: 'GBP', symbol: '£' },
-        de: { price: 0.18, currency: 'EUR', symbol: '€' },
-        fr: { price: 0.18, currency: 'EUR', symbol: '€' },
-        es: { price: 0.18, currency: 'EUR', symbol: '€' },
-        it: { price: 0.18, currency: 'EUR', symbol: '€' },
-        nl: { price: 0.18, currency: 'EUR', symbol: '€' },
-        pl: { price: 0.80, currency: 'PLN', symbol: 'zł' },
-        ca: { price: 0.27, currency: 'CAD', symbol: 'C$' },
-        au: { price: 0.29, currency: 'AUD', symbol: 'A$' },
-        jp: { price: 29, currency: 'JPY', symbol: '¥' },
-        kr: { price: 260, currency: 'KRW', symbol: '₩' },
-        sg: { price: 0.27, currency: 'SGD', symbol: 'S$' },
-        in: { price: 16, currency: 'INR', symbol: '₹' },
-        br: { price: 1.0, currency: 'BRL', symbol: 'R$' },
-        mx: { price: 4, currency: 'MXN', symbol: '$' }
+        us: { price: 0.055, currency: 'USD', symbol: '$' },
+        uk: { price: 0.041, currency: 'GBP', symbol: '£' },
+        de: { price: 0.0047, currency: 'EUR', symbol: '€' },
+        nl: { price: 0.0047, currency: 'EUR', symbol: '€' },
+        pl: { price: 0.20, currency: 'PLN', symbol: 'zł' },
+        ca: { price: 0.075, currency: 'CAD', symbol: 'C$' },
+        au: { price: 0.083, currency: 'AUD', symbol: 'A$' },
+        jp: { price: 8.3, currency: 'JPY', symbol: '¥' },
+        br: { price: 0.30, currency: 'BRL', symbol: 'R$' },
+        mx: { price: 1.02, currency: 'MXN', symbol: '$' }
       },
       phoneNumber: {
-        us: { price: 5, currency: 'USD', symbol: '$' },
-        uk: { price: 4.2, currency: 'GBP', symbol: '£' },
-        de: { price: 4.5, currency: 'EUR', symbol: '€' },
-        fr: { price: 4.5, currency: 'EUR', symbol: '€' },
-        es: { price: 4.5, currency: 'EUR', symbol: '€' },
-        it: { price: 4.5, currency: 'EUR', symbol: '€' },
-        nl: { price: 4.5, currency: 'EUR', symbol: '€' },
-        pl: { price: 20, currency: 'PLN', symbol: 'zł' },
-        ca: { price: 6.7, currency: 'CAD', symbol: 'C$' },
-        au: { price: 7.3, currency: 'AUD', symbol: 'A$' },
-        jp: { price: 730, currency: 'JPY', symbol: '¥' },
-        kr: { price: 6500, currency: 'KRW', symbol: '₩' },
-        sg: { price: 6.8, currency: 'SGD', symbol: 'S$' },
-        in: { price: 415, currency: 'INR', symbol: '₹' },
-        br: { price: 25, currency: 'BRL', symbol: 'R$' },
-        mx: { price: 100, currency: 'MXN', symbol: '$' }
+        us: { price: 2, currency: 'USD', symbol: '$' },
+        uk: { price: 2, currency: 'GBP', symbol: '£' },
+        de: { price: 25, currency: 'EUR', symbol: '€' },
+        nl: { price: 10, currency: 'EUR', symbol: '€' },
+        pl: { price: 28, currency: 'PLN', symbol: 'zł' },
+        ca: { price: 3, currency: 'CAD', symbol: 'C$' },
+        au: { price: 20, currency: 'AUD', symbol: 'A$' },
+        jp: { price: 1320, currency: 'JPY', symbol: '¥' },
+        br: { price: 47, currency: 'BRL', symbol: 'R$' },
+        mx: { price: 232, currency: 'MXN', symbol: '$' }
       },
       aiAgents: {
         us: { price: 2.50, currency: 'USD', symbol: '$' },
         uk: { price: 2.1, currency: 'GBP', symbol: '£' },
         de: { price: 2.3, currency: 'EUR', symbol: '€' },
-        fr: { price: 2.3, currency: 'EUR', symbol: '€' },
-        es: { price: 2.3, currency: 'EUR', symbol: '€' },
-        it: { price: 2.3, currency: 'EUR', symbol: '€' },
         nl: { price: 2.3, currency: 'EUR', symbol: '€' },
         pl: { price: 10, currency: 'PLN', symbol: 'zł' },
         ca: { price: 3.4, currency: 'CAD', symbol: 'C$' },
         au: { price: 3.6, currency: 'AUD', symbol: 'A$' },
         jp: { price: 365, currency: 'JPY', symbol: '¥' },
-        kr: { price: 3250, currency: 'KRW', symbol: '₩' },
-        sg: { price: 3.4, currency: 'SGD', symbol: 'S$' },
-        in: { price: 207, currency: 'INR', symbol: '₹' },
         br: { price: 12.5, currency: 'BRL', symbol: 'R$' },
         mx: { price: 50, currency: 'MXN', symbol: '$' }
       }
@@ -162,7 +127,11 @@ export default function SimplePricing() {
 
   // Get current country data
   const getCurrentCountryData = (country: string) => {
-    return countries.find(c => c.code === country) || countries[0];
+    const countryData = countries.find(c => c.code === country) || countries[0];
+    return {
+      ...countryData,
+      name: tCountries(countryData.code)
+    };
   };
 
   // Safe pricing data access with fallback
@@ -268,13 +237,13 @@ export default function SimplePricing() {
   if (!mounted) return null;
 
   return (
-    <section id="pricing" className="relative py-24 overflow-hidden scroll-mt-20">
+    <section id="pricing" className="relative py-16 sm:py-24 overflow-hidden scroll-mt-20">
       {/* Ambient background effects matching your theme */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_100%_100%_at_50%_50%,_var(--tw-gradient-stops))] from-primary/10 via-primary/5 to-transparent"></div>
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[800px] bg-[radial-gradient(ellipse_60%_60%_at_50%_50%,_var(--tw-gradient-stops))] from-primary/15 via-primary/5 to-transparent blur-3xl"></div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6">
-        <div className="text-center mb-16">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
           <Badge
             variant="secondary"
             className="mb-6 bg-primary/10 text-primary border-primary/20 px-4 py-2"
@@ -306,32 +275,34 @@ export default function SimplePricing() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="mt-8 flex justify-center"
           >
-            <div className="flex items-center gap-3">
-              <Globe className="h-4 w-4 text-muted-foreground" />
-              <span className="text-sm text-muted-foreground">{t('currencySelector.label')}</span>
+            <div className="flex flex-col sm:flex-row items-center gap-3 sm:gap-3">
+              <div className="flex items-center gap-2">
+                <Globe className="h-4 w-4 text-muted-foreground" />
+                <span className="text-sm text-muted-foreground whitespace-nowrap">{t('currencySelector.label')}</span>
+              </div>
               <Select value={selectedCountry} onValueChange={setSelectedCountry}>
-                <SelectTrigger className="w-[280px]">
-                  <div className="flex items-center gap-2">
+                <SelectTrigger className="w-full sm:w-[280px] max-w-[95vw] min-w-[240px]">
+                  <div className="flex items-center gap-2 min-w-0 overflow-hidden">
                     <ReactCountryFlag
                       countryCode={getCurrentCountryData(selectedCountry).flag}
                       svg
                       style={{ width: '16px', height: '12px' }}
                     />
-                    <span>{getCurrentCountryData(selectedCountry).name}</span>
-                    <span className="text-muted-foreground">({getCurrentCountryData(selectedCountry).currency})</span>
+                    <span className="truncate">{getCurrentCountryData(selectedCountry).name}</span>
+                    <span className="text-muted-foreground whitespace-nowrap">({getCurrentCountryData(selectedCountry).currency})</span>
                   </div>
                 </SelectTrigger>
                 <SelectContent>
                   {countries.map((country) => (
                     <SelectItem key={country.code} value={country.code}>
-                      <div className="flex items-center gap-2 w-full">
+                      <div className="flex items-center gap-2 w-full min-w-0">
                         <ReactCountryFlag
                           countryCode={country.flag}
                           svg
                           style={{ width: '16px', height: '12px' }}
                         />
-                        <span>{country.name}</span>
-                        <span className="ml-auto text-muted-foreground text-xs">
+                        <span className="truncate">{tCountries(country.code)}</span>
+                        <span className="ml-auto text-muted-foreground text-xs whitespace-nowrap">
                           {country.currency}
                         </span>
                       </div>
@@ -476,23 +447,23 @@ export default function SimplePricing() {
             const payAsYouGoPlan = plans[3]; // Get the Pay as you go plan
             return (
               <Card className="relative bg-card border border-border transition-all duration-300 hover:shadow-lg hover:border-primary/30">
-                <div className="p-8">
+                <div className="p-4 sm:p-6 lg:p-8">
                   {/* Header */}
-                  <div className="flex items-center gap-3 mb-6">
-                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 mb-6">
+                    <div className="flex h-10 w-10 items-center justify-center rounded-full bg-muted text-muted-foreground flex-shrink-0">
                       <payAsYouGoPlan.icon className="h-5 w-5" />
                     </div>
-                    <div className="flex-1">
-                      <h3 className="text-2xl font-bold text-card-foreground">{payAsYouGoPlan.name}</h3>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-xl sm:text-2xl font-bold text-card-foreground">{payAsYouGoPlan.name}</h3>
                       <p className="text-sm text-muted-foreground mt-1">{payAsYouGoPlan.description}</p>
                     </div>
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 w-full sm:w-auto">
                       <FeatureComingSoonDialog
                         featureName={tFeatures('payAsYouGoPlan')}
                       >
                         <Button
                           variant="outline"
-                          className="font-medium transition-all duration-300 group border-border hover:border-primary/50 hover:bg-primary/5 hover:text-primary px-8"
+                          className="w-full sm:w-auto font-medium transition-all duration-300 group border-border hover:border-primary/50 hover:bg-primary/5 hover:text-primary px-4 sm:px-8"
                         >
                           {payAsYouGoPlan.cta}
                           <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
@@ -502,15 +473,15 @@ export default function SimplePricing() {
                   </div>
 
                   {/* Pricing Details Grid */}
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                     {/* Call Minutes */}
                     <motion.div
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.6 }}
-                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                      className="bg-muted/30 rounded-lg p-3 sm:p-4 border border-border/50"
                     >
-                      <div className="flex items-center justify-between mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                         <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.callMinutes')}</span>
                         <span className="text-lg font-bold text-primary">
                           {t('plans.payAsYouGo.pricing.callMinutes', { 
@@ -527,9 +498,9 @@ export default function SimplePricing() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.65 }}
-                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                      className="bg-muted/30 rounded-lg p-3 sm:p-4 border border-border/50"
                     >
-                      <div className="flex items-center justify-between mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                         <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.phoneNumber')}</span>
                         <span className="text-lg font-bold text-primary">
                           {t('plans.payAsYouGo.pricing.phoneNumber', { 
@@ -546,9 +517,9 @@ export default function SimplePricing() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.7 }}
-                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                      className="bg-muted/30 rounded-lg p-3 sm:p-4 border border-border/50"
                     >
-                      <div className="flex items-center justify-between mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                         <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.aiAgents')}</span>
                         <span className="text-lg font-bold text-primary">
                           {t('plans.payAsYouGo.pricing.aiAgents', { 
@@ -565,9 +536,9 @@ export default function SimplePricing() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.75 }}
-                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                      className="bg-muted/30 rounded-lg p-3 sm:p-4 border border-border/50"
                     >
-                      <div className="flex items-center justify-between mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                         <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.support')}</span>
                         <div className="flex items-center">
                           <Check className="h-4 w-4 text-green-500 mr-1" />
@@ -582,9 +553,9 @@ export default function SimplePricing() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.8 }}
-                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                      className="bg-muted/30 rounded-lg p-3 sm:p-4 border border-border/50"
                     >
-                      <div className="flex items-center justify-between mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                         <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.apiAccess')}</span>
                         <span className="text-sm font-medium text-muted-foreground">{t('plans.payAsYouGo.status.notIncluded')}</span>
                       </div>
@@ -596,9 +567,9 @@ export default function SimplePricing() {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ duration: 0.3, delay: 0.85 }}
-                      className="bg-muted/30 rounded-lg p-4 border border-border/50"
+                      className="bg-muted/30 rounded-lg p-3 sm:p-4 border border-border/50"
                     >
-                      <div className="flex items-center justify-between mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
                         <span className="text-sm font-medium text-card-foreground">{t('plans.payAsYouGo.labels.integrations')}</span>
                         <div className="flex items-center">
                           <Check className="h-4 w-4 text-green-500 mr-1" />

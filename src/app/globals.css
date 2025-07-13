@@ -186,6 +186,29 @@
   body {
     @apply bg-background text-foreground;
     letter-spacing: var(--tracking-normal);
+    overflow-x: hidden;
+  }
+  
+  html {
+    overflow-x: hidden;
+  }
+  
+  /* Prevent horizontal scroll by ensuring proper word breaking */
+  * {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  /* Handle long German compound words */
+  h1, h2, h3, h4, h5, h6 {
+    word-break: break-word;
+    hyphens: auto;
+  }
+  
+  /* Specific handling for German language */
+  :lang(de) {
+    word-break: break-word;
+    hyphens: auto;
   }
   
   /* Ensure sections with IDs have proper scroll margin to account for fixed navbar */

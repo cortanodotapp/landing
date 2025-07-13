@@ -22,7 +22,7 @@ export function Footer() {
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <img
-                src="https://upload.cortano.app/Logo-Green.svg"
+                src="https://upload.cortano.app/logos/logo.svg"
                 alt="Cortano Logo"
                 className="h-6 w-auto"
               />

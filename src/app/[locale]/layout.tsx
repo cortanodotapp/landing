@@ -68,7 +68,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
     images: [
-      "https://upload.cortano.app/banner.png"
+      "https://upload.cortano.app/banners/main.png"
     ]
   },
   twitter: {
@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     description: "Deploy intelligent AI call agents for your business in minutes. Handle customer calls, book appointments, qualify leads, and provide 24/7 phone support with our no-code platform.",
     creator: "@cortanodotapp", // Update with your actual Twitter handle
     images: [
-      "https://upload.cortano.app/banner.png"
+      "https://upload.cortano.app/banners/main.png"
     ]
   },
   robots: {
@@ -124,12 +124,10 @@ export default async function LocaleLayout({
     "name": "Cortano",
     "description": "Deploy intelligent AI call agents for your business in minutes. Handle customer calls, book appointments, qualify leads, and provide 24/7 phone support with our no-code platform.",
     "url": "https://cortano.app", // Update with your actual domain
-    "logo": "https://cortano.app/logo.png", // Update with your actual logo URL
+    "logo": "https://upload.cortano.app/logos/logo.svg", // Update with your actual logo URL
     "sameAs": [
-      // Add your social media profiles
-      // "https://twitter.com/cortano",
-      // "https://linkedin.com/company/cortano",
-      // "https://github.com/cortano"
+      "https://twitter.com/cortanodotapp",
+      "https://github.com/cortanodotapp"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -147,14 +145,14 @@ export default async function LocaleLayout({
     }
   };
   return (
-    <html lang={(await params).locale}>
+    <html lang={(await params).locale} className="overflow-x-hidden">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className={`${Bricolage.className} antialiased dark`}>
+      <body className={`${Bricolage.className} antialiased dark overflow-x-hidden`}>
         <NextIntlClientProvider messages={messages}>
           <PostHogProvider>
             {children}

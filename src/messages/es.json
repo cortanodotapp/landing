@@ -101,10 +101,11 @@
         "name": "Starter",
         "description": "Perfecto para pequeñas empresas que comienzan con agentes de llamadas IA.",
         "price": "{price}{currency}/mes",
-        "cta": "Comenzar prueba gratuita",
+        "cta": "Comenzar ahora",
         "features": {
           "minutes": "500 minutos de llamada/mes",
           "agents": "1 Agente de llamadas IA",
+          "phoneNumber": "1 número de teléfono incluido",
           "integrations": "Integraciones simples",
           "support": "Soporte básico",
           "apiAccess": "Sin acceso API"
@@ -114,10 +115,11 @@
         "name": "Medium",
         "description": "Ideal para empresas en crecimiento con mayor volumen de llamadas.",
         "price": "{price}{currency}/mes",
-        "cta": "Comenzar prueba gratuita",
+        "cta": "Comenzar ahora",
         "features": {
           "minutes": "1.500 minutos de llamada/mes",
           "agents": "3 Agentes de llamadas IA",
+          "phoneNumber": "1 número de teléfono incluido",
           "integrations": "Integraciones avanzadas",
           "support": "Soporte prioritario",
           "apiAccess": "Acceso completo a API"
@@ -131,6 +133,7 @@
         "features": {
           "minutes": "Minutos de llamada ilimitados",
           "agents": "Agentes de llamadas IA ilimitados",
+          "phoneNumber": "1 número de teléfono incluido",
           "integrations": "Integraciones personalizadas",
           "support": "Soporte prioritario",
           "apiAccess": "Acceso completo a API"
@@ -342,7 +345,7 @@
     "headline": "Comienza tu viaje con IA",
     "headlineHighlight": "Hoy",
     "description": "Únete a miles de empresas que ya usan IA para revolucionar sus interacciones con clientes. Configura tu primer agente de IA en minutos y ve la diferencia que hace.",
-    "primaryCta": "Comenzar prueba gratuita",
+    "primaryCta": "Comenzar ahora",
     "secondaryCta": "Ver documentación",
     "trustIndicator1": "Sin tarifas de configuración",
     "trustIndicator2": "Configuración de 5 minutos",
@@ -381,5 +384,17 @@
     "contactTitle": "¿Aún tienes preguntas?",
     "contactDescription": "¿No puedes encontrar la respuesta que buscas? Nuestro equipo de soporte está aquí para ayudar.",
     "contactButton": "Contactar Soporte"
+  },
+  "countries": {
+    "us": "Estados Unidos",
+    "uk": "Reino Unido", 
+    "de": "Alemania",
+    "nl": "Países Bajos",
+    "pl": "Polonia",
+    "ca": "Canadá",
+    "au": "Australia",
+    "jp": "Japón",
+    "br": "Brasil",
+    "mx": "México"
   }
 }

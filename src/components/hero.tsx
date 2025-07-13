@@ -35,9 +35,9 @@ export function Hero() {
             </div>
             
             {/* Main Heading */}
-            <h1 className="mb-4 md:mb-6 text-3xl md:text-4xl font-bold tracking-tight text-foreground sm:text-4xl md:sm:text-5xl lg:text-6xl leading-tight">
+            <h1 className="mb-4 md:mb-6 text-3xl md:text-4xl font-bold tracking-tight text-foreground sm:text-4xl md:sm:text-5xl lg:text-6xl leading-tight break-words overflow-wrap-break-word">
               {t('headline')}{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent break-words">
                 {t('headlineHighlight')}
               </span>
             </h1>

@@ -98,10 +98,11 @@
         "name": "Starter",
         "description": "Perfect for small businesses getting started with AI call agents.",
         "price": "{currency}{price}/month",
-        "cta": "Start Free Trial",
+        "cta": "Start Now",
         "features": {
           "minutes": "500 call minutes/month",
           "agents": "1 AI Call Agent",
+          "phoneNumber": "1 phone number included",
           "integrations": "Simple integrations",
           "support": "Basic support",
           "apiAccess": "No API access"
@@ -111,10 +112,11 @@
         "name": "Medium",
         "description": "Ideal for growing businesses with higher call volumes.",
         "price": "{currency}{price}/month",
-        "cta": "Start Free Trial",
+        "cta": "Start Now",
         "features": {
           "minutes": "1,500 call minutes/month",
           "agents": "3 AI Call Agents",
+          "phoneNumber": "1 phone number included",
           "integrations": "Advanced integrations",
           "support": "Priority support",
           "apiAccess": "Full API access"
@@ -128,6 +130,7 @@
         "features": {
           "minutes": "Unlimited call minutes",
           "agents": "Unlimited AI Call Agents",
+          "phoneNumber": "1 phone number included",
           "integrations": "Custom integrations",
           "support": "Priority support",
           "apiAccess": "Full API access"
@@ -335,7 +338,7 @@
     "headline": "Start Your AI Journey",
     "headlineHighlight": "Today",
     "description": "Join thousands of businesses already using AI to revolutionize their customer interactions. Set up your first AI agent in minutes and see the difference it makes.",
-    "primaryCta": "Start Free Trial",
+    "primaryCta": "Start Now",
     "secondaryCta": "View Documentation",
     "trustIndicator1": "No setup fees",
     "trustIndicator2": "5-minute setup",
@@ -374,5 +377,17 @@
     "contactTitle": "Still have questions?",
     "contactDescription": "Can't find the answer you're looking for? Our support team is here to help.",
     "contactButton": "Contact Support"
+  },
+  "countries": {
+    "us": "United States",
+    "uk": "United Kingdom", 
+    "de": "Germany",
+    "nl": "Netherlands",
+    "pl": "Poland",
+    "ca": "Canada",
+    "au": "Australia",
+    "jp": "Japan",
+    "br": "Brazil",
+    "mx": "Mexico"
   }
 }

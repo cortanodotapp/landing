@@ -116,7 +116,7 @@ export function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
 
-            <img src={"https://upload.cortano.app/Logo-Green.svg"} alt="Cortano Logo" className="h-5 w-auto" />
+            <img src={"https://upload.cortano.app/logos/logo.svg"} alt="Cortano Logo" className="h-5 w-auto" />
 
             <span className="text-xl font-bold text-foreground">cortano</span>
           </Link>
@@ -129,7 +129,7 @@ export function Navbar() {
                   {t('products')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] max-w-[95vw] overflow-hidden">
                     {products.map((product) => (
                       <li key={product.title}>
                         {product.comingSoon ? (
@@ -175,7 +175,7 @@ export function Navbar() {
                   {t('developer')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] max-w-[95vw] overflow-hidden">
                     {developer.map((item) => (
                       <li key={item.title}>
                         <FeatureComingSoonDialog
@@ -202,7 +202,7 @@ export function Navbar() {
                   {t('resources')}
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
-                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                  <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] max-w-[95vw] overflow-hidden">
                     {resources.map((resource) => (
                       <li key={resource.title}>
                         {resource.featureName ? (
