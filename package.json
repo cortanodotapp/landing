@@ -35,7 +35,7 @@
     "framer-motion": "^12.19.1",
     "gray-matter": "^4.0.3",
     "lucide-react": "^0.522.0",
-    "motion": "^12.18.1",
+    "motion": "^12.23.6",
     "next": "15.3.4",
     "next-intl": "^4.3.0",
     "next-mdx-remote": "^5.0.0",
