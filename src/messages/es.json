@@ -203,6 +203,14 @@
       "hiring": "Empleo",
       "blog": "Blog"
     },
+    "company": {
+      "title": "Empresa",
+      "name": "CORTANO LIMITED",
+      "location": "Londres, Reino Unido",
+      "email": "hello@cortano.app",
+      "address": "71-75 Shelton Street, Covent Garden, WC2H 9JQ",
+      "companyNumber": "Núm. de empresa 16596976"
+    },
     "legal": {
       "copyright": "© 2025 Cortano. Todos los derechos reservados.",
       "privacyPolicy": "Política de privacidad",
