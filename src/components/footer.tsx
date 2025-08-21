@@ -104,13 +104,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('digitalCallAgent')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('products.digitalCallAgent')}
-                  </span>
-                </FeatureComingSoonDialog>
+                <span className="text-sm text-muted-foreground opacity-70 cursor-not-allowed">
+                  {t('products.digitalCallAgent')}
+                </span>
               </li>
               <li>
                 <Link href="/#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
@@ -125,31 +121,34 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-foreground mb-4">{t('developer.title')}</h3>
             <ul className="space-y-3">
               <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('developerDocs')}
+                <a 
+                  href="https://docs.cortano.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
                 >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('developer.documentation')}
-                  </span>
-                </FeatureComingSoonDialog>
+                  {t('developer.documentation')}
+                </a>
               </li>
               <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('apiStatus')}
+                <a 
+                  href="https://status.cortano.app" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
                 >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('developer.apiStatus')}
-                  </span>
-                </FeatureComingSoonDialog>
+                  {t('developer.servicesStatus')}
+                </a>
               </li>
               <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('apiChangelog')}
+                <a 
+                  href="https://docs.cortano.app/changelog" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
                 >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('developer.apiChangelog')}
-                  </span>
-                </FeatureComingSoonDialog>
+                  {t('developer.apiChangelog')}
+                </a>
               </li>
             </ul>
           </div>
@@ -159,7 +158,7 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-foreground mb-4">{t('resources.title')}</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/legal" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                <Link href={`/${locale}/legal`} className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
                   {t('resources.legal')}
                 </Link>
               </li>
@@ -169,13 +168,9 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <FeatureComingSoonDialog
-                  featureName={tFeatures('hiring')}
-                >
-                  <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                    {t('resources.hiring')}
-                  </span>
-                </FeatureComingSoonDialog>
+                <Link href="/hiring" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
+                  {t('resources.hiring')}
+                </Link>
               </li>
               <li>
                 <Link href="/blog" className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200">
@@ -204,13 +199,12 @@ export function Footer() {
               >
                 {t('legal.termsOfService')}
               </Link>
-              <FeatureComingSoonDialog
-                featureName={tFeatures('cookiePolicy')}
+              <Link 
+                href={`/${locale}/legal/cookies`}
+                className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200"
               >
-                <span className="text-sm text-muted-foreground hover:text-primary transition-colors duration-200 cursor-pointer">
-                  {t('legal.cookiePolicy')}
-                </span>
-              </FeatureComingSoonDialog>
+                {t('legal.cookiePolicy')}
+              </Link>
             </div>
           </div>
         </div>

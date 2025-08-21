@@ -9,7 +9,7 @@
   },
   "navbar": {
     "products": "Produkty",
-    "developer": "Deweloper", 
+  "developer": "Platforma", 
     "resources": "Zasoby",
     "getStarted": "Rozpocznij",
     "productItems": {
@@ -28,7 +28,7 @@
     },
     "developerItems": {
       "documentation": {
-        "title": "Dokumentacja dla deweloperów",
+        "title": "Dokumentacja",
         "description": "Kompletna dokumentacja API, przewodniki i samouczki do integracji Cortano z Twoimi aplikacjami."
       },
       "apiStatus": {
@@ -50,8 +50,8 @@
         "description": "Poznaj naszą misję, zespół i historię powstania Cortano."
       },
       "hiring": {
-        "title": "Praca",
-        "description": "Dołącz do naszego zespołu i pomóż nam budować przyszłość interakcji z klientami napędzanych przez AI."
+    "title": "Praca",
+    "description": "Dołącz do naszego zespołu i pomóż nam budować przyszłość interakcji z klientami napędzanych przez AI."
       },
       "blog": {
         "title": "Blog",
@@ -190,9 +190,9 @@
       "pricing": "Cennik"
     },
     "developer": {
-      "title": "Deweloper",
+      "title": "Platforma",
       "documentation": "Dokumentacja",
-      "apiStatus": "Status API",
+      "servicesStatus": "Status usług",
       "apiChangelog": "Dziennik zmian API"
     },
     "resources": {
@@ -338,6 +338,12 @@
     "on": "dnia",
     "readingTime": "min czytania"
   },
+  "hiring": {
+    "title": "Praca",
+    "description": "Dołącz do naszego zespołu i pomóż nam budować przyszłość interakcji z klientami napędzanych przez AI.",
+    "noOffersTitle": "Brak dostępnych ofert",
+    "noOffersDescription": "W tej chwili nie prowadzimy rekrutacji — sprawdź ponownie później."
+  },
   "legal": {
     "backToHome": "Powrót do strony głównej",
     "lastUpdated": "Ostatnia aktualizacja",
@@ -403,5 +409,50 @@
     "jp": "Japonia",
     "br": "Brazylia",
     "mx": "Meksyk"
+  },
+  "callAgentPage": {
+    "hero": {
+      "badge": "Agent rozmów AI",
+      "title": "Odbieraj każdy telefon dzięki",
+      "titleHighlight": "inteligentnemu agentowi",
+      "description": "Cortano Call Agent obsługuje połączenia, umawia wizyty, kwalifikuje leady i zapewnia wsparcie 24/7 w naturalnych rozmowach.",
+      "primaryCta": "Poproś o demo",
+      "secondaryCta": "Zobacz ceny"
+    },
+    "features": {
+  "badge": "Funkcje",
+      "title": "Co zyskujesz",
+      "subtitle": "Zaprojektowany do niezawodnej, profesjonalnej obsługi telefonicznej",
+      "items": [
+        { "title": "Naturalne rozmowy", "description": "Naturalne, kontekstowe dialogi zgodne z Twoją marką." },
+        { "title": "Dostępność 24/7", "description": "Już nigdy nie przegapisz połączenia. Zawsze włączony, zawsze spójny." },
+        { "title": "Rezerwacja wizyt", "description": "Integracja z kalendarzem: rezerwacje, zmiany i potwierdzenia." },
+        { "title": "Bezpieczeństwo danych", "description": "Bezpieczne przetwarzanie danych z szyfrowaniem i kontrolą prywatności." },
+        { "title": "Analityka połączeń", "description": "Mierz skuteczność, intencje i wyniki z praktycznymi wnioskami." }
+      ]
+    },
+    "cardTitles": {
+      "models": "Modele AI",
+      "integrations": "Integracje",
+      "outcomes": "Wyniki rozmów"
+    },
+    "outcomes": {
+      "booked": "Umówione",
+      "qualified": "Zakwalifikowane",
+      "voicemail": "Poczta głosowa",
+      "transferred": "Przekazane"
+    },
+    "models": {
+      "gpt4o": "GPT-4o",
+      "claude35": "Claude 3.5",
+      "geminiPro": "Gemini Pro",
+      "custom": "Własny"
+    },
+    "cta": {
+      "title": "Gotowy zautomatyzować wsparcie telefoniczne?",
+      "description": "Pozwól AI obsługiwać rutynowe rozmowy, a zespół skupi się na priorytetach.",
+      "primaryCta": "Poproś o demo",
+      "secondaryCta": "Skontaktuj się ze sprzedażą"
+    }
   }
 }

@@ -8,7 +8,7 @@
   },
   "navbar": {
     "products": "Products",
-    "developer": "Developer", 
+  "developer": "Platform", 
     "resources": "Resources",
     "getStarted": "Get Started",
     "productItems": {
@@ -27,7 +27,7 @@
     },
     "developerItems": {
       "documentation": {
-        "title": "Developer Documentation",
+        "title": "Documentation",
         "description": "Complete API documentation, guides, and tutorials to integrate Cortano into your applications."
       },
       "apiStatus": {
@@ -50,7 +50,7 @@
       },
       "hiring": {
         "title": "Hiring",
-        "description": "Join our team and help us build the future of AI-powered customer interactions."
+        "description": "Join our team and help us build the future of AI-powered customer interactions"
       },
       "blog": {
         "title": "Blog",
@@ -190,7 +190,7 @@
     "developer": {
       "title": "Developer",
       "documentation": "Documentation",
-      "apiStatus": "API Status",
+      "servicesStatus": "Services Status",
       "apiChangelog": "API Changelog"
     },
     "resources": {
@@ -332,6 +332,12 @@
     "on": "on",
     "readingTime": "min read"
   },
+  "hiring": {
+    "title": "Hiring",
+    "description": "Join our team and help us build the future of AI-powered customer interactions.",
+    "noOffersTitle": "No open roles",
+    "noOffersDescription": "We are not hiring right now — please check back later."
+  },
   "legal": {
     "backToHome": "Back to Home",
     "lastUpdated": "Last updated",
@@ -397,5 +403,50 @@
     "jp": "Japan",
     "br": "Brazil",
     "mx": "Mexico"
+  },
+  "callAgentPage": {
+    "hero": {
+      "badge": "AI Call Agent",
+      "title": "Answer every call with",
+      "titleHighlight": "an intelligent phone agent",
+      "description": "Cortano Call Agent handles customer calls, books appointments, qualifies leads, and provides 24/7 phone support with human‑like conversations.",
+      "primaryCta": "Request a demo",
+      "secondaryCta": "View pricing"
+    },
+    "features": {
+  "badge": "Features",
+      "title": "What you get",
+      "subtitle": "Purpose-built for reliable, professional phone support",
+      "items": [
+        { "title": "Human‑like conversations", "description": "Natural, context‑aware dialogs that feel professional and on‑brand." },
+        { "title": "24/7 availability", "description": "Never miss a call again. Always on, always consistent." },
+        { "title": "Appointment booking", "description": "Seamless calendar integration to book, reschedule, and confirm meetings." },
+        { "title": "Data security", "description": "Secure data handling with encryption and privacy controls." },
+        { "title": "Call analytics", "description": "Track performance, intent, and outcomes with actionable insights." }
+      ]
+    },
+    "cardTitles": {
+      "models": "AI Models",
+      "integrations": "Integrations",
+      "outcomes": "Call Outcomes"
+    },
+    "outcomes": {
+      "booked": "Booked",
+      "qualified": "Qualified",
+      "voicemail": "Voicemail",
+      "transferred": "Transferred"
+    },
+    "models": {
+      "gpt4o": "GPT-4o",
+      "claude35": "Claude 3.5",
+      "geminiPro": "Gemini Pro",
+      "custom": "Custom"
+    },
+    "cta": {
+      "title": "Ready to put your phone support on autopilot?",
+      "description": "Let our AI handle routine calls so your team can focus on what matters.",
+      "primaryCta": "Request a demo",
+      "secondaryCta": "Contact sales"
+    }
   }
 }

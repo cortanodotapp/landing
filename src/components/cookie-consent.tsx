@@ -5,8 +5,11 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { X, Cookie } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { getCookieConsent, setCookieConsent } from '@/lib/cookie-consent'
+import Link from 'next/link'
+import { useLocale } from 'next-intl'
 
 export function CookieConsent() {
+  const locale = useLocale?.() as string | undefined
   const [isVisible, setIsVisible] = useState(false)
   const [isLoaded, setIsLoaded] = useState(false)
 
@@ -70,8 +73,10 @@ export function CookieConsent() {
                     Cookie Notice
                   </h3>
                   <p className="text-xs text-white/80 leading-relaxed">
-                    This website uses cookies to enhance your experience and analyze our website traffic. 
-                    By continuing to browse, you agree to our use of cookies.
+                    This website uses cookies to enhance your experience and analyze our website traffic.{' '}
+                    <Link href={`/${locale || 'en'}/legal/cookies`} className="underline text-primary hover:text-primary/80">
+                      Learn more
+                    </Link>.
                   </p>
                 </div>
               </div>
