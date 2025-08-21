@@ -114,6 +114,11 @@ export default async function LegalPage({ params }: LegalPageProps) {
                   {t('termsOfService')}
                 </Button>
               </Link>
+              <Link href={`/${locale}/legal/cookies`}>
+                <Button variant="outline" size="sm">
+                  {t('cookiePolicy')}
+                </Button>
+              </Link>
             </div>
           </div>
         </footer>

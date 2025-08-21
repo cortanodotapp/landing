@@ -9,7 +9,7 @@
   },
   "navbar": {
     "products": "Produkte",
-    "developer": "Entwickler", 
+  "developer": "Plattform", 
     "resources": "Ressourcen",
     "pricing": "Preise",
     "getStarted": "Loslegen",
@@ -28,8 +28,8 @@
       }
     },
     "developerItems": {
-      "documentation": {
-        "title": "Entwickler-Dokumentation",
+        "documentation": {
+          "title": "Dokumentation",
         "description": "Vollständige API-Dokumentation, Anleitungen und Tutorials zur Integration von Cortano in Ihre Anwendungen."
       },
       "apiStatus": {
@@ -77,7 +77,7 @@
     },
     "enterpriseSecurity": {
       "title": "Enterprise-Sicherheit",
-      "description": "Bankenähnliche Verschlüsselung, SOC 2-Konformität und 99,9 % Uptime SLA. Ihre Anrufdaten sind sicher und jederzeit geschützt."
+      "description": "Bankenstarkes Verschlüsselung, SOC 2-Konformität und 99,9% Verfügbarkeit. Ihre Anrufdaten sind sicher und geschützt."
     },
     "globalInfrastructure": {
       "title": "Globales Telefonnetzwerk",
@@ -193,7 +193,7 @@
     "developer": {
       "title": "Entwickler",
       "documentation": "Dokumentation",
-      "apiStatus": "API-Status",
+      "servicesStatus": "Service-Status",
       "apiChangelog": "API-Changelog"
     },
     "resources": {
@@ -339,6 +339,12 @@
     "on": "am",
     "readingTime": "Min Lesezeit"
   },
+  "hiring": {
+    "title": "Stellenausschreibungen",
+    "description": "Schließe dich unserem Team an und hilf uns, die Zukunft von KI-gestützten Kundeninteraktionen zu gestalten.",
+    "noOffersTitle": "Derzeit keine offenen Stellen",
+    "noOffersDescription": "Wir stellen momentan nicht ein — schau später noch einmal vorbei."
+  },
   "legal": {
     "backToHome": "Zurück zur Startseite",
     "lastUpdated": "Zuletzt aktualisiert",
@@ -404,5 +410,50 @@
     "jp": "Japan",
     "br": "Brasilien",
     "mx": "Mexiko"
+  },
+  "callAgentPage": {
+    "hero": {
+      "badge": "KI-Anrufagent",
+      "title": "Beantworten Sie jeden Anruf mit",
+      "titleHighlight": "einem intelligenten Telefonagenten",
+      "description": "Cortano Call Agent bearbeitet Kundenanrufe, bucht Termine, qualifiziert Leads und bietet 24/7-Telefonsupport mit natürlich klingenden Gesprächen.",
+      "primaryCta": "Demo anfragen",
+      "secondaryCta": "Preise ansehen"
+    },
+    "features": {
+  "badge": "Funktionen",
+      "title": "Ihre Vorteile",
+  "subtitle": "Speziell für zuverlässigen, professionellen Telefonsupport",
+      "items": [
+        { "title": "Menschlich klingende Gespräche", "description": "Natürliche, kontextbezogene Dialoge – professionell und markenkonform." },
+        { "title": "Verfügbarkeit 24/7", "description": "Verpassen Sie nie wieder einen Anruf. Immer erreichbar, immer konsistent." },
+        { "title": "Terminbuchung", "description": "Nahtlose Kalenderintegration zum Buchen, Verschieben und Bestätigen." },
+        { "title": "Datensicherheit", "description": "Sichere Datenverarbeitung mit Verschlüsselung und Datenschutzkontrollen." },
+        { "title": "Anrufanalysen", "description": "Leistung, Intent und Ergebnisse mit umsetzbaren Einblicken messen." }
+      ]
+    },
+    "cardTitles": {
+      "models": "KI-Modelle",
+      "integrations": "Integrationen",
+      "outcomes": "Anrufergebnisse"
+    },
+    "outcomes": {
+      "booked": "Gebucht",
+      "qualified": "Qualifiziert",
+      "voicemail": "Sprachnachricht",
+      "transferred": "Weitergeleitet"
+    },
+    "models": {
+      "gpt4o": "GPT-4o",
+      "claude35": "Claude 3.5",
+      "geminiPro": "Gemini Pro",
+      "custom": "Benutzerdefiniert"
+    },
+    "cta": {
+      "title": "Bereit, Ihren Telefonsupport zu automatisieren?",
+      "description": "Überlassen Sie unserer KI Routineanrufe – Ihr Team fokussiert sich auf das Wesentliche.",
+      "primaryCta": "Demo anfragen",
+      "secondaryCta": "Vertrieb kontaktieren"
+    }
   }
 }

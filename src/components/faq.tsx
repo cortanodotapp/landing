@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronDown, Plus, Minus } from "lucide-react"
+import GradientDither from "@/components/ui/gradient-dither"
 import { useTranslations } from 'next-intl'
 
 export function FAQ() {
@@ -46,9 +47,11 @@ export function FAQ() {
   ]
 
   return (
-    <section className="relative py-24 overflow-hidden">
+  <section className="relative py-24 overflow-hidden">
+      {/* Dither overlay to prevent gradient banding in subtle backgrounds */}
+      <GradientDither strength={0.05} />
       {/* Subtle background glow */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/1 to-background"></div>
+  <div className="absolute inset-0 z-0 bg-gradient-to-b from-background via-primary/1 to-background" />
       
       {/* Floating decorative elements */}
       <motion.div 
@@ -82,7 +85,7 @@ export function FAQ() {
         <Minus className="w-5 h-5" />
       </motion.div>
 
-      <div className="relative z-10 mx-auto max-w-4xl px-6">
+  <div className="relative z-20 mx-auto max-w-4xl px-6">
         {/* Section Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

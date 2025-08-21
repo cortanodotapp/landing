@@ -6,6 +6,7 @@ import { FeatureComingSoonDialog } from "@/components/ui/feature-coming-soon-dia
 import { ArrowRight, Sparkles, Zap, Phone, MessageCircle } from "lucide-react"
 import { useTranslations } from 'next-intl'
 import { motion } from "framer-motion"
+import GradientDither from "@/components/ui/gradient-dither"
 
 export function CTA() {
   const t = useTranslations('ctaSection')
@@ -13,6 +14,8 @@ export function CTA() {
   
   return (
     <section className="relative py-24 overflow-hidden">
+      {/* Dither overlay to prevent gradient banding */}
+      <GradientDither strength={0.05} />
       {/* Nearly invisible background effects */}
       
       {/* Extremely subtle moving gradient orbs */}
@@ -109,7 +112,7 @@ export function CTA() {
       </motion.div>
 
       {/* Main Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
+  <div className="relative z-20 mx-auto max-w-4xl px-6 text-center">
         {/* Radiant Glow Effects Behind Text */}
         <div className="absolute inset-0 flex items-center justify-center">
           {/* Central glow behind headline */}
@@ -155,7 +158,7 @@ export function CTA() {
               delay: 2,
             }}
           />
-        </div>
+  </div>
         {/* Animated Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

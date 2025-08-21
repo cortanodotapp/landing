@@ -9,7 +9,7 @@
   },
   "navbar": {
     "products": "Productos",
-    "developer": "Desarrollador", 
+  "developer": "Plataforma", 
     "resources": "Recursos",
     "pricing": "Precios",
     "getStarted": "Comenzar",
@@ -29,7 +29,7 @@
     },
     "developerItems": {
       "documentation": {
-        "title": "Documentación para desarrolladores",
+        "title": "Documentación",
         "description": "Documentación completa de API, guías y tutoriales para integrar Cortano en sus aplicaciones."
       },
       "apiStatus": {
@@ -51,8 +51,8 @@
         "description": "Conoce nuestra misión, equipo y la historia detrás de Cortano."
       },
       "hiring": {
-        "title": "Empleo",
-        "description": "Únete a nuestro equipo y ayúdanos a construir el futuro de las interacciones con clientes impulsadas por IA."
+    "title": "Empleo",
+    "description": "Únete a nuestro equipo y ayúdanos a construir el futuro de las interacciones con clientes impulsadas por IA."
       },
       "blog": {
         "title": "Blog",
@@ -191,9 +191,9 @@
       "pricing": "Precios"
     },
     "developer": {
-      "title": "Desarrollador",
+      "title": "Plataforma",
       "documentation": "Documentación",
-      "apiStatus": "Estado de API",
+      "servicesStatus": "Estado de servicios",
       "apiChangelog": "Registro de cambios de API"
     },
     "resources": {
@@ -339,6 +339,12 @@
     "on": "el",
     "readingTime": "min de lectura"
   },
+  "hiring": {
+    "title": "Empleo",
+    "description": "Únete a nuestro equipo y ayúdanos a construir el futuro de las interacciones con clientes impulsadas por IA.",
+    "noOffersTitle": "No hay vacantes",
+    "noOffersDescription": "No estamos contratando en este momento — vuelve a consultar más tarde."
+  },
   "legal": {
     "backToHome": "Volver al Inicio",
     "lastUpdated": "Última actualización",
@@ -404,5 +410,50 @@
     "jp": "Japón",
     "br": "Brasil",
     "mx": "México"
+  },
+  "callAgentPage": {
+    "hero": {
+      "badge": "Agente de llamadas IA",
+      "title": "Responde cada llamada con",
+      "titleHighlight": "un agente telefónico inteligente",
+      "description": "Cortano Call Agent maneja llamadas, agenda citas, califica leads y brinda soporte telefónico 24/7 con conversaciones naturales.",
+      "primaryCta": "Solicitar demo",
+      "secondaryCta": "Ver precios"
+    },
+    "features": {
+  "badge": "Funciones",
+      "title": "Qué obtienes",
+  "subtitle": "Diseñado para soporte telefónico fiable y profesional",
+      "items": [
+        { "title": "Conversaciones naturales", "description": "Diálogos contextuales que se sienten profesionales y alineados a tu marca." },
+        { "title": "Disponibilidad 24/7", "description": "Nunca vuelvas a perder una llamada. Siempre activo y consistente." },
+        { "title": "Agendado de citas", "description": "Integración con calendario para agendar, reprogramar y confirmar." },
+        { "title": "Seguridad de datos", "description": "Manejo seguro de datos con cifrado y controles de privacidad." },
+        { "title": "Analítica de llamadas", "description": "Mide rendimiento, intención y resultados con insights accionables." }
+      ]
+    },
+    "cardTitles": {
+      "models": "Modelos de IA",
+      "integrations": "Integraciones",
+      "outcomes": "Resultados de llamadas"
+    },
+    "outcomes": {
+      "booked": "Agendado",
+      "qualified": "Calificado",
+      "voicemail": "Buzón de voz",
+      "transferred": "Transferido"
+    },
+    "models": {
+      "gpt4o": "GPT-4o",
+      "claude35": "Claude 3.5",
+      "geminiPro": "Gemini Pro",
+      "custom": "Personalizado"
+    },
+    "cta": {
+      "title": "¿Listo para automatizar tu soporte telefónico?",
+      "description": "Deja que nuestra IA maneje llamadas rutinarias para que tu equipo se enfoque en lo importante.",
+      "primaryCta": "Solicitar demo",
+      "secondaryCta": "Contactar ventas"
+    }
   }
 }

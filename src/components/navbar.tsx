@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/navigation-menu"
 import { cn } from "@/lib/utils"
 import { useScrollDirection } from "@/hooks/useScrollDirection"
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { Phone, Globe, Code, BookOpen, Users, Briefcase, FileText, Activity, BarChart3 } from "lucide-react"
 import React from "react"
 
@@ -24,6 +24,7 @@ export function Navbar() {
   const t = useTranslations('navbar')
   const tFeatures = useTranslations('featureNames')
   const tCommon = useTranslations('common')
+  const locale = useLocale()
 
   const products = [
     {
@@ -49,7 +50,7 @@ export function Navbar() {
     }
   ]
 
-  const developer = [
+  const platform = [
     {
       title: t('developerItems.documentation.title'),
       href: "/docs",
@@ -76,7 +77,7 @@ export function Navbar() {
   const resources = [
     {
       title: t('resourceItems.legal.title'),
-      href: "/legal",
+      href: `/${locale}/legal`,
       description: t('resourceItems.legal.description'),
       icon: FileText
     },
@@ -133,24 +134,20 @@ export function Navbar() {
                     {products.map((product) => (
                       <li key={product.title}>
                         {product.comingSoon ? (
-                          <FeatureComingSoonDialog
-                            featureName={product.featureName}
-                          >
-                            <div className="block select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer">
-                              <div className="flex items-center justify-between">
-                                <div className="flex items-center space-x-2">
-                                  <product.icon className="h-4 w-4 text-primary" />
-                                  <div className="text-sm font-medium leading-none">{product.title}</div>
-                                </div>
-                                <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs px-2 py-0.5">
-                                  {tCommon('soon')}
-                                </Badge>
+                          <div className="block select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none cursor-not-allowed opacity-70">
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-2">
+                                <product.icon className="h-4 w-4 text-primary" />
+                                <div className="text-sm font-medium leading-none">{product.title}</div>
                               </div>
-                              <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                {product.description}
-                              </p>
+                              <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 text-xs px-2 py-0.5">
+                                {tCommon('soon')}
+                              </Badge>
                             </div>
-                          </FeatureComingSoonDialog>
+                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                              {product.description}
+                            </p>
+                          </div>
                         ) : (
                           <Link href={product.href}>
                             <div className="block select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer">
@@ -176,7 +173,7 @@ export function Navbar() {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] max-w-[95vw] overflow-hidden">
-                    {developer.map((item) => (
+                  {platform.map((item) => (
                       <li key={item.title}>
                         <FeatureComingSoonDialog
                           featureName={item.featureName}

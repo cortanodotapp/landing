@@ -21,12 +21,17 @@ export default async function BlogPage({ params }: BlogPageProps) {
 
   if (!posts || posts.length === 0) {
     return (
-      <main className="min-h-screen bg-background">
+      <main className="min-h-screen bg-background flex flex-col">
         <Navbar />
-        <div className="container mx-auto px-4 py-16">
-          <h1 className="text-4xl font-bold text-center mb-8">{t('title')}</h1>
-          <p className="text-center text-muted-foreground">{t('noPosts')}</p>
-        </div>
+        {/* Content fills available space so the footer stays at the bottom */}
+        <section className="h-screen flex items-center justify-center">
+          <div className="container mx-auto px-4 text-center">
+            <div className="flex flex-col items-center justify-center h-full">
+              <h1 className="text-4xl font-bold mb-4">{t('title')}</h1>
+              <p className="text-lg text-muted-foreground">{t('noPosts')}</p>
+            </div>
+          </div>
+        </section>
         <LanguageSwitcher />
         <Footer />
       </main>
@@ -41,12 +46,14 @@ export default async function BlogPage({ params }: BlogPageProps) {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16 bg-gradient-to-b from-background to-muted/50">
+      <section className="h-screen flex items-center bg-gradient-to-b from-background to-muted/50">
         <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">{t('title')}</h1>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            {t('subtitle')}
-          </p>
+          <div className="flex flex-col items-center justify-center h-full">
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">{t('title')}</h1>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              {t('subtitle')}
+            </p>
+          </div>
         </div>
       </section>
 
