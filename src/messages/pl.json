@@ -220,7 +220,22 @@
   "dialog": {
     "comingSoon": "Wkrótce",
     "featureNotPublished": "Ta funkcja jest obecnie w fazie rozwoju i będzie dostępna wkrótce.",
-    "acknowledge": "Rozumiem"
+    "acknowledge": "Rozumiem",
+    "openBeta": "Otwarta Beta",
+    "openBetaTitle": "Dołącz do Beta",
+    "openBetaDescription": "Wkrótce uruchamiamy naszą otwartą betę! Bądź wśród pierwszych, którzy doświadczą {featureName} i pomogą kształtować przyszłość obsługi klienta napędzanej przez AI.",
+    "newsletterSignup": "Otrzymaj powiadomienie gdy będzie gotowe",
+    "emailPlaceholder": "Wprowadź swój adres email",
+    "firstNamePlaceholder": "Imię (opcjonalne)",
+    "lastNamePlaceholder": "Nazwisko (opcjonalne)",
+    "signMeUp": "Zapisz mnie",
+    "signingUp": "Zapisywanie...",
+    "signupSuccess": "Dzięki! Powiadomimy Cię gdy beta będzie gotowa.",
+    "signupError": "Coś poszło nie tak. Spróbuj ponownie.",
+    "emailRequired": "Adres email jest wymagany",
+    "invalidEmail": "Wprowadź prawidłowy adres email",
+    "alreadySubscribed": "Jesteś już na naszej liście!",
+    "rateLimited": "Za dużo prób. Spróbuj ponownie później."
   },
   "featureNames": {
     "aiCallAgentPlatform": "Platforma agentów rozmów AI",
@@ -340,9 +355,7 @@
   },
   "hiring": {
     "title": "Praca",
-    "description": "Dołącz do naszego zespołu i pomóż nam budować przyszłość interakcji z klientami napędzanych przez AI.",
-    "noOffersTitle": "Brak dostępnych ofert",
-    "noOffersDescription": "W tej chwili nie prowadzimy rekrutacji — sprawdź ponownie później."
+    "description": "W tej chwili nie mamy żadnych wolnych stanowisk, ale zawsze szukamy utalentowanych osób. Sprawdź ponownie wkrótce!"
   },
   "legal": {
     "backToHome": "Powrót do strony głównej",
@@ -453,6 +466,41 @@
       "description": "Pozwól AI obsługiwać rutynowe rozmowy, a zespół skupi się na priorytetach.",
       "primaryCta": "Poproś o demo",
       "secondaryCta": "Skontaktuj się ze sprzedażą"
+    }
+  },
+  "welcomeEmail": {
+    "preview": "Witamy w Cortano - Twoja Platforma Agentów Połączeń AI",
+    "welcome": "Witamy w Cortano",
+    "thankYou": "Dziękujemy za subskrypcję naszego newslettera! Jesteś teraz częścią naszej społeczności, która rewolucjonizuje obsługę klienta za pomocą agentów połączeń napędzanych przez AI.",
+    "expectFrom": "Oto czego możesz od nas oczekiwać:",
+    "unsubscribe": "Wypisz się",
+    "companyInfo": "Cortano, Londyn, Wielka Brytania",
+    "steps": {
+      "productUpdates": {
+        "title": "Aktualizacje i Wydania Produktów.",
+        "description": "o nowych funkcjach, ulepszeniach i możliwościach agentów połączeń AI, które wprowadzamy.",
+        "linkText": "Bądź pierwszy, który się dowie"
+      },
+      "industryInsights": {
+        "title": "Wgląd w Branżę.",
+        "description": "Otrzymuj ekspertkie analizy trendów w obsłudze klienta, automatyzacji AI i najlepszych praktyk skalowania operacji wsparcia.",
+        "linkText": "Przeczytaj nasze najnowsze spostrzeżenia"
+      },
+      "exclusiveContent": {
+        "title": "Ekskluzywne Treści.",
+        "description": "Dostęp do webinarów, studiów przypadków i samouczków, które pomagają zmaksymalizować implementację agenta połączeń AI.",
+        "linkText": "Odkryj naszą bibliotekę zasobów"
+      },
+      "earlyAccess": {
+        "title": "Możliwości Wczesnego Dostępu.",
+        "description": "Otrzymaj zaproszenia do testowania nowych funkcji w wersji beta i wyrażania opinii, które kształtują przyszłość naszej platformy.",
+        "linkText": "Dołącz do naszego programu beta"
+      }
+    },
+    "links": {
+      "blog": "Odwiedź nasz blog",
+      "documentation": "Przeczytaj dokumentację",
+      "support": "Skontaktuj się z pomocą techniczną"
     }
   }
 }

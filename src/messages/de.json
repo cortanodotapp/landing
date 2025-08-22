@@ -221,7 +221,22 @@
   "dialog": {
     "comingSoon": "Demnächst verfügbar",
     "featureNotPublished": "Diese Funktion ist in Entwicklung und bald verfügbar.",
-    "acknowledge": "Verstanden"
+    "acknowledge": "Verstanden",
+    "openBeta": "Offene Beta",
+    "openBetaTitle": "Beta-Zugang erhalten",
+    "openBetaDescription": "Wir starten bald unsere offene Beta! Seien Sie unter den Ersten, die {featureName} erleben und die Zukunft des KI-gestützten Kundenservice mitgestalten.",
+    "newsletterSignup": "Benachrichtigung erhalten",
+    "emailPlaceholder": "E-Mail-Adresse eingeben",
+    "firstNamePlaceholder": "Vorname (optional)",
+    "lastNamePlaceholder": "Nachname (optional)",
+    "signMeUp": "Anmelden",
+    "signingUp": "Wird angemeldet...",
+    "signupSuccess": "Danke! Wir benachrichtigen Sie, wenn die Beta verfügbar ist.",
+    "signupError": "Etwas ist schief gelaufen. Bitte versuchen Sie es erneut.",
+    "emailRequired": "E-Mail-Adresse ist erforderlich",
+    "invalidEmail": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+    "alreadySubscribed": "Sie stehen bereits auf unserer Liste!",
+    "rateLimited": "Zu viele Versuche. Bitte versuchen Sie es später erneut."
   },
   "featureNames": {
     "aiCallAgentPlatform": "KI-Anrufagenten-Plattform",
@@ -341,9 +356,7 @@
   },
   "hiring": {
     "title": "Stellenausschreibungen",
-    "description": "Schließe dich unserem Team an und hilf uns, die Zukunft von KI-gestützten Kundeninteraktionen zu gestalten.",
-    "noOffersTitle": "Derzeit keine offenen Stellen",
-    "noOffersDescription": "Wir stellen momentan nicht ein — schau später noch einmal vorbei."
+    "description": "Wir haben momentan keine freien Stellen, aber wir sind immer auf der Suche nach talentierten Personen. Schauen Sie bald wieder vorbei!"
   },
   "legal": {
     "backToHome": "Zurück zur Startseite",
@@ -454,6 +467,41 @@
       "description": "Überlassen Sie unserer KI Routineanrufe – Ihr Team fokussiert sich auf das Wesentliche.",
       "primaryCta": "Demo anfragen",
       "secondaryCta": "Vertrieb kontaktieren"
+    }
+  },
+  "welcomeEmail": {
+    "preview": "Willkommen bei Cortano - Ihre KI-Call-Agent-Plattform",
+    "welcome": "Willkommen bei Cortano",
+    "thankYou": "Vielen Dank für Ihr Abonnement unseres Newsletters! Sie sind jetzt Teil unserer Gemeinschaft, die den Kundensupport mit KI-gestützten Call Agents revolutioniert.",
+    "expectFrom": "Das können Sie von uns erwarten:",
+    "unsubscribe": "Abmelden",
+    "companyInfo": "Cortano, London, Vereinigtes Königreich",
+    "steps": {
+      "productUpdates": {
+        "title": "Produktupdates & Veröffentlichungen.",
+        "description": "über neue Funktionen, Verbesserungen und KI-Call-Agent-Fähigkeiten, die wir einführen.",
+        "linkText": "Als Erste erfahren"
+      },
+      "industryInsights": {
+        "title": "Brancheneinblicke.",
+        "description": "Erhalten Sie Expertenanalysen zu Kundenservice-Trends, KI-Automatisierung und bewährten Praktiken zur Skalierung Ihrer Support-Operationen.",
+        "linkText": "Lesen Sie unsere neuesten Erkenntnisse"
+      },
+      "exclusiveContent": {
+        "title": "Exklusive Inhalte.",
+        "description": "Zugang zu Webinaren, Fallstudien und Tutorials, die Ihnen helfen, Ihre KI-Call-Agent-Implementierung zu maximieren.",
+        "linkText": "Erkunden Sie unsere Ressourcenbibliothek"
+      },
+      "earlyAccess": {
+        "title": "Frühzugang-Möglichkeiten.",
+        "description": "Werden Sie eingeladen, neue Funktionen zu testen und Feedback zu geben, das die Zukunft unserer Plattform prägt.",
+        "linkText": "Treten Sie unserem Beta-Programm bei"
+      }
+    },
+    "links": {
+      "blog": "Besuchen Sie unseren Blog",
+      "documentation": "Dokumentation lesen",
+      "support": "Support kontaktieren"
     }
   }
 }

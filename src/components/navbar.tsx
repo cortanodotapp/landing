@@ -53,24 +53,24 @@ export function Navbar() {
   const platform = [
     {
       title: t('developerItems.documentation.title'),
-      href: "/docs",
+      href: "https://docs.cortano.app",
       description: t('developerItems.documentation.description'),
-      featureName: tFeatures('developerDocs'),
-      icon: BookOpen
+      icon: BookOpen,
+      external: true
     },
     {
       title: t('developerItems.apiStatus.title'),
-      href: "/status",
+      href: "https://status.cortano.app",
       description: t('developerItems.apiStatus.description'),
-      featureName: tFeatures('apiStatus'),
-      icon: Activity
+      icon: Activity,
+      external: true
     },
     {
       title: t('developerItems.apiChangelog.title'),
-      href: "/changelog",
+      href: "https://docs.cortano.app/changelog",
       description: t('developerItems.apiChangelog.description'),
-      featureName: tFeatures('apiChangelog'),
-      icon: Code
+      icon: Code,
+      external: true
     }
   ]
 
@@ -175,19 +175,20 @@ export function Navbar() {
                   <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] max-w-[95vw] overflow-hidden">
                   {platform.map((item) => (
                       <li key={item.title}>
-                        <FeatureComingSoonDialog
-                          featureName={item.featureName}
+                        <a 
+                          href={item.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="block select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer"
                         >
-                          <div className="block select-none space-y-2 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground cursor-pointer">
-                            <div className="flex items-center space-x-2">
-                              <item.icon className="h-4 w-4 text-primary" />
-                              <div className="text-sm font-medium leading-none">{item.title}</div>
-                            </div>
-                            <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                              {item.description}
-                            </p>
+                          <div className="flex items-center space-x-2">
+                            <item.icon className="h-4 w-4 text-primary" />
+                            <div className="text-sm font-medium leading-none">{item.title}</div>
                           </div>
-                        </FeatureComingSoonDialog>
+                          <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                            {item.description}
+                          </p>
+                        </a>
                       </li>
                     ))}
                   </ul>

@@ -21,17 +21,16 @@ export default async function BlogPage({ params }: BlogPageProps) {
 
   if (!posts || posts.length === 0) {
     return (
-      <main className="min-h-screen bg-background flex flex-col">
+      <main className="min-h-screen flex flex-col bg-background">
         <Navbar />
-        {/* Content fills available space so the footer stays at the bottom */}
-        <section className="h-screen flex items-center justify-center">
-          <div className="container mx-auto px-4 text-center">
-            <div className="flex flex-col items-center justify-center h-full">
-              <h1 className="text-4xl font-bold mb-4">{t('title')}</h1>
-              <p className="text-lg text-muted-foreground">{t('noPosts')}</p>
-            </div>
+        
+        <section className="container mx-auto px-4 pt-24 pb-12 flex-grow flex items-center justify-center">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl font-bold mb-4">{t('title')}</h1>
+            <p className="text-lg text-muted-foreground">{t('noPosts')}</p>
           </div>
         </section>
+        
         <LanguageSwitcher />
         <Footer />
       </main>

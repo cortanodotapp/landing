@@ -217,7 +217,22 @@
   },  "dialog": {
     "comingSoon": "Coming Soon",
     "featureNotPublished": "This feature is currently under development and will be available soon.",
-    "acknowledge": "Got it"
+    "acknowledge": "Got it",
+    "openBeta": "Open Beta",
+    "openBetaTitle": "Join the Open Beta",
+    "openBetaDescription": "We're launching our open beta soon! Be among the first to experience {featureName} and help shape the future of AI-powered customer service.",
+    "newsletterSignup": "Get notified when it's ready",
+    "emailPlaceholder": "Enter your email address",
+    "firstNamePlaceholder": "First name (optional)",
+    "lastNamePlaceholder": "Last name (optional)",
+    "signMeUp": "Sign me up",
+    "signingUp": "Signing up...",
+    "signupSuccess": "Thanks! We'll notify you when the beta is ready.",
+    "signupError": "Something went wrong. Please try again.",
+    "emailRequired": "Email address is required",
+    "invalidEmail": "Please enter a valid email address",
+    "alreadySubscribed": "You're already on our list!",
+    "rateLimited": "Too many attempts. Please try again later."
   },
   "featureNames": {
     "aiCallAgentPlatform": "AI Call Agent Platform",
@@ -334,9 +349,7 @@
   },
   "hiring": {
     "title": "Hiring",
-    "description": "Join our team and help us build the future of AI-powered customer interactions.",
-    "noOffersTitle": "No open roles",
-    "noOffersDescription": "We are not hiring right now — please check back later."
+    "description": "We don't have any open positions at the moment, but we're always looking for talented individuals. Check back soon!"
   },
   "legal": {
     "backToHome": "Back to Home",
@@ -447,6 +460,41 @@
       "description": "Let our AI handle routine calls so your team can focus on what matters.",
       "primaryCta": "Request a demo",
       "secondaryCta": "Contact sales"
+    }
+  },
+  "welcomeEmail": {
+    "preview": "Welcome to Cortano - Your AI Call Agent Platform",
+    "welcome": "Welcome to Cortano",
+    "thankYou": "Thank you for subscribing to our newsletter! You're now part of our community that's revolutionizing customer support with AI-powered call agents.",
+    "expectFrom": "Here's what you can expect from us:",
+    "unsubscribe": "Unsubscribe",
+    "companyInfo": "Cortano, London, United Kingdom",
+    "steps": {
+      "productUpdates": {
+        "title": "Product Updates & Releases.",
+        "description": "about new features, improvements, and AI call agent capabilities we're launching.",
+        "linkText": "Be the first to know"
+      },
+      "industryInsights": {
+        "title": "Industry Insights.",
+        "description": "Get expert analysis on customer service trends, AI automation, and best practices for scaling your support operations.",
+        "linkText": "Read our latest insights"
+      },
+      "exclusiveContent": {
+        "title": "Exclusive Content.",
+        "description": "Access to webinars, case studies, and tutorials that help you maximize your AI call agent implementation.",
+        "linkText": "Explore our resource library"
+      },
+      "earlyAccess": {
+        "title": "Early Access Opportunities.",
+        "description": "Get invited to beta test new features and provide feedback that shapes the future of our platform.",
+        "linkText": "Join our beta program"
+      }
+    },
+    "links": {
+      "blog": "Visit our blog",
+      "documentation": "Read documentation",
+      "support": "Contact support"
     }
   }
 }

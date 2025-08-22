@@ -329,12 +329,6 @@ export function CTA() {
             className="flex items-center gap-2"
             whileHover={{ scale: 1.02 }}
           >
-            <motion.div
-              animate={{ scale: [1, 1.05, 1] }}
-              transition={{ duration: 3, repeat: Infinity, delay: 0 }}
-            >
-              ✅
-            </motion.div>
             {t('trustIndicator1')}
           </motion.div>
           
@@ -342,12 +336,6 @@ export function CTA() {
             className="flex items-center gap-2"
             whileHover={{ scale: 1.02 }}
           >
-            <motion.div
-              animate={{ scale: [1, 1.05, 1] }}
-              transition={{ duration: 3, repeat: Infinity, delay: 1 }}
-            >
-              🚀
-            </motion.div>
             {t('trustIndicator2')}
           </motion.div>
           
@@ -355,12 +343,6 @@ export function CTA() {
             className="flex items-center gap-2"
             whileHover={{ scale: 1.02 }}
           >
-            <motion.div
-              animate={{ scale: [1, 1.05, 1] }}
-              transition={{ duration: 3, repeat: Infinity, delay: 2 }}
-            >
-              🔒
-            </motion.div>
             {t('trustIndicator3')}
           </motion.div>
         </motion.div>

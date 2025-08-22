@@ -1,0 +1,26 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/.prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model newsletter_subscriptions {
+  id               String   @id @default(cuid())
+  email            String   @unique
+  locale           String   @default("en")
+  firstName        String?
+  lastName         String?
+  unsubscribeToken String   @unique
+  subscribedAt     DateTime @default(now())
+  unsubscribedAt   DateTime?
+  isActive         Boolean  @default(true)
+  ipAddress        String?
+  userAgent        String?
+  source           String?  // Where they signed up from
+
+  @@map("newsletter_subscriptions")
+}

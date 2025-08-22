@@ -221,7 +221,22 @@
   "dialog": {
     "comingSoon": "Próximamente",
     "featureNotPublished": "Esta función está en desarrollo y estará disponible pronto.",
-    "acknowledge": "Entendido"
+    "acknowledge": "Entendido",
+    "openBeta": "Beta Abierta",
+    "openBetaTitle": "Únete a la Beta",
+    "openBetaDescription": "¡Pronto lanzaremos nuestra beta abierta! Sé de los primeros en experimentar {featureName} y ayudar a dar forma al futuro del servicio al cliente impulsado por IA.",
+    "newsletterSignup": "Recibir notificación cuando esté listo",
+    "emailPlaceholder": "Ingresa tu dirección de email",
+    "firstNamePlaceholder": "Nombre (opcional)",
+    "lastNamePlaceholder": "Apellido (opcional)",
+    "signMeUp": "Inscríbeme",
+    "signingUp": "Inscribiendo...",
+    "signupSuccess": "¡Gracias! Te notificaremos cuando la beta esté lista.",
+    "signupError": "Algo salió mal. Por favor intenta de nuevo.",
+    "emailRequired": "La dirección de email es requerida",
+    "invalidEmail": "Por favor ingresa una dirección de email válida",
+    "alreadySubscribed": "¡Ya estás en nuestra lista!",
+    "rateLimited": "Demasiados intentos. Por favor intenta más tarde."
   },
   "featureNames": {
     "aiCallAgentPlatform": "Plataforma de agentes de llamadas IA",
@@ -341,9 +356,7 @@
   },
   "hiring": {
     "title": "Empleo",
-    "description": "Únete a nuestro equipo y ayúdanos a construir el futuro de las interacciones con clientes impulsadas por IA.",
-    "noOffersTitle": "No hay vacantes",
-    "noOffersDescription": "No estamos contratando en este momento — vuelve a consultar más tarde."
+    "description": "No tenemos ninguna posición libre en este momento, pero siempre estamos buscando personas talentosas. ¡Vuelve pronto!"
   },
   "legal": {
     "backToHome": "Volver al Inicio",
@@ -454,6 +467,41 @@
       "description": "Deja que nuestra IA maneje llamadas rutinarias para que tu equipo se enfoque en lo importante.",
       "primaryCta": "Solicitar demo",
       "secondaryCta": "Contactar ventas"
+    }
+  },
+  "welcomeEmail": {
+    "preview": "Bienvenido a Cortano - Tu Plataforma de Agentes de Llamadas IA",
+    "welcome": "Bienvenido a Cortano",
+    "thankYou": "¡Gracias por suscribirte a nuestro boletín! Ahora eres parte de nuestra comunidad que está revolucionando el soporte al cliente con agentes de llamadas impulsados por IA.",
+    "expectFrom": "Esto es lo que puedes esperar de nosotros:",
+    "unsubscribe": "Cancelar suscripción",
+    "companyInfo": "Cortano, Londres, Reino Unido",
+    "steps": {
+      "productUpdates": {
+        "title": "Actualizaciones y Lanzamientos de Productos.",
+        "description": "sobre nuevas características, mejoras y capacidades de agentes de llamadas IA que estamos lanzando.",
+        "linkText": "Sé el primero en saber"
+      },
+      "industryInsights": {
+        "title": "Perspectivas de la Industria.",
+        "description": "Obtén análisis experto sobre tendencias de servicio al cliente, automatización IA y mejores prácticas para escalar tus operaciones de soporte.",
+        "linkText": "Lee nuestros últimos insights"
+      },
+      "exclusiveContent": {
+        "title": "Contenido Exclusivo.",
+        "description": "Acceso a webinars, casos de estudio y tutoriales que te ayudan a maximizar la implementación de tu agente de llamadas IA.",
+        "linkText": "Explora nuestra biblioteca de recursos"
+      },
+      "earlyAccess": {
+        "title": "Oportunidades de Acceso Temprano.",
+        "description": "Recibe invitaciones para probar nuevas características en beta y proporcionar feedback que da forma al futuro de nuestra plataforma.",
+        "linkText": "Únete a nuestro programa beta"
+      }
+    },
+    "links": {
+      "blog": "Visita nuestro blog",
+      "documentation": "Leer documentación",
+      "support": "Contactar soporte"
     }
   }
 }

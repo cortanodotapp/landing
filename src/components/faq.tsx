@@ -2,7 +2,8 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { ChevronDown, Plus, Minus } from "lucide-react"
+import { ChevronDown, Plus, Minus, HelpCircle } from "lucide-react"
+import { Badge } from "@/components/ui/badge"
 import GradientDither from "@/components/ui/gradient-dither"
 import { useTranslations } from 'next-intl'
 
@@ -101,9 +102,10 @@ export function FAQ() {
             viewport={{ once: true }}
             className="mb-6 inline-block"
           >
-            <div className="bg-primary/10 text-primary border border-primary/20 px-4 py-2 rounded-full text-sm font-medium">
+            <Badge variant="secondary" className="bg-primary/10 text-primary border-primary/20 px-4 py-2 text-sm font-medium">
+              <HelpCircle className="mr-2 h-4 w-4" />
               {t('badge')}
-            </div>
+            </Badge>
           </motion.div>
           
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
