@@ -7,14 +7,14 @@ import { CheckCircle, XCircle, Mail } from 'lucide-react';
 import Link from 'next/link';
 
 interface UnsubscribePageProps {
-  searchParams: {
+  searchParams: Promise<{
     email?: string;
     token?: string;
-  };
+  }>;
 }
 
 async function UnsubscribeContent({ searchParams }: UnsubscribePageProps) {
-  const { email, token } = searchParams;
+  const { email, token } = await searchParams;
 
   if (!email || !token) {
     return (
@@ -103,6 +103,9 @@ async function UnsubscribeContent({ searchParams }: UnsubscribePageProps) {
 }
 
 export default function UnsubscribePage({ searchParams }: UnsubscribePageProps) {
+  // Resolve searchParams before rendering child to match Next.js expected shapes
+  const resolvedParamsPromise = searchParams;
+
   return (
     <div className="min-h-screen bg-background flex items-center justify-center p-4">
       <Suspense
@@ -116,7 +119,8 @@ export default function UnsubscribePage({ searchParams }: UnsubscribePageProps) 
           </Card>
         }
       >
-        <UnsubscribeContent searchParams={searchParams} />
+        {/* Pass the Promise through Suspense - UnsubscribeContent will await it */}
+        <UnsubscribeContent searchParams={resolvedParamsPromise} />
       </Suspense>
     </div>
   );
