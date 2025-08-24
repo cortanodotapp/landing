@@ -2,17 +2,12 @@
   "name": "landing",
   "version": "0.1.5-preview.2",
   "private": true,
+  "engines": {"node": ">=20"},
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
-    "docker:dev:build": "docker build --build-arg NEXT_PUBLIC_POSTHOG_KEY=%CORTANO_POSTHOG_KEY% --build-arg NEXT_PUBLIC_POSTHOG_HOST=%CORTANO_POSTHOG_HOST% -t cortano.azurecr.io/landing:v%CORTANO_VERSION% .",
-    "docker:dev:build:ps": "docker build --build-arg NEXT_PUBLIC_POSTHOG_KEY=$env:CORTANO_POSTHOG_KEY --build-arg NEXT_PUBLIC_POSTHOG_HOST=$env:CORTANO_POSTHOG_HOST -t cortano.azurecr.io/landing:v$env:CORTANO_VERSION .",
-    "docker:dev:build:cmd": "cmd /c \"docker build --build-arg NEXT_PUBLIC_POSTHOG_KEY=%CORTANO_POSTHOG_KEY% --build-arg NEXT_PUBLIC_POSTHOG_HOST=%CORTANO_POSTHOG_HOST% -t cortano.azurecr.io/landing:v%CORTANO_VERSION% .\""
+    "lint": "next lint"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.873.0",

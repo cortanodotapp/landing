@@ -15,7 +15,7 @@ export const initPostHog = () => {
           person_profiles: 'identified_only',
           capture_pageview: false, // Disable automatic pageview capture, as we capture manually
           capture_pageleave: true,
-          debug: process.env.NODE_ENV === 'development', // Enable debug mode in development
+          debug: false, // Enable debug mode in development
           // Enhanced error tracking configuration
           session_recording: {
             recordCrossOriginIframes: true,
