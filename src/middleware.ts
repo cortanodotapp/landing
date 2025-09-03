@@ -1,56 +1,35 @@
-import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale } from './i18n/config';
 import { NextRequest, NextResponse } from 'next/server';
-import { trackServerError } from './lib/posthog';
 
-const intlMiddleware = createMiddleware({
-  // A list of all locales that are supported
-  locales,
-
-  // Used when no locale matches
-  defaultLocale,
-
-  // Prefix strategy - paths will be like /en, /pl, /es, /de
-  localePrefix: 'as-needed'
-});
-
-export async function middleware(request: NextRequest) {
+// Rewrite every incoming request to the site root `/`.
+// This middleware intentionally does not use any i18n or next-intl logic.
+export function middleware(request: NextRequest) {
   try {
-    // Run the internationalization middleware
-    const response = intlMiddleware(request);
-    
-    // Add error tracking headers for better debugging
-    if (response) {
-      response.headers.set('x-error-tracking', 'enabled');
+    const url = request.nextUrl.clone();
+    const pathname = url.pathname;
+
+    // Don't rewrite asset, API, or internal Next.js requests
+    const isFavicon = pathname === '/favicon.ico';
+    const isApi = pathname.startsWith('/api');
+    const isIngest = pathname.startsWith('/ingest');
+    const isNextInternal = pathname.startsWith('/_next');
+    const isStatic = pathname.startsWith('/static') || pathname.startsWith('/public');
+    // Also ignore requests that look like files (have an extension)
+    const hasExtension = /\.[a-zA-Z0-9]+$/.test(pathname);
+
+    if (isFavicon || isApi || isIngest || isNextInternal || isStatic || hasExtension) {
+      return NextResponse.next();
     }
-    
-    return response;
+
+    // Rewrite all other requests to the site root
+    url.pathname = '/';
+    return NextResponse.rewrite(url);
   } catch (error) {
-    // Track middleware errors
-    if (error instanceof Error) {
-      await trackServerError({
-        type: 'middleware_error',
-        message: error.message,
-        stack: error.stack,
-        route: request.nextUrl.pathname,
-        method: request.method,
-        timestamp: new Date().toISOString(),
-        environment: process.env.NODE_ENV || 'production',
-        additionalContext: {
-          userAgent: request.headers.get('user-agent'),
-          ip: request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip'),
-          pathname: request.nextUrl.pathname,
-          searchParams: request.nextUrl.searchParams.toString()
-        }
-      });
-    }
-    
-    // Return a basic response to prevent complete failure
+    // On error, continue without rewriting
     return NextResponse.next();
   }
 }
 
+// Match all incoming requests
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(de|en|es|pl)/:path*', '/((?!api|ingest|_next/static|_next/image|favicon.ico).*)']
+  matcher: ['/:path*']
 };
